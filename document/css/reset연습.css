@@ -1,0 +1,20 @@
+*{margin: 0;
+    padding:0;
+    font-size: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+    box-shadow: 10px 5px 5px thistle;
+    }
+    
+    a{color: inherit; text-decoration: underline overline thistle;}
+    ul,
+    ol{
+        list-style: circle;
+    }
+    body{
+        line-height: 1;
+    }
+    
+    img{
+        vertical-align: middle;
+    }
