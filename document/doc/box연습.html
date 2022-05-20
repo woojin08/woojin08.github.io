@@ -7,27 +7,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset연습.css">
     <link rel="stylesheet" href="../css/box연습.css">
+    <script src="../js/position03.js"></script>
 </head>
+
 <body>
-    <section class="basic01">
-        <h2>제대해</h2>
-        <p>박서함
+  <section id="event">
+        
+    <h2>박서함<i class="xi-night"></i></h2>
+        <h3><i class="xi-garden"></i>
+        i'm crying</h3>
+        <p>소집해제해!<i class="xi-emoticon-sad-o"></i>
         </p>
         <div class="container">
-            <figure>
-          <img  src="../img/1.jpg" alt="">
-        
-            </figure>
-      
-            <figure>
-          <img  src="../img/3.jpg" alt="">
-        
-            </figure>
-            <figure>
-          <img  src="../img/4.jpg" alt="">
-        
-            </figure>
-        
+
+        <figure>
+          <img src="../img/1.jpg" alt="">
+          <a href="#!">more</a>
+      </figure>
+  
+      <figure>
+          <img src="../img/3.jpg" alt="">
+          <a href="#!">more the more</a>
+      </figure>
+  
+      <figure>
+          <img src="../img/3.jpg" alt="">
+          <a href="#!">more</a>
+      </figure>
     </section>
 
     <section class="basic01">
@@ -50,6 +56,46 @@
 
         
     </section>
+  </main>
+
+  <div class="popup">
+    <안녕하세요~ 여기는 떠함페이지>
+      <button>close</button>
+  </div>
+  <script>
+      document.querySelector('.popup button').addEventListener('click', function () {
+          console.log('바부팅');
+          document.querySelector('.popup').style.display='none';
+      })
+  </script>
+
+<nav>
+  <ul>
+      <li><a href="">떠함정보</a></li><br>
+      <li><a href="">ㅇㅅㅇ</a></li><br>
+      <li><a href="">팬미팅</a></li><br>
+      <li><a href="">노래</a></li><br>
+      <li><a href="">생일카페</a></li><br>
+      <li><a href="">ㅎㅅㅎ</a></li><br>
+      </ul>
+</nav>
+<div class="mpoen">
+  <span></span><span></span><span></span><span></span>
+  
+</div>
+
+
+<strong class="box box03">
+  언제와유
+</strong>
+
+<script>
+  document.querySelector('.mpoen').addEventListener('click',function(){
+      document.querySelector('nav').classList.toggle('oo');
+      this.classList.toggle('oo');
+  });
+</script>
+
 
 
     
