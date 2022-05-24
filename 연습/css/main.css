@@ -1,0 +1,28 @@
+:root{
+--mc:#5CD1E5;
+--gc:#dc3545;
+}
+html{
+    font-size: 20px;
+}
+body{
+    font-size: 0.8rem;
+}
+
+.top_banner{
+    border-top: 2px solid var(--mc);
+    border-bottom: 1px solid var(--gc);
+    font-size: 0.65rem;
+    line-height: 1.5rem;
+
+}
+.header{
+    lince-height:5rem;
+}
+
+.top_banner .container{
+    display: flex;
+    justify-content: flex-end;
+    width: 60rem;
+    margin: 0 auto;
+}

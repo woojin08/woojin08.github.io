@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#event {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#event i{
+    background: #5CD1E5;
+    color: #fff;
+    padding: 5px;
+    border-radius: 30%;
+}
+
+#event h2{
+    font-size: 21px;
+    font-weight:  700;
+    margin: 0 0 10px 0;
+}
+
+#event h2::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background: #4374D9;
+    margin: 0 10px;
+    vertical-align: middle;
+   
+}
+
+#event h2::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background: #4374D9;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#event p{
+    font-size: 15px;
+    font-weight:  300;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+}
+
+#event .container{
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#event img{
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+#event figure{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+
+}
+#event .container figure:hover img{
+    transform: scale(2);
+}
+
+#event figure a{
+   position: absolute;
+   top: -40px;
+   left: 0;
+    padding: 10px 30px;
+    background: #4374D9;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#event figure:hover a {
+    top: 0 ;
+}
+
+
+
+
+*{margin: 0;
+    padding:0;
+    font-size: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+}
+
+    a{color: inherit; text-decoration:none;}
+    ul,
+    ol{
+        list-style: circle;
+    }
+    body{
+        line-height: 1;
+    }
+    
+    img{
+        vertical-align: middle;
+    }
+
+
+    .popup{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 450px;
+        height: 350px;
+        background:#4374D9
+        
+    }
+    
+    .popup button{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+
+
+    body{
+        background:#fff;
+    }
+    
+    nav{
+        position: fixed;
+        top: 0;
+        left: -500px;
+        width: 500px;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+    
+    }
+    nav.oo{
+        left: 0 ;
+    
+    }
+    .mpoen{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        background:#D4F4FA;
+        ;
+    }
+    
+    .mpoen span{
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        height: 3px;
+        background:#4374D9;
+        transition: 0.5s;
+    
+    }
+    .mpoen span:nth-child(1){
+        top: 5px;
+    }
+    
+    .mpoen.oo span:nth-child(1){
+        opacity: 0;
+    }
+    
+    .mpoen span:nth-child(2){
+        top: 14px;
+    }
+    
+    .mpoen.oo span:nth-child(2){
+        transform: rotate(360deg);
+    }
+    
+    .mpoen span:nth-child(3){
+        top: 14px;
+    }
+    .mpoen.oo span:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    
+    .mpoen span:nth-child(4){
+        bottom: 5px;
+    }
+    
+    .mpoen.oo span:nth-child(4){
+        opacity: 0;
+    }
+   
+    *{
+        box-sizing: border-box;
+    }
+    
+    
+    .box{
+        margin: 50px auto;
+        width: 1000px;
+        border:1px solid #333;
+    }
+    
+    
+    .box03{
+        /* inline strong tag를 박스로 바꿈 */
+        display: block;
+        margin:100px auto;
+        padding: 100px 30px;
+    }
+
+ 
