@@ -1,9 +1,10 @@
 $(function(){
 
-    $('.first_slider').slick({
+    $('.main_slider').slick({
         arrow:false,
         autoplay:true,
-        dots:true,
+        pauseOnHover:false,
+        pauseOnFocus:false,
 
     });
 })
