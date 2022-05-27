@@ -11,18 +11,31 @@ body{
 
 .top_banner{
     border-top: 2px solid var(--mc);
-    border-bottom: 1px solid var(--gc);
+    border-bottom: 1px solid var(--mc);
     font-size: 0.65rem;
-    line-height: 1.5rem;
+    line-height: 1rem;
 
 }
 .header{
-    lince-height:5rem;
+    line-height:5rem;
 }
 
 .top_banner .container{
     display: flex;
     justify-content: flex-end;
-    width: 60rem;
+    width: 80rem;
     margin: 0 auto;
+}
+.top_banner li{
+    border-right: 1px solid var(--mc);
+    padding: 0 0.5rem;
+}
+
+.header .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.header h1 img{
+    width: 300px;
 }

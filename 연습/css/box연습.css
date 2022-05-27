@@ -24,3 +24,11 @@
 .basic01 figure{
     flex: 1px;
 }
+
+.right_banner{
+    position: fixed;
+    top: 10vh;
+    right:-40px;
+    background: #EBF7FF;
+    transition: right 0.5s;
+}
