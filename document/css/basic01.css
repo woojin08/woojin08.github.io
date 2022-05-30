@@ -38,7 +38,7 @@
     right: 30px;
     width: 30px;
     height: 30px;
-    background: #ff0;
+    background: #5CD1E5;
 }
 
 .mopen span {
@@ -92,7 +92,7 @@
         left: -100%;
         width: calc(100% - 90px);
         height: 100vh;
-        background: #ff0;
+        background: #4374D9;
         z-index: 999;
         transition: left 0.5s;
     }
@@ -122,7 +122,7 @@
         right: 30px;
         width: 30px;
         height: 30px;
-        background: #ff0;
+        background: #5CD1E5;
     }
 
     .mopen span {
