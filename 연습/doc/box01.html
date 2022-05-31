@@ -23,6 +23,17 @@
         <h1>
           LOGO
         </h1>
+        <div class="popup">
+          <안녕하세요~ 여기는 떠함페이지>
+            <button>close</button>
+        </div>
+        <script>
+            document.querySelector('.popup button').addEventListener('click', function () {
+                console.log('바부팅');
+                document.querySelector('.popup').style.display='none';
+            })
+        </script>
+
         <nav>
           <ul>
             <li><a href="">박</a></li>
@@ -55,14 +66,14 @@
             </figure>
             <figure class="itm02 itm">
                 <div class="inner">
-                    <h3>01.Lorem ipsum dolor sit amet.</h3>
+                    <h3>02.Lorem ipsum dolor sit amet.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/> Veniam consequatur non quaerat eaque nihil facilis?</p>
                     <a href="">more the more</a>
                 </div>
             </figure>
             <figure class="itm03 itm">
                 <div class="inner">
-                    <h3>01.Lorem ipsum dolor sit amet.</h3>
+                    <h3>03.Lorem ipsum dolor sit amet.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/> Veniam consequatur non quaerat eaque nihil facilis?</p>
                     <a href="">more</a>
                 </div>
