@@ -1,222 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        ol li {
-            margin: 0 0 30px 0;
-            border-bottom: 1px solid #ddd;
-            padding: 0 0 30px 0;
-        }
-    </style>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/reset.css">
-
-
+    <title>HTML BASIC - 기본</title>
 </head>
 
 <body>
-    <h2>display</h2>
-    <ol>
+    <h1>HTML BASIC</h1>
+    <hr />
+    <h2>기본 박스 : box-model</h2>
+    <en>2022.06.02(목)</en>
+    <ul>
         <li>
 
-            <a href="./doc/box01.html" target="_blank">box 01 </a>"
-            <p>박스의 기본 성질을 알아보았다.</p>
-            <en>2022.05.16</en>
-            <strong>기본인만큼 천천히 알아보아야겠다.
-                h1과 div도 더 알아보겠다.
+            <a href="./doc/box01.html">기본 박스 01</a>
 
-            </strong>
+            <p>기본적인 박스의 성질에 대한 이해 width height padding margin</p>
+            <p>width는 늘어났다. </p>
+        </li>
+        <br>
+        <a href="./doc/box02.html">기본 박스 02</a>
+        <p>선택자에 대한 이해</p>
+        <p>선택자=부르는 용도/후손,자식,형제등 선택자로 부름</p>
+        <p>text, search 사용, 색의 배치,ul과 class등을 사용하고 +,~로 색 배치</p>
+
 
         </li>
-
         <li>
-
-            <a href="./doc/box02.html" target="_blank">box 02 </a>"
-            <p>박스의 기본 성질2을 알아보았다.</p>
-            <en>2022.05.17</en><br><br>
-            <strong>박스 색과 배치,선<br>
-                margin=div 테두리 바깥 여백<br>
-                padding=div 테두리 안쪽 여백<br>
-                width= 너비와 높이 지정<br>
-                border=테두리<br>
-                display block= 위로 8<-이런 모양<br>
-                    display line= ㅇㅇ ㅇㅇ ㅇㅇ
-
-            </strong>
-
+            <a href="./doc/test01.html">다단메뉴01</a>
+            <p>메뉴를 설정하고 아래로 나열하여 메뉴를 만들수있다.</p>
+            <p>nav>ul>li>a,ul>li>a 순서기억</p>
         </li>
-
         <li>
-            <a href="./doc/box03.html" target="_blank">box 03 </a>"
-            <p>그림 넣고 정렬하고 배치+백그라운드 색감</p>
-            <en>2022.05.17</en>
-            <strong>허접하지만 웹페이지 같은 디자인을 해봤다
-                실습시간에도 따라해봄. 디자인 더 신경쓰자!<br>
-                figure, img src=이미지/ 그라데이션도 해봄
-                padding=안쪽여백
+            <a href="./doc/multi_menu01.html">다단메뉴01</a>
+            <p>메뉴에 화살표 모양으로 만들 수 있다.<br /> 선을 그어 메뉴 섹션을 나눌 수 있다.</p>
+            <strong>nth-child를 사용하여 순서를 정한것에 동그라미를 그려봄.<br />
+                ::before 사용
             </strong>
-
         </li>
-
         <li>
-
-            <a href="./doc/box04.html" target="_blank">box 04 </a>"
-            <p>메뉴 영역+색넣기+배치</p>
-            <en>2022.05.18</en>
-            <strong> li와 menu, header 기억</strong>
-            <pre>
-            제발 link tap 누르자/ 한 자씩 치는거 하지마!!
-            </pre>
+            <a href="./doc/multi_menu02.html">다단메뉴02</a>
+            <p>border을 사용하여 소메뉴에 색을 입혀봄</p>
+            <strong>박스 사이즈,배열 중요</strong>
         </li>
-    </ol>
+    </ul>
+    <hr />
 
-    <h2>position</h2>
-    <!-- position:static, relative, absolute, fixed -->
-    <ol>
-        <li>
-            <a href="./doc/position01.html">position의 기초</a><br>
-
-
-            <p>기본적인 포지션을 배워보았다.</p>
-            <p>
-                <en>2022.05.19</en><br>
-            </p>
-
-            <strong>
-                display none=없앤다<br>
-                display block=나타나다<br>
-                transition=좀더 부드럽게 움직임 (ex:0.5s로 표현)<br>
-                absolute=완전한것,절대적 위치<br>
-                toggle=on/off 기능<br>
-                nav(header안에 사용)와 mpoen span<br>
-                nth- child()=임의의 ()번째
-            </strong>
-            <pre>position02.색과 닫기버튼</pre>
-
-        <li><a href="./doc/position02.html">position의 기초2</a><br>
-
-            <pre>
-
-            position02.메뉴 만들기와 움직임
-            자바스크립트 조금 사용
-
-            움직이는 동작까지 넣으니 괜찮아보인다.
-            그래도 아직 따라하기 조금 벅차다.이동시간 코딩 용어 정리!
-        </li>    
-
-        <li><a href="./doc/position03.html">가상요소 선택/position 응용</a><br>
-            <p><en>2022.05.20(금)</en><br></p>
-            <p><strong>1.홈페이지 가상요소 선택 </strong><br>
-                홈페이지 사진 사이즈 조절,확대,더보기란 만들기(more),제목 선 배열(중간,양쪽)<br>->웹페이지 효과 주는데 중요해보임! 연습해보자ㅎㅎ<br><br>
-                
-                <strong>2.구글웹폰트(*라이센스 중요!)</strong><br>->@import로 지정(링크복사)<br>폰트는 하나!<br><br>
-                <strong>3.XEICON</strong><br>
-                ->GET STARTED에서 사이트 head태그 안에 코드 붙이기<br>
-                (ex:카카오,페이스북 아이콘)<br><br>
-
-                ＆사이트를 만드는데 동적인 느낌까지 주니까 더 재밌다ㅎㅅㅎ<br>
-                +용어정리가 더필요한 느낌!
-            </p>
-       </li>
-       
-       <li><a href="../trn01/index.html">DK스틸</a><br>
-        박스 슬라이드,배치
-        <p><en>2022.05.23(월)</en><br></p>
-        <p><strong><박스 슬라이드></strong><br>
-         jqaery cdn<br>
-         slick=css,js링크 다운<br>
-         margin->background포함x<br>
-         padding=가능
-         </p>
-
-    </li>
-
-    <li><a href="../trn01/index.html">DK스틸2</a><br>
-        홈페이지
-     박스 슬라이드,배치2
-     <p><en>2022.05.24(화)</en><br></p>
-     <p><strong><홈페이지 위쪽></strong><br>
-   aos,slick,Bootstrap 활용<br>
-   로고넣기,메뉴,사진 속 글 넣기,슬라이드,슬로건<br>
-   rem<br>
-   root해서 색지정
-   </p>
-   </li>
-
-   <li>
-
-    <a href="./doc/position04.html" target="_blank">나이키신발 </a>
-    <p>이미지 움직임,슬라이드</p>
-    <en>2022.05.25(수)</en>
-    <strong>이미지를 다운받아 슬라이드를 넣고 여러모션으로 움직여보았다.
-
-    </strong>
-
-</li>
-
-<li>
-    <a href="./doc/position05.html" target="_blank">웃는얼굴->슬픈얼굴 </a>
-    <p>이미지 움직임</p>
-    <en>2022.05.26(목)</en>
-    <strong>
-        js toggleClass를통해 웃는얼굴을 우는 얼굴로 바꿔봄<br></strong>
-       <p> 원을잡고 표정 중심맞추는거에 신경쓰자</p>
-
-</li>
-
-<li>
-
-    <a href="./doc/position06.html" target="_blank"> 메뉴 슬라이드,해,자동차,하트 모션 </a>
-    <p>이미지 애니메이션,메뉴 슬라이드</p>
-    <en>2022.05.26(목)</en>
-    <strong>메뉴 슬라이드 새로운 모션익힘<br>
-        도형으로 사물을 만들어보며 움직임을 넣고 애니메이션 효과를 넣어봄<br></strong>
-        <p>아직은 어렵지만 동작이 들어가니 더 재밌다.</p>
-
-    
-
-</li>
-
-<li>
-
-    <a href="../trn01/index.html" target="_blank">DK스틸 아래부분 완성 </a><br>
-    <p>이미지 움직임,배열, 블록배열,링크걸기 </p>
-    <en>2022.05.27(금)</en>
-    <strong>이미지를 넣고 움직임을 넣어보고 차례대로 배열해볼 수 있다.<br>
-        링크를 걸고 사이사이 구분선 넣기<br></strong>
-        
-</li>
-
-<li>
-
-    <a href="./doc/basic01.html" target="_blank">반응형 웹사이트 </a><br>
-    <p>메뉴,로고,visual,copy배치,span메뉴 <br><br></p>
-    <en>2022.05.30(월)<br><br></en>
-    <strong>일반 웹페이지를 반응형으로 만들어봄.(@media를 넣어서) <br>
-        mopen으로 메뉴를 만드는 법이 익숙해진거 같음. <br>
-    자바스크립트로 움직임을 넣는건 아직 서투르지만 해본 방법으로 다시 연습해보아야겠음.<br></strong>
-    <p>Wrap,Wrp_fkld <-이런식으로 사용<br></p>
-    시맨틱 태그:header,main,footer<br>
-    ctrl+/=주석(주석다는 습관을 기르자)<br>
-    reset파일 위치 중요
-        
-</li>
-
-<li>
-    <a href="./doc/slick01.html" target="_blank">웹페이지 슬라이드 </a><br>
-    <p>웹페이지에 슬라이드를 넣고 글자를 띄울 수 있다 <br><br></p>
-    <en>2022.05.31(화)<br><br></en>
-    <strong>웹페이지에 자바를 이용하여 슬라이드를 넣음<br>
-        </strong>
-        
-</li>
-  
-</ol>
 </body>
 
 </html>
