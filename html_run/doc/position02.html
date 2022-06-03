@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0%;
+            left: 0;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            line-height: 100vh;
+        }
+
+        header {
+            background: #f00;
+
+        }
+
+        main {
+            background: #ff0;
+        }
+
+        footer {
+            background: #00f;
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .container figure {
+            flex: 1;
+            line-height: 1.4;
+
+        }
+
+        .container figure:nth-child(2) {
+            background: #333;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky">
+        header
+    </header>
+    <main class="sticky">
+
+    </main>
+
+    <section class="sticky">
+        <div class="container">
+            <figure>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perspiciatis tempora ducimus
+                eveniet quo, porro pariatur odio amet debitis doloribus quis expedita aspernatur quos voluptates ratione
+                corporis hic quas consectetur repellendus libero enim harum sit. Corrupti voluptatibus repellendus
+                nulla? Sit aliquid natus quaerat adipisci sint eum perferendis, quis in ipsam a tenetur vitae laborum
+                reiciendis atque molestias. Nesciunt officia, animi aliquid illo nam quaerat sit esse placeat magni
+                debitis necessitatibus, repudiandae voluptates deleniti officiis est earum eum repellendus aliquam?
+                Error debitis eveniet architecto impedit, et optio. Iste asperiores repellendus similique omnis alias
+                fugit quibusdam tempora cupiditate? Minus temporibus suscipit iste, earum dolores quibusdam asperiores
+                dolor labore sit facilis maxime voluptates incidunt modi, laudantium minima. Quam expedita veniam
+                similique deserunt minima magnam assumenda a suscipit dolorem corrupti distinctio blanditiis ea
+                praesentium non quo voluptas beatae ipsam ex, ipsum, nostrum quae, porro dolorum. Ducimus laudantium
+                eveniet veritatis velit quas corporis possimus veniam fuga dolore tempora beatae odio aut officia sit
+                odit, aliquam aliquid totam doloremque atque iste sapiente officiis ut quidem? Est animi consectetur
+                incidunt, voluptatibus distinctio quam nemo exercitationem nobis reiciendis quibusdam praesentium
+                corrupti blanditiis unde fugiat sed, amet corporis molestiae quia laudantium inventore cumque.
+                Recusandae porro dignissimos in quas molestiae.
+            </figure>
+            <figure>
+
+            </figure>
+        </div>
+    </section>
+    <footer class="sticky">
+        footer
+    </footer>
+</body>
+
+</html>
