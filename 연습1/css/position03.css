@@ -1,0 +1,241 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+.container>* {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    position: fixed;
+    /* 상우하좌 */
+    inset: 10px auto auto 10px;
+    z-index: 999;
+}
+
+header img {
+    width: 200px;
+}
+
+header i {
+    position: fixed;
+    inset: 60px 60px auto auto;
+    z-index: 999;
+    font-size: 30px;
+    /* 오른쪽 거리 */
+    padding: 10px;
+    background: rgba(255, 0, 0, 0.3);
+    /* 문단정리 */
+    text-align: center;
+    /* 줄높이 */
+    line-height: 100px;
+    border-radius: 10px;
+
+}
+
+.section01 {
+    display: flex;
+    /* justify-content의 값을 center로 정하면 가운데에 배치합니다. */
+    justify-content: center;
+    align-items: center;
+}
+
+.abs {
+    position: absolute;
+    inset: auto auto 100px 50%;
+    /* translateX:오른쪽으로 이동(음수=왼쪽으로 이동)
+       translateY:아래쪽으로 이동(음수=위쪽으로 이동)*/
+    transform: translateX(-50%);
+}
+
+.section02 {
+    display: flex;
+    /* flex-direction의 값을 column으로 하면, 위에서 아래로 배열합니다. */
+    flex-direction: column;
+    background: #f3f3f3;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section02 .container {
+    width: 1500px;
+    /* 속성값으로 음수를 사용할 수 있다는 것,
+    auto를 사용할 수 있다 =HTML 요소를 가운데 정렬할 수 있습니다.
+    상하 좌우 */
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.section02 .container img {
+    max-width: 100%;
+}
+
+.section02 h2 {
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+
+}
+
+.section02 p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 60px 0;
+    line-height: 1.6;
+}
+
+.section03 .container figure {
+    height: 100vh;
+    filter: grayscale(1) brightness(0.4);
+}
+
+.section03 .container .left {
+    background: url(../img/04.jpg) no-repeat center center/cover;
+}
+
+.section03 .container .right {
+    background: url(../img/07.jpg) no-repeat center center/cover;
+
+}
+
+.section04 .container .left {
+    flex-direction: column;
+    /* 가장 위쪽에 맞춤 */
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 0 0 150px;
+    color: #fff;
+    height: 100vh;
+}
+
+.section04 .container .left h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    line-height: 1.3;
+}
+
+.section04 .container .left p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+    line-height: 1.414;
+}
+
+.section04 .container .right {
+    /* 위에서 아래로 배치 */
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 0 0 50%;
+    color: #fff;
+    height: 100vh;
+    text-align: right;
+    background: url(../img/05.jpg) no-repeat center center/cover;
+
+}
+
+.section05 .container .right h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    line-height: 1.3;
+    padding: 0 150px 0 0;
+}
+
+.section05 .container .right p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+    line-height: 1.414;
+    padding: 0 150px 0 0;
+}
+
+.section05 .container .right a {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+    line-height: 1.414;
+    padding: 0 150px 0 0;
+}
+
+
+.section06 .container .left {
+    height: 100vh;
+    background: url(../img/09.jpg) no-repeat center center/cover;
+}
+
+footer .container .right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    background: #FFEBFE;
+}
+
+footer .container .right img {
+    width: 500px;
+}
+
+footer .container .box {
+    margin: 0 0 100px 0;
+}
+
+footer .container .customer {
+    display: flex;
+    margin: 0 0 100px 0;
+    gap: 30px;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+footer .container .sns {
+    font-size: 19px;
+    margin: 0 0 40px 0;
+}
+
+footer address {
+    font-size: 11px;
+    font-style: normal;
+}
+
+.cover {
+    position: fixed;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    /* 굵기 */
+    font-weight: 300;
+    /* 긁자 사이의 간격 */
+    letter-spacing: 1em;
+    /* uppercase : 모든 글자를 대문자로 바꿉니다. */
+    text-transform: uppercase;
+    overflow: hidden;
+    transform: 0.5s;
+
+}
+
+.cover .on {
+    height: 100vh;
+}
+
+.cover li {
+    margin: 0 0 20px 0;
+}
