@@ -49,7 +49,7 @@
 
 .mainVisual .mainSlider figure {
     position: relative;
-    height: 850px;
+    height: 900px;
 
 }
 
@@ -181,13 +181,48 @@
     transition: 0.8s 1.3s;
 }
 
+.mainContent {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
 
 .mainContent h2 {
+    margin: 0 0 10px 0;
     font-size: 45px;
     font-weight: 400;
 }
 
+.mainContent h2::before {
+    content: "";
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    background: #9e1c4e;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.mainContent h2::after {
+    content: "";
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    background: #9e1c4e;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
 .mainContent p {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    margin: 5px 0 10px 0;
+}
+
+
+.mainContent .container figure {
+    padding: 40px 15px 15px;
+    font-size: 13px;
 }
