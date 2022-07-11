@@ -1,0 +1,76 @@
+.header {
+    line-height: 100px;
+}
+
+.header i {
+    position: fixed;
+    inset: 60PX 60PX auto auto;
+    z-index: 999;
+    font-size: 25px;
+    padding: 10px;
+    background: #f00;
+    border-radius: 5px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.header .gnb a {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    font-weight: -100;
+
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li .smenu {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    display: none;
+    background: #fff;
+    line-height: 35px;
+    width: 140px;
+    text-align: center;
+    transform: translateX(-50%);
+    border-bottom: 2px solid #ddd;
+    z-index: 999;
+}
+
+.header .gnb>ul>li:hover .smenu {
+    display: block;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sticky01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abs {
+    position: absolute;
+    inset: auto auto 50% 50%;
+    transform: translateX(-50%);
+}
