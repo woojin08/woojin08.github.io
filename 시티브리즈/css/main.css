@@ -98,13 +98,25 @@
 .mainVisual .itm01 {
     background: url(../img/220613_pc.jpg) no-repeat center center/cover;
 }
+.mainVisual .itm01.on {
+    background: url(../img/220613_pc.jpg) no-repeat center center/cover;
+    transition: 10s;
+}
 
 .mainVisual .itm02 {
     background: url(../img/220613_pc2.jpg) no-repeat center center/cover;
 }
+.mainVisual .itm02.on {
+    background: url(../img/220613_pc2.jpg) no-repeat center center/cover;
+    transition: 10s;
+}
 
 .mainVisual .itm03 {
     background: url(../img/04.jpg) no-repeat center center/cover;
+}
+.mainVisual .itm03.on {
+    background: url(../img/04.jpg) no-repeat center center/cover;
+    transition: 10s;
 }
 
 
@@ -132,6 +144,7 @@
 }
 
 .best p {
+    padding: 10px;
     color: #000;
     line-height: 1;
     letter-spacing: 1px;
@@ -233,6 +246,7 @@
 }
 
 .tab_content .notice img {
+position: relative;
     padding: 100px 0 0 2px;
     overflow: hidden;
     min-width: 0;
@@ -243,6 +257,7 @@
     padding: 10px 0 0 0;
     line-height: 1;
     font-size: 13px;
+   
 
 }
 
@@ -250,7 +265,10 @@
     padding: 10px;
     font-size: 15px;
     color: #999;
-    text-decoration: line-through
+    text-decoration: line-through;
+    
+
+    
 }
 
 .section02 {
@@ -328,7 +346,7 @@
     padding: 500px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/22HS_muse_lookbook_06.jpg) no-repeat fixed;
+    background: url(./img/22HS_muse_lookbook_06.jpg) no-repeat fixed;
 
 
 }
@@ -337,7 +355,7 @@
     padding: 500px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/22HS_muse_lookbook_12.jpg) no-repeat fixed right;
+    background: url(./img/22HS_muse_lookbook_12.jpg) no-repeat fixed right;
 
 
 }
@@ -347,7 +365,38 @@
     padding: 500px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/22HS_muse_lookbook_12.jpg) no-repeat fixed center center/cover;
+    background: url(./img/22HS_muse_lookbook_12.jpg) no-repeat fixed center center/cover;
 
 
 }
+
+
+#footer {min-width:1200px; width:100%; max-width:1807px; margin:0 auto; border-top:1px solid #000; text-align:center;}
+#footer .ft_box {min-width:1200px; width:100%; max-width:1400px; margin:0 auto; padding:70px 0; font-size:0;}
+#footer .ft_box .ft_wrap,
+#footer .ft_box .shopinfo,
+#footer .ft_box .ft_pay {display:inline-block; vertical-align:top;}
+#footer .ft_box .ft_pay > li:first-child a {cursor:default;}
+
+#footer .ft_wrap {text-align:left;}
+#footer .ft_wrap .cs_title {color:#010101; font-size:13px; letter-spacing:0.05rem;}
+#footer .ft_wrap .cs_box strong {color:#010101; font-size:22px; font-weight:900; line-height:1; letter-spacing:0.05rem;}
+#footer .ft_wrap .cs_box p {color:#626262; font-size:15px; font-weight:400; letter-spacing:0.05rem;}
+#footer .shopinfo {padding:0 135px; text-align:left;}
+
+#footer .shopinfo .info,
+#footer .shopinfo .info * {color:#010101; font-size:12px; font-style:normal; letter-spacing:0.05rem;}
+#footer .shopinfo .info span {position:relative; padding:0 6px;}
+
+#footer .shopinfo .ft_menu {font-size:0;}
+#footer .shopinfo .ft_menu > li {display:inline-block; padding:0 10px; vertical-align:top;margin: 0 0 10px 0;}
+#footer .shopinfo .ft_menu > li a {color:#010101; font-size:13px; font-weight:700; letter-spacing:0.05rem;}
+#footer .shopinfo .copyright {margin-top:9px; color:#000; font-size:13px;}
+#footer .shopinfo .copyright a {color:#000; font-size:13px;}
+#footer .shopinfo .copyright a strong,
+#footer .shopinfo .copyright a:hover {color:#3fc0e5;}
+
+
+#footer .btn_scroll {display:none; position:fixed; right:56px; bottom:50px; z-index:20; width:60px; }
+#footer .btn_scroll a {display:block; width:60px; height:72px; background-repeat:no-repeat; background-position:center; font-size:0; text-align:center; cursor:pointer;}
+#footer .btn_scroll a.up {background-image:url(https://cf.channel.io/pub-file/87410/62a70bc45d39fc3ac94d/citybreeze-symbol_-1.png);}
