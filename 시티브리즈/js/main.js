@@ -11,13 +11,6 @@ $(function () {
             $('mainArrow i').addClass('on')
         }
 
-        // if (c) {
-        //     c = c + 1;
-
-        // } else {
-        //     c = 1
-        // }
-        $('.slideNum').text((c ? (c + 1) : 1) + " / " + s.slideCount);
     });
 
     $('.mainSlider').slick({
@@ -26,6 +19,7 @@ $(function () {
         dots: true,
         pauseOnHover: false,
         pauseFocus: false,
+        fade: true,
     });
 
     $('.tab_menu li').on('click', function (event) {
@@ -48,4 +42,3 @@ $(function () {
     });
 
 })
-
