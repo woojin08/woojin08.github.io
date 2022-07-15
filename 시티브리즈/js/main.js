@@ -11,6 +11,13 @@ $(function () {
             $('mainArrow i').addClass('on')
         }
 
+        // if (c) {
+        //     c = c + 1;
+
+        // } else {
+        //     c = 1
+        // }
+        $('.slideNum').text((c ? (c + 1) : 1) + " / " + s.slideCount);
     });
 
     $('.mainSlider').slick({
@@ -21,6 +28,9 @@ $(function () {
         pauseFocus: false,
         fade: true,
     });
+
+
+
 
     $('.tab_menu li').on('click', function (event) {
         event.preventDefault();
@@ -41,4 +51,58 @@ $(function () {
         console.log(ux)
     });
 
+
+
+
+
+    $(window).on('scroll', function () {
+        var sct = $(window).scrollTop();
+        if (sct > 500) {
+            $('.toTop').fadeIn(300)
+        } else {
+            $('.toTop').fadeOut(1000)
+        }
+    });
+    $(window).on('section02', function () {
+        var sct = $(window).scrollTop();
+        if (sct > 500) {
+            $('.toTop').fadeIn(300)
+        } else {
+            $('.toTop').fadeOut(1000)
+        }
+    });
+
+    $('.toTop').on('click', function () {
+        $('html,body').animate({ scrollTop: 0 }, 200)
+    });
+
+    // 유튜브 player
+
+
+
+    $('#bgndVideo').YTPlayer({
+        videoURL: 'https://youtu.be/PCPlULDTteE',
+        containment: '.section02 .movie',
+        autoPlay: true,
+        showControls: false,
+        mute: true,
+        playOnlyIfVisible: true,
+
+    });
+
+
+    $('.movie i:nth-child(1)').on('click', function () {
+
+        $('#bgndVideo').YTPPause();
+    });
+    $('.movie02 i:nth-child(2)').on('click', function () {
+
+        $('#bgndVideo').YTPPlay();
+    });
+    $('.movie02 i:nth-child(3)').on('click', function () {
+
+        $('#bgndVideo').YTPUnmute();
+    });
+
 })
+
