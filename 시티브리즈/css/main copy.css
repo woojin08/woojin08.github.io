@@ -62,11 +62,11 @@ header i {
 .cover {
     position: fixed;
     inset: 0 auto auto 30px;
-   width: 500px;
+    width: 500px;
     height: 0;
     background: #fff;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
     overflow: hidden;
@@ -141,12 +141,13 @@ header i {
     margin: 0 0 60px 0;
     line-height: 1.6;
 }
+
 #WD_left {
     position: fixed;
     left: 30px;
     top: 60px;
     width: 130px;
-    background: rgba(255,255,255,0);
+    background: rgba(255, 255, 255, 0);
     padding: 30px 20px;
     z-index: 9;
     -webkit-transition: .3s ease-in-out;
@@ -162,18 +163,20 @@ header i {
 .nav .logo {
     margin: 0px auto 0px;
 }
+
 .nav li {
     position: relative;
 }
 
 .nav .logo a {
-    font-family: "Montserrat","Nanum Gothic";
+    font-family: "Montserrat", "Nanum Gothic";
     font-weight: 700;
     font-size: 20px;
     color: #000;
 }
+
 .nav li a {
-    font-family: 'Montserrat',Roboto, "Nanum Gothic";
+    font-family: 'Montserrat', Roboto, "Nanum Gothic";
     color: #000;
     display: block;
     font-size: 13px;
@@ -182,7 +185,10 @@ header i {
     letter-spacing: 0px;
     font-weight: 700;
 }
-a, a img, img {
+
+a,
+a img,
+img {
     -webkit-transition: all 0.3s ease;
     -khtml-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -190,6 +196,7 @@ a, a img, img {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 a {
     -webkit-transition: all 0.3s ease;
     -khtml-transition: all 0.3s ease;
@@ -198,6 +205,7 @@ a {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 a {
     color: #222;
     text-decoration: none;
@@ -209,22 +217,23 @@ a {
 .nav .category {
     padding: 10px 0 20px 5px;
     width: 100%;
-    display: none;}
+    display: none;
+}
 
-    .nav .category li {
-        position: relative;
-    }
+.nav .category li {
+    position: relative;
+}
 
-    .nav .category li a {
-        color: #000;
-        padding: 0px;
-        letter-spacing: 0.5px;
-        line-height: 18px;
-        font-size: 11px;
-        font-weight: 400;
-        border: 0px solid #000;
-    }
+.nav .category li a {
+    color: #000;
+    padding: 0px;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 11px;
+    font-weight: 400;
+    border: 0px solid #000;
+}
 
-    element.style {
-        display: none;
-    }
+element.style {
+    display: none;
+}
