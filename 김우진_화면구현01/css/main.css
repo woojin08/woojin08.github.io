@@ -861,3 +861,39 @@
     border-radius: 3px;
     margin: 100px 0 0 0;
 }
+
+.service {
+    padding: 100px 0;
+}
+
+.service .container {
+    gap: 30px;
+
+}
+
+.service .container>div {
+
+    flex: 1;
+}
+
+
+.service .container .case {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.service .container iframe {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.service .container .root_daum_roughmap {
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+}
+
+.service .container .root_daum_roughmap .wrap_map {
+    height: 100%;
+
+}
