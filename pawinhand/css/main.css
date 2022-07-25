@@ -398,6 +398,7 @@ nav>ul>li a {
 
 .serviceTab .container {
     gap: 30px;
+
 }
 
 .serviceTab .container>div {
@@ -417,12 +418,16 @@ nav>ul>li a {
     width: 40%;
     margin: 0 auto;
     font-size: 0;
+
 }
 
 .serviceTab .tab_menu li {
     display: inline-block;
     font-size: 20px;
     text-align: center;
+
+
+
 
 }
 
@@ -454,14 +459,154 @@ nav>ul>li a {
     margin-left: 0;
 }
 
+/* 1 */
+.activities {
+
+    position: relative;
+    width: 600px;
+    margin: 120px auto 0;
+}
+
+.activities .btn_years {
+    position: absolute;
+    top: -20px;
+    left: -280px;
+    text-align: center;
+}
+
+.activities .btn_years a {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #eee;
+    line-height: 1.3;
+}
+
+.activities .btn_years .on {
+    color: #333;
+}
+
+/* 포인핸드 영어 옆으로 */
+.activities .subtit {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-family: 'gilroy';
+    transform: rotate(90deg) translate(100%, 0%);
+    transform-origin: top right;
+    font-weight: 700;
+}
+
+.activities .list_activities .thumbBox:before {
+    padding-bottom: 50%;
+}
+
+.activities .list_activities .desc {
+    margin-top: 30px;
+}
+
+.activities .list_activities .desc strong {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.activities .list_activities .desc p {
+    margin-top: 10px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.activities .list_activities ul {
+    display: none;
+}
+
+.activities .list_activities ul li+li {
+    margin-top: 80px;
+}
+
+.activities .list_activities ul.on {
+    display: block;
+}
+
+.act-obj {
+    display: block;
+    position: absolute;
+    top: 1200px;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.tab_content img {
+    width: 100%;
+}
+
+.tab_content .text {
+    margin-top: 30px;
+}
+
+.tab_content .text h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tab_content .text p {
+    margin-top: 10px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/* .tab_content .slick-dots {
+    position: absolute;
+    inset: auto auto 20px 50%;
+    transform: translateX(-50%);
+} */
+
+.tab_content .slick-dots li {
+    display: inline-block;
+    border-radius: 50%;
+    background: #f00;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+
+.tab_content .slick-dots li.slick-active {
+    background: #333;
+}
+
+
+.tab_content .slick-dots button {
+    display: none;
+}
+
+
+
 .tab_content .notice a {
     display: flex;
     justify-content: space-between;
 }
 
+
+
 .tab_content .notice img {
     position: relative;
-    padding: 80px 0 0 10px;
+    padding: 80px 0 20px -10px;
     overflow: hidden;
 
 
@@ -480,7 +625,7 @@ nav>ul>li a {
     transform: translateX(-50%);
     width: 0;
     height: 3px;
-    border-bottom: 1px solid #f5c45a;
+    border-bottom: 2px solid #f5c45a;
     transition: 0.5s;
 }
 
@@ -500,6 +645,91 @@ nav>ul>li a {
 
 }
 
+/* 2 */
+
+.bar-txtBox {
+    text-align: center;
+    padding: 100px 0 0 0;
+    background: #f7f7f7;
+}
+
+.bar-txtBox:before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(270deg, #f77706, #f5c45a);
+}
+
+.bar-txtBox .tit {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.bar-txtBox .tit .line {
+    display: inline-block;
+    position: relative;
+}
+
+.bar-txtBox .tit .line strong {
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+}
+
+.bar-txtBox .tit .line i {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #ffec53;
+}
+
+.bar-txtBox .txt {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+.bar-txtBox.none:before {
+    display: none;
+
+
+}
+
+.main-donation-info {
+    position: absolute;
+    top: 100px;
+    right: 480px;
+    font-size: 18px;
+
+    text-align: right;
+    font-weight: 700;
+}
+
+.main-donation-info span {
+    display: block;
+    margin-top: 5px;
+    font-size: 24px;
+
+
+}
+
+.number {
+    position: absolute;
+    top: 100px;
+    right: 450px;
+    font-size: 18px;
+
+    text-align: right;
+    font-weight: 700;
+}
+
+/* 아래 */
 .main_bottom {
     display: flex;
     justify-content: space-between;
