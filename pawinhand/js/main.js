@@ -35,10 +35,10 @@ $(function () {
         $('.mainVisual .content>li').eq(c).addClass('on').siblings().removeClass('on')
     })
 
-    $('.tab_menu li').on('click', function (event) {
+    $('.btn_years a').on('click', function (event) {
         event.preventDefault();
         //console.log($(this), $(this).index(), event.target, event.currentTarget);
-        $('.tab_menu li').removeClass('on');
+        $('.btn_years a').removeClass('on');
         $(this).addClass('on');
         var idx = $(this).index(); // 0,1,2
         $('.tab_content>div').removeClass('on');
@@ -53,25 +53,84 @@ $(function () {
         $('.right_content>li').eq(idx).addClass('on');
         console.log(ux)
     });
-
-    $(window).on('scroll', function () {
-        var sct = $(window).scrollTop();
-        if (sct > 500) {
-            $('.toTop').fadeIn(300)
-        } else {
-            $('.toTop').fadeOut(1000)
-        }
-    });
-
-    $(".container scrollme").slick({
+    $(".event-slider").slick({
         arrows: false,
         //autoplay:true,
         autoplaySpeed: 3000,
         pauseOnHover: false,
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
     });
 
-    $(".container scrollme").eq(0).slick("slickPlay");
+    var contentSlider01 = $(".content-slider").slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 400,
+        //centerMode: true,
+        //variableWidth: true,
+        //https://cubic-bezier.com/ 베지어 곡선 만들기
+        //cssEase:"cubic-bezier(.69,-1.31,.74,1.17)",
+        cssEase: "cubic-bezier(0,0,.58,1)",
+    });
+    var contentSlider02 = $(".content-slider01").slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 400,
+        //centerMode: true,
+        //variableWidth: true,
+        //https://cubic-bezier.com/ 베지어 곡선 만들기
+        //cssEase:"cubic-bezier(.69,-1.31,.74,1.17)",
+        cssEase: "cubic-bezier(0,0,.58,1)",
+    });
+
+    var contentPrev = $("#content01 i.xi-angle-left-thin");
+    var contentNext = $("#content01 i.xi-angle-right-thin");
+
+    contentPrev.on("click", function () {
+        contentSlider01.slick("slickPrev")
+    });
+    contentNext.on("click", function () {
+        contentSlider01.slick("slickNext")
+    });
+
+    var contentItem = $(".content-slider figure");
+    contentItem.eq(3).addClass("on")
+    contentSlider01.on("afterChange", function (event, slick, current) {
+        contentItem.eq(current + 3).addClass("on").siblings().removeClass("on");
+    });
+
+
 })
+
+$(function () {
+    var cnt0 = 0;
+
+    counterFn();
+
+    function counterFn() {
+
+        id0 = setInterval(count0Fn, 1);
+
+        function count0Fn() {
+            cnt0++;
+            if (cnt0 > 709) {
+                clearInterval(id0);
+            } else {
+                $(".number").text(cnt0);
+            }
+        }
+    }
+});
