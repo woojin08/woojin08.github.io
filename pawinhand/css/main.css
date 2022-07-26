@@ -50,12 +50,10 @@
     z-index: 5;
     box-sizing: border-box;
 }
-
 #header .head {
     height: 48px;
     background-color: rgb(234, 237, 241);
 }
-
 #header .head>.inner,
 #header .con>.inner {
     max-width: 1280px;
@@ -64,17 +62,14 @@
     padding: 0 40px;
     box-sizing: border-box;
 }
-
 #header .head>.inner {
     position: relative;
     top: 0;
     left: 0;
 }
-
 #header .util {
     float: right;
 }
-
 #header .util a {
     float: left;
 } */
@@ -293,7 +288,6 @@ nav>ul>li a {
     transition: transform 0.3s ease;
     border-radius: 50%;
 }
-
 .cursor.big {
     transform: translate3D(-50%, -50%, 0) scale(2);
 } */
@@ -703,10 +697,9 @@ nav>ul>li a {
 
 .main-donation-info {
     position: absolute;
-    top: 100px;
-    right: 480px;
-    font-size: 18px;
-
+    top: 153px;
+    right: 580px;
+    font-size: 15px;
     text-align: right;
     font-weight: 700;
 }
@@ -715,16 +708,31 @@ nav>ul>li a {
     display: block;
     margin-top: 5px;
     font-size: 24px;
+}
 
+.main-donation-num {
+    position: absolute;
+    top: 176px;
+    right: 630px;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 700;
+}
 
+.main-donation_won {
+    position: absolute;
+    top: 177px;
+    right: 577px;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 700;
 }
 
 .number {
     position: absolute;
-    top: 100px;
-    right: 450px;
-    font-size: 18px;
-
+    top: 176px;
+    right: 597px;
+    font-size: 20px;
     text-align: right;
     font-weight: 700;
 }
