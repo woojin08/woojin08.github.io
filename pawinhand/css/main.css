@@ -79,7 +79,7 @@
     width: 100%;
     border-top: 1px solid #ddd;
     /* border-bottom: 1px solid #ddd; */
-    line-height: 50px;
+    line-height: 56px;
     text-align: center;
 }
 
@@ -155,29 +155,32 @@ nav>ul>li a {
     position: relative;
     height: 680px;
 
+
 }
 
 .mainVisual .mainSlider .itm01 h2 {
     position: absolute;
     top: 30%;
-    left: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 1200px;
     font-size: 72px;
     line-height: 1;
     font-weight: 900;
     color: #f29600;
+    text-align: center;
 }
 
 .mainVisual .mainSlider .itm01 p {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 1200px;
     font-size: 36px;
     font-weight: 600;
     color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 .mainVisual .mainSlider .itm02 {}
@@ -295,7 +298,6 @@ nav>ul>li a {
 .pageTop {
     position: relative;
     width: 100%;
-    height: 380px;
     margin-bottom: 200px;
     padding: 100px 0 0 0;
 }
@@ -543,10 +545,12 @@ nav>ul>li a {
 }
 
 .tab_content .text {
-    margin-top: 30px;
+
+    margin-top: 300px;
 }
 
 .tab_content .text h3 {
+
     font-size: 22px;
     font-weight: bold;
 }
@@ -763,6 +767,9 @@ nav>ul>li a {
     display: flex;
     align-items: center;
     margin-right: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
 }
 
 .main_bottom .pawinhandInfo li img {
@@ -802,3 +809,224 @@ nav>ul>li a {
 .pawinhandInfo .number:first-child {
     border-left: 0;
 }
+
+
+/* d */
+
+html {
+    font-size: 20px;
+}
+
+/* .container {
+    width: 1200px;
+} */
+
+.container:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#wrap {
+    min-width: 60rem;
+}
+
+
+.section {
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.section figure img {
+    width: 100%;
+}
+
+/* #event {background:#f2f2f2;} */
+#event figure {
+    padding: 0 1.85rem;
+}
+
+#event .slider-menu {
+    margin-bottom: 1rem;
+    display: flex;
+    padding: 0 0 0 690px;
+    cursor: pointer;
+}
+
+#event .slider-menu li {
+    display: block;
+    padding: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #eee;
+    line-height: 1.3;
+}
+
+#event .slider-menu li.on {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.3;
+}
+
+#event .tab-con {
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+}
+
+#event .tab-con .event-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+}
+
+#event .tab-con .event-slider.on {
+    visibility: visible;
+}
+
+.tab-con .text {
+    position: inherit;
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* count */
+#MD_main {
+    margin: 0px auto 0px;
+    padding: 0 200px 50px 300px;
+    max-width: 100%;
+
+}
+
+.main_bn {
+    overflow: hidden;
+    padding-bottom: 6px;
+    margin: 60px auto;
+}
+
+
+
+.main_bn .flex {
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+}
+
+.main_bn li {
+    position: relative;
+    overflow: hidden;
+}
+
+.main_bn li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.main_bn li img {
+    width: 100%;
+    height: auto;
+}
+
+.main_bn li .txt1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.030em;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.main_bn li:hover .txt1 {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+}
+
+.main_bn li .txt2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.030em;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.main_bn li:hover .txt2 {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+/* ㅊㅊ */
+.content {
+    padding: 50px 0;
+
+}
+
+.content .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content figure {
+    flex: 1;
+}
+
+
+
+.content figure .box {
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+
+
+.content figure img {
+    transition: 0.5s;
+}
+
+.content figure:hover img {
+    transform: scale(1.5);
+}
+
+.content strong {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 17px 0;
+}
+
+.content p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+
+}
+
+@media {}
