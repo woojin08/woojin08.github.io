@@ -327,7 +327,8 @@ nav>ul>li a {
     position: relative;
     padding: 10px 0 0 0;
     font-size: 16px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    color: #a0a0a0;
     text-align: center;
 
 }
@@ -662,8 +663,9 @@ nav>ul>li a {
 }
 
 .bar-txtBox .tit {
-    font-size: 30px;
-    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .bar-txtBox .tit .line {
@@ -688,8 +690,10 @@ nav>ul>li a {
 }
 
 .bar-txtBox .txt {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
     color: #a0a0a0;
 }
 
@@ -701,8 +705,8 @@ nav>ul>li a {
 
 .main-donation-info {
     position: absolute;
-    top: 153px;
-    right: 580px;
+    top: 160px;
+    right: 570px;
     font-size: 15px;
     text-align: right;
     font-weight: 700;
@@ -716,27 +720,27 @@ nav>ul>li a {
 
 .main-donation-num {
     position: absolute;
-    top: 176px;
-    right: 630px;
-    font-size: 20px;
+    top: 185px;
+    right: 640px;
+    font-size: 28px;
     text-align: right;
     font-weight: 700;
 }
 
 .main-donation_won {
     position: absolute;
-    top: 177px;
-    right: 577px;
-    font-size: 20px;
+    top: 185px;
+    right: 568px;
+    font-size: 28px;
     text-align: right;
     font-weight: 700;
 }
 
 .number {
     position: absolute;
-    top: 176px;
-    right: 597px;
-    font-size: 20px;
+    top: 185px;
+    right: 595px;
+    font-size: 28px;
     text-align: right;
     font-weight: 700;
 }
@@ -982,116 +986,330 @@ html {
     opacity: 1;
 }
 
-/* ㅊㅊ */
-.content {
-    padding: 50px 0;
 
+
+
+
+/*  메인3 */
+:root {
+    --mc: #0F97DD;
+    --lc: #ffffff;
+    --dc: #444444;
+    --dd: #dddddd;
 }
 
-.content .container01 {
-    display: flex;
-    gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.content figure {
-    flex: 1;
-}
+;
 
 
 
-.content figure .box {
-    overflow: hidden;
-    margin: 0 0 20px 0;
+#wrap {
+    min-width: 95rem;
 }
 
 
-.content figure img {
+
+#product {
+    /* padding: 5rem 0; */
+    background: #f7f7f7;
+    text-align: center;
+}
+
+#product>h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#product>h2:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.15rem;
+    background: var(--mc);
+    margin: 0.5rem auto 1rem auto;
     transition: 0.5s;
 }
 
-.content figure:hover img {
-    transform: scale(1.5);
+#product.on>h2:after {
+    width: 5rem;
 }
 
-.content strong {
+#product>p {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+#product .container {}
+
+#product .container figure {
+    position: relative;
+    width: 27.5rem;
+    height: 27.5rem;
+    margin: 0 1rem;
+}
+
+#product .container figure .case {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 70%;
+    border: 4px solid transparent;
+    transition: 0.5s;
+}
+
+#product .container figure:hover .case {
+    height: 85%;
+    /* border: 4px solid #f5c45a; */
+}
+
+#product .container figure .itm01 {
+    background: url(../img/2d937b7fcb17d4888740623fe7ff658c.jpg) no-repeat center center/cover;
+}
+
+#product .container figure .itm02 {
+    background: url(../img/306ce521ae3379a7533bbe7198ece1d6.jpg) no-repeat center center/cover;
+}
+
+#product .container figure .itm03 {
+    background: url(../img/41e8706ac890caeeb9e2eaa790ae772c.jpg) no-repeat center center/cover;
+}
+
+#product .container figure .itm04 {
+    background: url(../img/584c6362e58c109d09c81bcf92ffd87a.png) no-repeat center center/cover;
+}
+
+#product .container figure .itm05 {
+    background: url(../img/6bcd1879fb55a2db9d12faee688fb16b.jpg) no-repeat center center/cover;
+
+}
+
+#product .container figure .case .txt {
+    text-align: left;
+    color: #000;
+    padding: 13.5rem 2rem;
+}
+
+#product .container figure .case .txt h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#product .container figure .case .txt p {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    line-height: 1.2;
+}
+
+#product .container figure .case .txt a {
     display: block;
-    font-size: 17px;
-    font-weight: 500;
-    margin: 0 0 17px 0;
 }
 
-.content p {
-    font-size: 15px;
+#product .container figure .case .txt span {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+#product .container figure:hover .case .txt span {
+    padding: 60px 0 0 0;
+    width: 1.5rem;
+
+}
+
+
+#Adopt {
+    background: #f2f2f2;
+}
+
+#Adopt .container {
+    padding: 50px;
+    display: flex;
+}
+
+#Adopt .left {
+    position: relative;
+    flex: 7;
+    height: 23rem;
+    background: url(../img/main3.jpg) no-repeat center center/100% auto;
+    /* transition: 0.5s; */
+}
+
+#Adopt .right {
+    flex: 5;
+    height: 23rem;
+}
+
+#Adopt .left .txt {
+    position: absolute;
+    bottom: 7rem;
+    left: 5rem;
+    color: #000;
+    /* transition: 0.5s; */
+}
+
+#Adopt .left .txt h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+#Adopt .left .txt h3:after {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 0.1rem;
+    background: #f29600;
+    margin: 1.5rem 0;
+    transition: 0.5s;
+}
+
+#Adopt .left .txt p {
+    font-size: 0.75rem;
     font-weight: 300;
     line-height: 1.4;
-
+    margin-bottom: 2rem;
 }
 
-@media {}
-
-
-
-.tab_content .notice a {
-    display: flex;
-    justify-content: space-between;
+#Adopt .left .txt a {
+    display: block;
 }
 
-.tab_content .notice img {
-    position: relative;
-    padding: 80px 0 0 10px;
-    overflow: hidden;
-    min-width: 0;
-    width: 300px;
-
-}
-
-
-.tab_content .notice p {
-    padding: 10px 0 0 0;
-    line-height: 1;
-    font-size: 13px;
-}
-
-.tab_content .notice figure {
-    position: relative;
-
-    flex: 1;
-}
-
-.tab_content .notice figure img {
-    transition: 0.5s;
-}
-
-.tab_content .notice figure:hover img {
-    transform: scale(1.2);
-}
-
-.tab_content .notice figure::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+#Adopt .left .txt span {
+    display: inline-block;
     width: 0;
-    height: 3px;
-    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    white-space: nowrap;
     transition: 0.5s;
 }
 
+#Adopt .left:hover {
+    /* background-size: 110% auto; */
+}
 
+#Adopt .left:hover .txt {
+    right: 4rem;
+}
 
-.tab_content .notice figure:hover::after {
-    width: 100%;
+#Adopt .left:hover .txt h3:after {
+    width: 10rem;
+}
 
+#Adopt .left:hover .txt span {
+    width: 5.2rem;
+}
+
+#Adopt .right {
+    padding: 3rem;
+}
+
+#Adopt .right h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+#Adopt .right h3 a {
+    float: right;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border: 1px solid var(--dd);
+    line-height: 1.6rem;
+    border-radius: 0.8rem;
+    padding: 0 1rem;
+}
+
+#Adopt .right h3 a i {
+    margin-left: 0.5rem;
+}
+
+#Adopt .right img {
+    display: flex;
+    width: 50%;
+}
+
+#Adopt .right .list li {
+    border-bottom: 1px solid var(--dd);
+}
+
+#Adopt .right .list li a {
+    display: block;
+    line-height: 3rem;
+}
+
+#Adopt .right .list li span {
+    float: right;
+    font-size: 0.65rem;
 }
 
 
-.tab_content .notice span {
-    padding: 10px;
-    font-size: 15px;
-    color: #999;
-    text-decoration: line-through;
+#service {
+    padding: 5rem 0;
+}
 
+#service h2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+#service .container {
+    text-align: center;
+    font-size: 0;
+}
+
+#service .container figure {
+    display: inline-block;
+    font-size: 1rem;
+    width: 10rem;
+    position: relative;
+}
+
+#service .container figure strong {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    /* background: url(../img/img.png); */
+    margin: 0 auto 1rem auto;
+}
+
+#service .container figure .icon01 strong {
+    background-position: -100px 0;
+}
+
+#service .container figure .icon02 strong {
+    background-position: 0 0;
+}
+
+#service .container figure .icon03 strong {
+    background-position: -200px 0;
+}
+
+#service .container figure .icon04 strong {
+    background-position: -300px 0;
+}
+
+#service .container figure~figure:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 1px;
+    height: 1.5rem;
+    background: var(--dd);
 }
