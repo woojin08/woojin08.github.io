@@ -180,3 +180,13 @@ $('.pr_slider').slick({
     pauseOnFocus: false,
     dots: false,
 });
+
+// popup
+document.querySelector('.popup_one button').addEventListener('click', function () {
+    console.log('바부팅');
+    document.querySelector('.popup_one').style.display = 'none';
+})
+document.querySelector('.popup_two button').addEventListener('click', function () {
+    console.log('바부팅');
+    document.querySelector('.popup_two').style.display = 'none';
+})
