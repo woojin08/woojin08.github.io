@@ -1,0 +1,39 @@
+.Wrap {}
+
+#header .container {}
+
+
+#header .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header .topBanner {
+    padding: 10px 0;
+    background: #ddd;
+}
+
+#header .topBanner .inner {
+    position: relative;
+}
+
+#header .topBanner span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#header .topBanner h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .topBanner i {
+    position: absolute;
+    inset: 0 0 auto auto;
+    padding: 5px;
+    background: #f5ff00;
+}
+
+#header .logo_s {
+    display: none;
+}
