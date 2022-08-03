@@ -12,36 +12,7 @@ $(function () {
         $('html, body').animate({ scrollTop: idx * (h + 1) }, 1000)
     })
 })
-$('.gnb .left').hover(function () {
-    $('.gnb').addClass('hover')
-    $('.smenu').addClass('on')
-},
-    () => {
-        $('.gnb').removeClass('hover')
-        $('.smenu').removeClass('on')
-    })
-$('.mainVisual').YTPlayer({
-    videoURL: 'https://youtu.be/VCDWg0ljbFQ',
-    containment: '.video', autoPlay: true, mute: true, startAt: 3, opacity: 1, showControls: false, playOnlyIfVisible: true,
-})
-$('.slider').slick({
-    arrows: false,
-    autoplay: true,
-    centerMode: true,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    centerPadding: '700px',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                centerMode: false,
-                centerPadding: '0px',
-                fade: true,
-            }
-        }
-    ]
-});
+
 
 // song 슬라이드
 

@@ -72,8 +72,6 @@ header i {
     margin: 0 0 40px 0;
 }
 
-/* VIDEO */
-.mainVisual .video { height: calc(100vh - 140px); } 
 
 /* main */
 html {
