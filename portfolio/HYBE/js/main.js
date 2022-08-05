@@ -13,7 +13,6 @@ $(function () {
     })
 })
 
-
 // song 슬라이드
 
 var songSlider = $('.song-contents .slider-wrap'),
@@ -35,7 +34,6 @@ songItem.each(function (index, count) {
 function songNum() {
     var num = songSlider.find('.on').attr('data');
     var songPgNow = songSlider.find('.now');
-    // songPgNow.html("0"+num);
 
     num = Number(num).toString();
     if (Number(num) < 10 && num.length == 1)
