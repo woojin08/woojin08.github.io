@@ -41,11 +41,9 @@ function songNum() {
     if (Number(num) < 10 && num.length == 1)
         num = "0" + num;
     songPgNow.html(num);
-    // return num;
 }
 
 function songProcess() {
-    // const target = songSlider.find('.process');
     songProcessBar.removeClass("on").removeClass('pause'),
         void songProcessBar.outerWidth(),
         songProcessBar.addClass("on");
@@ -66,11 +64,6 @@ function songFirst() {
 }
 
 function songLast() {
-    // songItem.each(function (index, count) {
-    //     for(var i = 1;i<index;i++){
-    //         songNext(true);
-    //     }
-    // });
     var count = songItem.length - 1;
     for (var i = 0; i < count; i++) {
         songNext(true);
@@ -118,17 +111,6 @@ songBtnNext.on('click', function () {
 songBtnPrev.on('click', function () {
     songPrev(true);
     songNum();
-});
-
-songSlider.find('> ul').on('mouseover', function (e) {
-    playing = false;
-    lastNextCall = new Date();
-    songProcessBar.addClass('pause');
-});
-songSlider.find('> ul').on('mouseout', function (e) {
-    playing = true;
-    lastNextCall = new Date();
-    songProcess();
 });
 
 // main3
