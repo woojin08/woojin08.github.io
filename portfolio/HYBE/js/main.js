@@ -120,13 +120,6 @@ $('.mainSlider').on('init afterChange', function (e, s, c) {
         $('mainArrow i').addClass('on')
     }
 
-    // if (c) {
-    //     c = c + 1;
-
-    // } else {
-    //     c = 1
-    // }
-    $('.slideNum').text((c ? (c + 1) : 1) + " / " + s.slideCount);
 });
 
 $('.mainSlider').slick({
