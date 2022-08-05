@@ -131,37 +131,50 @@ songSlider.find('> ul').on('mouseout', function (e) {
     songProcess();
 });
 
-//content-slider
-var contentSlider01 = $(".content-slider").slick({
+// main3
+$('.mainSlider').on('init afterChange', function (e, s, c) {
+    var current = $('.slick-current');
+    current.addClass('on').siblings().removeClass('on');
+    $('mainArrow i').removeClass('on');
+    if (c === 1) {
+        $('mainArrow i').addClass('on')
+    }
+
+    // if (c) {
+    //     c = c + 1;
+
+    // } else {
+    //     c = 1
+    // }
+    $('.slideNum').text((c ? (c + 1) : 1) + " / " + s.slideCount);
+});
+
+$('.mainSlider').slick({
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: false,
-    pauseOnFocus: false,
     dots: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    speed: 400,
-    //centerMode: true,
-    //variableWidth: true,
-    //https://cubic-bezier.com/ 베지어 곡선 만들기
-    //cssEase:"cubic-bezier(.69,-1.31,.74,1.17)",
-    cssEase: "cubic-bezier(0,0,.58,1)",
+    pauseOnHover: false,
+    pauseFocus: false,
+});
+$('.mainArrow i:nth-child(1)').on('click', function () {
+    $('.mainSlider').slick('slickPrev')
+});
+$('.mainArrow i:nth-child(2)').on('click', function () {
+    $('.mainSlider').slick('slickNext')
 });
 
-var contentPrev = $("artist-wrap i.xi-angle-left");
-var contentNext = $("artist-wrap i.xi-angle-right");
+$('.gnb .left').hover(function () {
+    $('.gnb').addClass('hover')
+    $('.smenu').addClass('on')
+},
+    () => {
+        $('.gnb').removeClass('hover')
+        $('.smenu').removeClass('on')
+    })
 
-contentPrev.on("click", function () {
-    artist - wrap.slick("slickPrev")
-});
-contentNext.on("click", function () {
-    artist - wrap.slick("slickNext")
-});
-
-var contentItem = $(".content-slider figure");
-contentItem.eq(3).addClass("on")
-contentSlider01.on("afterChange", function (event, slick, current) {
-    contentItem.eq(current + 3).addClass("on").siblings().removeClass("on");
-});
+// youtu
+$('.mainVisual').YTPlayer({
+    videoURL: 'https://youtu.be/VCDWg0ljbFQ',
+    containment: '.video', autoPlay: true, mute: true, startAt: 3, opacity: 1, showControls: false, playOnlyIfVisible: true,
+})
 
