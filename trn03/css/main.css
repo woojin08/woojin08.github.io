@@ -2,22 +2,18 @@ html {
     font-size: 10px;
 }
 
-
 body {
     font-size: 1.6rem;
+    letter-spacing: -0.025em;
 }
 
-/* @media(max-width:768px) {
-    html {
-        font-size: 10px;
-    }
+.Wrapper {
+    min-width: 1900px;
+}
 
-    body {
-        font-size: 1.6rem;
-    }
-} */
-
-.Wrapper {}
+.mc {
+    color: #008850;
+}
 
 .container {
     display: flex;
@@ -25,15 +21,51 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    display: inline-block;
+    border: 1px solid #008850;
+    padding: 10px 20px;
+    color: #008850;
+    font-size: 1.2rem;
+}
+
+.btn i {
+    font-size: 0.8rem;
+    margin: 0 0 0 1rem;
+}
+
+.sec {
+    padding: 10rem 0;
+}
+
+.sec h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    padding: 0 1.5rem;
+}
+
+.sec p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 5rem 0;
+    padding: 0 1.5rem;
+}
+
 .TopBanner {
     background: #f8f8f8;
     padding: 3rem 0 3rem 0;
 }
 
+.TopBanner.on {
+    display: none;
+}
+
 .TopBanner .container {
     position: relative;
     display: block;
-
 }
 
 .TopBanner h2 {
@@ -44,7 +76,6 @@ body {
 
 .TopBanner p {
     font-size: 1.3rem;
-
 }
 
 .TopBanner a {
@@ -61,37 +92,36 @@ body {
     right: 0;
 }
 
-.header {
+.Header {
     line-height: 10rem;
-    /* background: #ff06; */
 }
 
-.header h1 {
+.Header h1 {
     font-size: 0;
 }
 
-.gnb {
+.Gnb {
     margin: 0 0 0 auto;
 }
 
-.gnb a {
+.Gnb a {
     display: block;
 }
 
-.gnb a::first-letter {
+.Gnb a::first-letter {
     color: #f00;
 }
 
-.gnb>ul {
+.Gnb>ul {
     display: flex;
     gap: 3rem;
 }
 
-.gnb>ul>li {
+.Gnb>ul>li {
     position: relative;
 }
 
-.gnb>ul>li~li::before {
+.Gnb>ul>li~li::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -129,4 +159,851 @@ body {
     border: none;
     background: transparent;
     font-size: 2rem;
+}
+
+.MainVisual {
+    position: relative;
+}
+
+.MainVisual .MainSlider figure {
+    height: 60rem;
+}
+
+.MainSlider .itm01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.MainSlider .itm02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.MainSlider .itm03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.MainSlider .itm04 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.MainVisual .slogan {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.MainVisual .slogan h2 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-shadow: 0 0 3px #000;
+    margin: 0 0 1.2rem 0;
+    text-indent: -2px;
+}
+
+.MainVisual .slogan p {
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px #000;
+}
+
+.MainSlider .slick-dots {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.MainSlider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 0.4rem;
+    background: #333;
+    border-radius: 0.2rem;
+    margin: 0 0.2rem;
+    overflow: hidden;
+}
+
+.MainSlider .slick-dots li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f00;
+}
+
+.MainSlider .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 2s;
+}
+
+.MainSlider .slick-dots button {
+    display: none;
+}
+
+.MainContent {
+    text-align: center;
+}
+
+.MainContent .box {
+    overflow: hidden;
+    margin: 0 0 4rem 0;
+}
+
+.MainContent figure .box img {
+    transition: 0.5s;
+}
+
+.MainContent figure:hover .box img {
+    transform: scale(1.2);
+}
+
+.MainContent .tit {
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 0 0 3rem 0;
+}
+
+.MainContent .tit::after {
+    content: "";
+    position: absolute;
+    top: -6rem;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 4rem;
+    background: #008850;
+}
+
+.MainContent .dec {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 0 4rem 0;
+}
+
+.Product {
+    text-align: center;
+    background: linear-gradient(#008850 50%, transparent 50%);
+    color: #fff;
+}
+
+.Product .ProductSlider {
+    width: 123rem;
+    margin: 0 auto;
+}
+
+.Product .ProductSlider figure {
+    padding: 0 1.5rem;
+}
+
+.Product .ProductSlider figure img {
+    margin: 0 0 3rem 0;
+}
+
+.Product .ProductSlider figure .dec {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.Footer .container {
+    justify-content: space-between;
+}
+
+.Footer .top {
+    position: relative;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    line-height: 7rem;
+}
+
+.Footer .top ul li {
+    display: inline-block;
+}
+
+.Footer .customer li~li::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: #ddd;
+    margin: 0 1.5rem;
+    transform: translate(-2px, -4px);
+}
+
+.Footer .top span {
+    font-size: 1.8rem;
+}
+
+.Footer .pop li {
+    position: relative;
+    padding: 0 3rem 0 0;
+    cursor: pointer;
+}
+
+.Footer .pop li::before {
+    content: "";
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translate(1px, -43%);
+    width: 2px;
+    height: 1rem;
+    background: #008850;
+}
+
+.Footer .pop li.on::before {
+    display: none;
+}
+
+.Footer .pop li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1rem;
+    height: 2px;
+    background: #008850;
+}
+
+.Footer .bottom {
+    padding: 3rem 0;
+    line-height: 1.25;
+}
+
+.Footer .bottom .sns i {
+    padding: 1rem;
+    color: #fff;
+    background: #333;
+    border-radius: 50%;
+}
+
+.Footer .popup {
+    display: none;
+    position: absolute;
+    top: calc(-7rem - 2px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f7f7f7;
+    padding: 0 2rem;
+    border: 1px solid #ddd;
+}
+
+.Footer .popup.on {
+    display: flex;
+}
+
+.Footer .popup i {
+    align-self: center;
+}
+
+.mopen {
+    display: none;
+}
+
+.mbr {
+    display: none;
+}
+
+.xxxxx {}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+여기서 부터 반응형
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+@media(max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+
+    body {
+        font-size: 1.6rem;
+        letter-spacing: -0.025em;
+        line-height: 1.45;
+    }
+
+    .Wrapper {
+        min-width: 320px;
+        overflow-x: hidden;
+    }
+
+    .mc {
+        color: #008850;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        gap: 3rem;
+    }
+
+    .btn {
+        display: inline-block;
+        border: 1px solid #008850;
+        padding: 10px 20px;
+        color: #008850;
+        font-size: 1.2rem;
+    }
+
+    .btn i {
+        font-size: 0.8rem;
+        margin: 0 0 0 1rem;
+    }
+
+    .sec {
+        padding: 10rem 0;
+    }
+
+    .sec h2 {
+        font-size: 5vw;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 0 2rem 0;
+    }
+
+    .sec p {
+        font-size: 3vw;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 5rem 0;
+    }
+
+    .TopBanner {
+        position: absolute;
+        top: 50%;
+        left: 1.5rem;
+        right: 1.5rem;
+        transform: translateY(-50%);
+        background: #f8f8f8;
+        padding: 3rem 0 3rem 0;
+        z-index: 999;
+    }
+
+    .TopBanner.on {
+        display: none;
+    }
+
+    .TopBanner .container {
+        position: static;
+        display: flex;
+        gap: 0;
+    }
+
+    .TopBanner h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0 0 1rem 0;
+    }
+
+    .TopBanner p {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+
+    .TopBanner a {
+        display: inline-block;
+        border: 1px solid #333;
+        padding: 2px 2rem 5px 2rem;
+        transform: translateY(-2px);
+        margin: 2rem 0 0 0;
+        align-self: flex-start;
+    }
+
+    .TopBanner i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        background: #333;
+        color: #fff;
+    }
+
+    .Header {
+        line-height: 10rem;
+    }
+
+    .Header h1 {
+        position: fixed;
+        top: 1.5rem;
+        left: 1.5rem;
+        font-size: 0;
+        z-index: 9999;
+    }
+
+    .Gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: calc(100% - 90px);
+        min-width: 300px;
+        height: 100vh;
+        background: #fff;
+        border-right: 1px solid #ddd;
+        margin: 0 0 0 auto;
+        padding: 10rem 1.5rem 0 1.5rem;
+        z-index: 999;
+        transition: 0.5s;
+    }
+
+    .Gnb.on {
+        left: 0;
+    }
+
+    .Gnb a {
+        display: block;
+    }
+
+    .Gnb a::first-letter {
+        color: #f00;
+    }
+
+    .Gnb>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        font-size: 2rem;
+        line-height: 3;
+        padding: 2rem 0 0 0;
+    }
+
+    .Gnb>ul>li {
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .Gnb>ul>li~li::before {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -1.5rem;
+        width: 1px;
+        height: 1.2rem;
+        background: #ddd;
+        transform: translateY(-50%);
+    }
+
+    #searchForm {
+        display: none;
+        margin: 0 0 0 4rem;
+    }
+
+    #searchForm input[name='search'] {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #333;
+    }
+
+    #searchForm input[name='search'] {
+        color: #f00;
+    }
+
+    #searchForm input[name='search']::placeholder {
+        color: #ddd;
+    }
+
+    #searchForm input[name='search']:focus::placeholder {
+        color: transparent;
+    }
+
+    #searchForm button {
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size: 2rem;
+    }
+
+    .MainVisual {
+        position: relative;
+    }
+
+    .MainVisual .MainSlider figure {
+        height: 60rem;
+    }
+
+    .MainSlider .itm01 {
+        background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+    }
+
+    .MainSlider .itm02 {
+        background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
+    }
+
+    .MainSlider .itm03 {
+        background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+    }
+
+    .MainSlider .itm04 {
+        background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+    }
+
+    .MainVisual .slogan {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 1.5rem;
+        right: 1.5rem;
+        transform: translate(0, -50%);
+        color: #fff;
+    }
+
+    .MainVisual .slogan h2 {
+        font-size: 7vw;
+        font-weight: 900;
+        text-shadow: 0 0 3px #000;
+        margin: 0 0 1.2rem 0;
+        text-indent: -2px;
+    }
+
+    .MainVisual .slogan p {
+        font-size: 1.5rem;
+        text-shadow: 0 0 3px #000;
+    }
+
+    .MainSlider .slick-dots {
+        position: absolute;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .MainSlider .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 4rem;
+        height: 0.4rem;
+        background: #333;
+        border-radius: 0.2rem;
+        margin: 0 0.2rem;
+        overflow: hidden;
+    }
+
+    .MainSlider .slick-dots li::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #f00;
+    }
+
+    .MainSlider .slick-dots li.slick-active::after {
+        width: 100%;
+        transition: 2s;
+    }
+
+    .MainSlider .slick-dots button {
+        display: none;
+    }
+
+    .MainContent {
+        text-align: center;
+    }
+
+    .MainContent .box {
+        overflow: hidden;
+        margin: 0 0 4rem 0;
+    }
+
+    .MainContent figure .box img {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .MainContent figure:hover .box img {
+        transform: scale(1.2);
+    }
+
+    .MainContent .tit {
+        position: relative;
+        font-size: 2.1rem;
+        font-weight: 500;
+        margin: 0 0 3rem 0;
+    }
+
+    .MainContent .tit::after {
+        content: "";
+        position: absolute;
+        top: -6rem;
+        left: calc(50% - 1px);
+        width: 2px;
+        height: 4rem;
+        background: #008850;
+    }
+
+    .MainContent .dec {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 0 0 4rem 0;
+    }
+
+    .Product {
+        text-align: center;
+        background: linear-gradient(#008850 50%, transparent 50%);
+        color: #fff;
+    }
+
+    .Product .ProductSlider {
+        width: auto;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .Product .ProductSlider figure {
+        padding: 0 0;
+    }
+
+    .Product .ProductSlider figure img {
+        width: 100%;
+        margin: 0 0 3rem 0;
+    }
+
+    .Product .ProductSlider figure .dec {
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .Product .slick-dots {
+        text-align: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .Product .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 4rem;
+        height: 0.4rem;
+        background: #333;
+        border-radius: 0.2rem;
+        margin: 0 0.2rem;
+        overflow: hidden;
+    }
+
+    .Product .slick-dots li::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #f00;
+    }
+
+    .Product .slick-dots li.slick-active::after {
+        width: 100%;
+        transition: 2s;
+    }
+
+    .Product .slick-dots button {
+        display: none;
+    }
+
+    .Footer {
+        text-align: center;
+    }
+
+    .Footer .container {
+        justify-content: space-between;
+    }
+
+    .Footer .top {
+        position: relative;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        line-height: 7rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .Footer .top ul {
+        line-height: 1.45;
+    }
+
+    .Footer .top ul li {
+        display: inline-block;
+        line-height: 1.25;
+    }
+
+    .Footer .customer li~li::before {
+        content: "";
+        display: none;
+        width: 4px;
+        height: 4px;
+        background: #ddd;
+        margin: 0 1.5rem;
+        transform: translate(-2px, -4px);
+    }
+
+    .Footer .top span {
+        font-size: 1.8rem;
+    }
+
+    .Footer .pop li {
+        position: relative;
+        padding: 0 3rem 0 0;
+        cursor: pointer;
+    }
+
+    .Footer .pop li::before {
+        content: "";
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translate(1px, -43%);
+        width: 2px;
+        height: 1rem;
+        background: #008850;
+    }
+
+    .Footer .pop li.on::before {
+        display: none;
+    }
+
+    .Footer .pop li::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1rem;
+        height: 2px;
+        background: #008850;
+    }
+
+    .Footer .bottom {
+        padding: 3rem 0;
+        line-height: 1.25;
+    }
+
+    .Footer .bottom .sns i {
+        padding: 1rem;
+        color: #fff;
+        background: #333;
+        border-radius: 50%;
+    }
+
+    .Footer .popup {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: calc(-7rem - 2px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f7f7f7;
+        padding: 1rem 2rem;
+        border: 1px solid #ddd;
+    }
+
+    .Footer .popup.on {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Footer .popup i {
+        align-self: center;
+    }
+
+    .mopen {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        background: #ddd;
+        font-size: 0;
+        line-height: 1;
+        z-index: 999;
+    }
+
+    .mopen::before,
+    .mopen::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        height: 2px;
+        background: #333;
+        transition: 0.5s;
+    }
+
+    .mopen::before {
+        top: 7px;
+    }
+
+    .mopen::after {
+        bottom: 7px;
+    }
+
+    .mopen.on::before {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    .mopen.on::after {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    .mopen button {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .mopen button::before,
+    .mopen button::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        height: 2px;
+        background: #333;
+        top: calc(50% - 1px);
+        transition: 0.5s;
+    }
+
+    .mopen.on button::before {
+        transform: rotate(45deg);
+    }
+
+    .mopen.on button::after {
+        transform: rotate(-45deg);
+    }
+
+    .mbr {
+        display: block;
+    }
 }
