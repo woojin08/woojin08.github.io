@@ -1,0 +1,140 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header.on {
+    background: #fff;
+}
+
+.header .active {
+    background: #fff;
+}
+
+.header .container {
+    display: flex;
+    justify-content: right;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0.75rem;
+}
+
+.header .container_a {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0.75rem;
+}
+
+.header .logo-c {
+    display: none;
+}
+
+.header .hd_t {
+    font-size: 12px;
+    font-weight: 200;
+    color: ;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .active .hd_t {
+    border-bottom: 1px solid #f00;
+    font-weight: 300;
+    color: #f00;
+}
+
+.header .hd_t .container {
+    height: 2rem;
+
+}
+
+
+.header .hd_t .t_right {
+    display: flex;
+    align-items: center;
+}
+
+.header .hd_t .t_right>li {
+    margin-left: 0.7rem;
+}
+
+.header .hd_t .t_right>li>a {
+    display: inline-block;
+}
+
+.header .hd_t .t_right>li:last-child>a {
+    border: 1px solid #ddd;
+    padding: 0.3rem 0.4rem 0.3rem 0.7rem;
+    border-radius: 5rem;
+}
+
+.header .hd_t .t_right>li:last-child>a:after {
+    content: "\e936";
+    font-family: xeicon !important;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.header .hd_t .t_right>li:last-child>a {
+    border-color: #999;
+}
+
+.header .hd_logo {
+    line-height: 3.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.header .hd_logo img {
+    height: 54px;
+}
+
+.header.on .hd_logo {
+    border-bottom: 1px solid #ddd;
+
+}
+
+.header.active .hd_logo {
+    border-bottom-color: #ddd;
+
+}
+
+.header .hd_t .lang {
+    border: #cccccc 1px solid;
+    border-radius: 12px;
+    padding: 0 2px;
+}
+
+.header .hd_t .lang li a {
+    font-size: 11px;
+    line-height: 1;
+}
+
+.header .hd_t .lang li a.on {
+    color: #2471c8;
+    font-weight: 700;
+}
+
+.header .hd_t .lang li a:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #eaeaea;
+    width: 1px;
+    height: 10px;
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+}
+
+.header .menu_a {
+    display: flex;
+}
+
+.header .menu_a>li>a {
+    display: block;
+}
