@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>크린토피아</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+
+
+    <style type="text/css">
+        .count_content {
+            width: 1200px;
+            margin: auto 400px;
+
+        }
+
+        .count_content h2 {
+            padding: 100px 0 10px 0;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .count_content p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .countup {
+            width: 100%;
+            color: #333;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        li {
+            float: left;
+            width: 30%;
+            list-style: none;
+
+
+        }
+
+        .first {
+            height: 550px;
+            padding-top: 86px;
+            box-sizing: border-box;
+
+        }
+
+        .first_ul {
+            margin-top: 100px;
+            font-size: 0
+        }
+
+        .first_ul li {
+            display: inline-block;
+            position: relative;
+            width: 33.3333%;
+            vertical-align: bottom
+        }
+
+        .first_ul li:nth-child(2):before,
+        .first_ul li:nth-child(2):after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 1px;
+            height: 80px;
+            background: rgba(0, 0, 0, 0.12)
+        }
+
+        .first_ul li:nth-child(2):before {
+            right: 0
+        }
+
+        .first_ul li:nth-child(2):after {
+            left: 0
+        }
+
+        .first_ul .num_txt {
+            padding-bottom: 24px;
+            font-family: 'NanumGothicBold';
+            font-size: 25px;
+            letter-spacing: -0.05em;
+            color: #333
+        }
+
+        .first_ul .num_txt em {
+            font-family: 'NanumGothicExtraBold';
+            font-size: 70px
+        }
+
+        .first_ul li:nth-child(2) .num_txt {
+            position: relative;
+            margin-left: -18px;
+            font-size: 30px;
+            letter-spacing: -0.1em;
+            color: #c5a16d
+        }
+
+        .first_ul li:nth-child(2) .num_txt:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 203px;
+            height: 95px;
+            margin-left: -92px;
+            margin-top: -65px;
+            background: url('./img/first_wreath.png') no-repeat center
+        }
+
+        .first_ul li:nth-child(2) .num_txt em {
+            font-size: 100px
+        }
+
+        .first_ul li:nth-child(3) .num_txt em {
+            font-size: 55px;
+            letter-spacing: -0.075em
+        }
+
+        p {
+            line-height: 1.45;
+        }
+
+        .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        body {
+            letter-spacing: -0.025em;
+        }
+
+
+        #Customer {
+            padding: 100px 0 400px 0;
+            background: url(./img/service_bg05.jpg) no-repeat center bottom/cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        #Customer h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 0 40px 0;
+            line-height: 1.2;
+        }
+
+        #Customer h3 {
+            font-size: 25px;
+            font-weight: 500;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+
+        #Customer p {
+            font-size: 14px;
+        }
+
+        #Customer .container {
+            gap: 30px;
+        }
+
+        #Customer .container>div {
+            position: relative;
+            flex: 1;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+        }
+
+        #Customer .container>div a::after {
+            content: "\e907";
+            font-family: xeicon !important;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            padding: 20px;
+            border: 3px solid #deb887;
+            background: #fff;
+            color: #333;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+
+        #Customer .container>div:hover a::after {
+            content: "\eba4";
+            border: 3px solid #deb887;
+            background: #deb887;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        #Customer .container a {
+            display: block;
+            padding: 100px 30px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <section class="count_content">
+            <ul class="countup">
+
+                <p></p>
+                <li class="ctup">
+                    <strong class="number">
+                        1,124
+                    </strong>
+                    <i>매장</i>
+                    <p>크린토피아<br /> 전국 가맹점</p>
+
+                </li>
+                <li class="ctup">
+                    <p class="num_txt"><em>1</em>위</p>
+                    <p class="img_txt">코인세탁시장 점유율</p>
+                </li>
+                <li class="ctup">
+                    <strong class="number">114</strong>
+                    <i>지사</i>
+                    <p>크린토피아<br /> 전국 지사</p>
+                </li>
+            </ul>
+            <div class="main_content">
+                <!-- first start -->
+                <div class="first inner">
+                    <p class="img_title">크린토피아 빨래방의 검증된 사업성</p>
+                    <p class="text">30년 역사의 세탁전문기업, <em>브랜드 인지도 99% 이상의 크린토피아와 함께 빨래방을 시작해보세요.</em></p>
+                    <ul class="first_ul" data-motion-offset="1">
+
+                        <li>
+                            <strong class="number">
+
+                            </strong>
+                            <p class="num_txt">1,124<em class="el1_1"></em>호점</p>
+                            <p class="img_txt"><img src="/img/main/ver2/first_imgtxt01.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="num_txt el1_3"><em>1</em>위</p>
+                            <p class="img_txt"><img src="/img/main/ver2/first_imgtxt02.png" alt=""></p>
+                        </li>
+                        <li>
+                            <p class="num_txt"><em class="el1_2" data-number="737231999"></em>지사</p>
+                            <p class="img_txt"><img src="/img/main/ver2/first_imgtxt03.png" alt=""></p>
+                        </li>
+                    </ul>
+                </div>
+
+        </section>
+
+        <section id="Customer">
+            <h2>
+                고품격 휴식과 프리미엄 가치를 동시에<br />
+                이제 투자대세는 카시아 속초입니다!
+            </h2>
+            <div class="container">
+                <div class="txt">
+                    <a href="#!">
+                        <h3>부동산 규제 없는
+                            투자상품</h3>
+                        <p>
+                            당 사업지는 1가구 2주택과 무관한 상품으로 특급호텔식 서비스는 기본, 세계적인 고급 주거 트렌드인 레지던스 형태로 투자가치가 높습니다.
+                        </p>
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="#!">
+                        <h3>부동산 규제 없는
+                            투자상품</h3>
+                        <p>
+                            당 사업지는 1가구 2주택과 무관한 상품으로 특급호텔식 서비스는 기본, 세계적인 고급 주거 트렌드인 레지던스 형태로 투자가치가 높습니다.
+                        </p>
+                    </a>
+                </div>
+                <div class="txt">
+                    <a href="#!">
+                        <h3>부동산 규제 없는
+                            투자상품</h3>
+                        <p>
+                            당 사업지는 1가구 2주택과 무관한 상품으로 특급호텔식 서비스는 기본, 세계적인 고급 주거 트렌드인 레지던스 형태로 투자가치가 높습니다.
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <script type="text/javascript">
+
+            $(function () {
+                var count0 = count1 = count2 = 0;
+
+                timeCounter();
+
+                function timeCounter() {
+
+                    id0 = setInterval(count0Fn, 1);
+
+                    function count0Fn() {
+                        count0++;
+                        if (count0 > 1124) {
+                            clearInterval(id0);
+                        } else {
+                            $(".number").eq(0).text(count0);
+                        }
+
+                    }
+
+                    id1 = setInterval(count1Fn, 1);
+
+                    function count1Fn() {
+                        count1++;
+                        if (count1 > 114) {
+                            clearInterval(id1);
+                        } else {
+                            $(".number").eq(1).text(count1);
+                        }
+                    }
+
+                    id2 = setInterval(count2Fn, 1);
+
+                    function count2Fn() {
+                        count2++;
+                        if (count2 > 114) {
+                            clearInterval(id2);
+                        } else {
+                            $(".number").eq(2).text(count2);
+                        }
+                    }
+                }
+            });
+
+
+
+
+
+
+        </script>
+
+
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+        <script src="./js/jquery.scrollme.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+    </body>
+
+</html>
