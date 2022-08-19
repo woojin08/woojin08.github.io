@@ -1924,4 +1924,68 @@ body {
         display: inline-block;
         margin: 0 0 0 20px;
     }
+
+    .mopen {
+        display: block;
+        position: fixed;
+        top: 65px;
+        right: 30px;
+        z-index: 999;
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+        background: #ddd;
+        border-radius: 3px;
+    }
+
+    .mopen button {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .mopen::before,
+    .mopen::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        height: 2px;
+        background: #333;
+    }
+
+    .mopen::before {
+        top: 7px;
+
+    }
+
+    .mopen::after {
+        bottom: 7px;
+    }
+
+    .mopen button::before,
+    .mopen button::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        height: 2px;
+        background: #333;
+        top: 50%;
+        top: calc(50% - 1px);
+    }
+
+    .mopen.on::before,
+    .mopen.on::after {
+        opacity: 0;
+    }
+
+    .mopen.on button::before {
+        transform: rotate(45deg);
+    }
+
+    .mopen.on button::after {
+        transform: rotate(-45deg);
+    }
+
 }
