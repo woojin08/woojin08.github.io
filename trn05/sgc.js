@@ -1,37 +1,48 @@
 $(function () {
 
-    var TXT = ['HOME', '01', '02', '03', '04', 'KIM,s portfolio']
+    var TXT = ['HOME', '01', '02', '03', '04', 'KIM,s portfolio', 'copyright']
     // fullpage
     $('.main').fullpage({
-        anchors: ['page01', 'page02', 'page03', 'page04', 'page05', 'page06'],
+        anchors: ['page01', 'page02', 'page03', 'page04', 'page05', 'footer'],
         // navigation: true,
         css3: false,
 
         afterLoad: function (page, num) {
             // 첫 페이지에서는 안붙음
-            setTimeout(() => {
+            setTimeout(function () {
                 $('.section').eq(num - 1).addClass('on').siblings().removeClass('on');
             });
             $('.Gnb li').eq(num - 1).addClass('on').siblings().removeClass('on');
             $('.this_page').text(TXT[num - 1]);
 
-
-            // 공,이미지 넘겨짐
-            //         $('.this_bg').css({
-            //             backgroundPositionY: - 100 * (num - 1) + "px"
-            //         });
-            //         $('.this_pic img').attr({
-            //             src: `./assets/imges/lesedilarona0${num}.jpg`
-            //         });
-
-            //         $('this_tp').css({
-            //             backgroundimage: `url(./assets/imges/lesedilarona0${num}.jpg)`
-            //         })
+            // 부정연산자 사용
+            num !== 1
+                ? $('.Header').addClass('on')
+                : $('.Header').removeClass('on')
         },
     });
 
-    //     $('.page03').on('wheel', function (e) {
-    //         console.log(e.originalEvent.wheelDelta);
-    //         e.originalEvent.wheelDelta > 0 && fullpage_api.moveSlideLeft();
-    //     })
+
+
+    $('.basicSlider').slick({
+        arrows: false,
+        autoplay: true,
+        // pauseOnHover: true,
+        asNavFor: '.basicSlider',
+    });
+
+
+    $('.productSlider .slide_menu li').on('click', function () {
+        var idx = $(this).index();
+        $('.basicSlider').slick('slickGoTo', idx)
+    });
+
+    $('.basicSlider').on('afterChange', function (e, s, c) {
+        $('.productSlider .slide_menu li').eq(c).addClass('on').siblings().removeClass('on')
+    });
+
+    $('.allOpen').on('click', function () {
+        $(this).toggleClass('on');
+        $('.cover').slideToggle();
+    })
 })
