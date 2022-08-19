@@ -58,12 +58,7 @@ $(function () {
         pauseFocus: false,
 
     });
-    $('.coco i:nth-child(1)').on('click', function () {
-        $('.chang-wrapper').slick('slickPrev')
-    });
-    $('.coco i:nth-child(2)').on('click', function () {
-        $('.chang-wrapper').slick('slickNext')
-    });
+
     $('.tutu :nth-child(1)').on('click', function () {
         $('.chang-wrapper').slick('slickPrev')
     });
@@ -89,6 +84,7 @@ $(function () {
                 } else {
                     $(".number").eq(0).text(count0);
                 }
+
 
             }
 
@@ -116,7 +112,11 @@ $(function () {
         }
     });
 
-
+    document.querySelector('.mopen').addEventListener('click', (e) => {
+        const TG = e.currentTarget;
+        TG.classList.toggle('on');
+        document.querySelector('#Header').classList.toggle('ox')
+    });
 })
 
 //   swiper
