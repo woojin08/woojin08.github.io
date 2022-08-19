@@ -36,12 +36,6 @@ $(function () {
         pauseFocus: false,
         fade: true,
     });
-    $('.mainArrow i:nth-child(1)').on('click', function () {
-        $('.mainSlider').slick('slickPrev')
-    });
-    $('.mainArrow i:nth-child(2)').on('click', function () {
-        $('.mainSlider').slick('slickNext')
-    });
 
     // 창업
     $('.chang-wrapper').on('init afterChange', function (e, s, c) {
