@@ -100,7 +100,7 @@ body {
 .header .MenuList>li>a {
     display: block;
     color: #333;
-    padding: 0 20px;
+    padding: 10px 20px;
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -135,7 +135,7 @@ body {
 .header .MenuList>li .MenuList_a {
     display: none;
     position: absolute;
-    top: 5.5rem;
+    top: 6.5rem;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
