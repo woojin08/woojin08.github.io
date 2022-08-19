@@ -11,7 +11,7 @@ body {
 .txt {
     display: flex;
     flex-direction: column;
-    justify-content: c;
+    justify-content: center;
 }
 
 .txt strong {
@@ -23,7 +23,7 @@ body {
 }
 
 .txt h2 {
-    margin: 100px 0 20px 0;
+    margin: 0 0 20px 0;
     font-size: 65px;
     font-weight: 900;
 
@@ -325,6 +325,7 @@ body {
 
 .Basic .container {
     display: flex;
+    align-items: center;
     gap: 100px;
     overflow: hidden;
 }
