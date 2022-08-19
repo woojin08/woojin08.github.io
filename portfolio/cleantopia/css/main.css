@@ -267,16 +267,6 @@ body {
     background: url(../img/main05.png) no-repeat center center/cover;
 }
 
-.mainArrow i {
-    position: absolute;
-    inset: 50% auto auto 50%;
-    transform: translate(-50%, -50%);
-    /* 투명하게 */
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 100px;
-
-
-}
 
 .mainArrow i.on {
     color: rgba(0, 0, 0, 0.5);
