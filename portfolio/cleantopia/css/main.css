@@ -709,7 +709,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    /* margin-bottom: 5rem; */
     font-weight: 800;
     margin-top: 100px;
     align-items: center;
@@ -755,27 +754,6 @@ body {
     border-radius: 20px;
 }
 
-/* .crin_middle>div a::after {
-    content: "\e907";
-    font-family: xeicon !important;
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    padding: 20px;
-    border: 3px solid #deb887;
-    background: #fff;
-    color: #333;
-    border-radius: 50%;
-    transition: 0.5s;
-} */
-
-/* .crin_middle a {
-    display: block;
-    padding: 0 30px;
-} */
-
 .crin_middle h3 {
     padding: 10px 0 0;
     text-align: center;
@@ -795,14 +773,8 @@ body {
 .crin_middle img {
     height: 350px;
 
-    /* transition: 0.5s; */
 }
 
-
-
-/* .crin_middle:hover img {
-    transform: scale(1.1);
-} */
 
 /* fix */
 
@@ -815,7 +787,6 @@ body {
     background: url(../img/story.jpg) no-repeat center;
     position: relative;
     height: 300px;
-    /* background-attachment: fixed; */
 }
 
 .fixedBg h2 {
@@ -1658,7 +1629,6 @@ body {
     }
 
     .tit-box .stit {
-        /* padding: 100px 0 0 0; */
         color: #000;
         font-size: 45px;
         letter-spacing: 0.2rem;
@@ -1678,8 +1648,6 @@ body {
         padding: 0 26px;
         min-width: 170px;
         border: 1px solid #a9a8a8;
-
-        /* background-color: #2471c8; */
         box-sizing: border-box;
         border-radius: 20px;
         font-size: 24px;
@@ -1714,7 +1682,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-content: center;
-        /* margin-bottom: 5rem; */
         font-weight: 800;
         margin-top: 100px;
         align-items: center;
@@ -1760,27 +1727,6 @@ body {
         border-radius: 20px;
     }
 
-    /* .crin_middle>div a::after {
-        content: "\e907";
-        font-family: xeicon !important;
-        position: absolute;
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 20px;
-        padding: 20px;
-        border: 3px solid #deb887;
-        background: #fff;
-        color: #333;
-        border-radius: 50%;
-        transition: 0.5s;
-    } */
-
-    /* .crin_middle a {
-        display: block;
-        padding: 0 30px;
-    } */
-
     .crin_middle h3 {
         padding: 10px 0 0;
         text-align: center;
@@ -1800,14 +1746,8 @@ body {
     .crin_middle img {
         height: 350px;
 
-        /* transition: 0.5s; */
     }
 
-
-
-    /* .crin_middle:hover img {
-        transform: scale(1.1);
-    } */
 
     /* fix */
 
