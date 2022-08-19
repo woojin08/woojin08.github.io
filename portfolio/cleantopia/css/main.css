@@ -214,12 +214,12 @@ body {
 /* main */
 .mainVisual {
     position: relative;
-    padding: 120px 0 0 0;
+    padding: 90px 0 0 0;
 }
 
 .mainVisual .mainSlider figure {
     position: relative;
-    height: 70vh;
+    height: 75vh;
 
 }
 
