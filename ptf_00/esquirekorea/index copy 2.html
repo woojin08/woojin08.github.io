@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esquire</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<style>
+    @charset "utf-8";
+
+    /*common*/
+    .header,
+    .container,
+    .footer {
+        width: 100%;
+        min-width: 1150px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .mainVisu div {
+        z-index: 1 !important;
+    }
+
+    h2 {
+        margin-top: 58px;
+        margin-bottom: 30px;
+        font-family: 'Maven Pro';
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #1e2928;
+    }
+
+    h2 p {
+        font-size: 17px;
+        line-height: 54px;
+        letter-spacing: -1px;
+    }
+
+
+    /*header*/
+    .header {
+        position: fixed;
+        top: 0;
+        padding-top: 33px;
+        font-size: 0;
+        text-align: center;
+        background-color: #fff;
+        z-index: 1000;
+    }
+
+    .header.on {
+        background: rgba(0, 0, 0, 1);
+    }
+
+    .header.smallSize {
+        animation-name: headerSmall;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+
+    .header.smallSize .gnbSection {
+        background: url('/img/watch_logo.png') no-repeat;
+        background-position: center center;
+    }
+
+    .header.largeSize {
+        animation-name: headerLarge;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+    }
+
+    .header h1 {
+        display: inline-block;
+        width: 162px;
+        height: 32px;
+        font-size: 0;
+    }
+
+    .header h1 a {
+        display: block;
+        width: 1200px;
+        height: 100%;
+        font-size: 0;
+        background: url('./img/Eq_PC_logo_gnb.png') no-repeat;
+    }
+
+    .header h2 {
+        position: absolute;
+        right: 50%;
+        top: 24px;
+        margin: 0;
+        margin-right: -574px;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .header h2 a {
+        display: inline-block;
+        width: 46px;
+        height: 16px;
+        font-family: 'Maven Pro';
+        font-size: 12px;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .header.smallSize h2 {
+        z-index: 100;
+        top: 103px;
+    }
+
+    .header.largeSize h2 {
+        top: 24px;
+    }
+
+    .header .gnbSection {
+        width: 100%;
+        min-width: 1150px;
+        text-align: center;
+        border-bottom: 1px solid #999999;
+    }
+
+    .header .gnb {
+        position: relative;
+        margin: 19px auto 0;
+        width: 1200px;
+        height: auto;
+        overflow: visible;
+    }
+
+    .header .gnb>li {
+        display: inline-block;
+    }
+
+    .header .gnb>li+li {
+        margin-left: 75px;
+    }
+
+    .header .gnb li a {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Maven Pro';
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 50px;
+        box-sizing: border-box;
+    }
+
+    .header .gnb li a:hover {
+        color: #000;
+    }
+
+    .header .gnb>li>a {
+        position: relative;
+    }
+
+    .header .gnb>li>a.active:before,
+    .header .gnb>li>a:hover:before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #000;
+        content: '';
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+    }
+
+    .header .gnb .depth_02 {
+        width: 1200px;
+        display: none;
+        padding-top: 25px;
+        position: absolute;
+        left: 0;
+        bottom: -369px;
+        height: 369px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .header .gnb .depth_02 ul {
+        display: inline-block;
+        width: 189px;
+        vertical-align: top;
+    }
+
+    .header .gnb .depth_02 ul.longTxt {
+        width: 240px;
+    }
+
+    .header .gnb .depth_02 ul.longTxt2 {
+        width: 285px;
+    }
+
+    .header .gnb .depth_02 ul.shotTxt {
+        width: 130px;
+    }
+
+    .header .gnb .depth_02 li {
+        text-align: left;
+    }
+
+    .header .gnb .depth_02 li:nth-child(1) {
+        margin: 19px 0 17px;
+    }
+
+    .header .gnb .depth_02 li:nth-child(1) a {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .header .gnb .depth_02 li:nth-child(1) a:hover {
+        text-decoration: none;
+        cursor: auto;
+    }
+
+    .header .gnb .depth_02 a {
+        padding: 0;
+        height: 34px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 34px;
+    }
+
+    .header .gnb .depth_02 a:hover {
+        text-decoration: underline;
+    }
+
+    .header .gnb .depth_02.makeupDepth_02 {
+        padding-left: 385px;
+    }
+
+    .header .gnb .depth_02.makeupDepth_02 .ct7 {
+        position: absolute;
+        right: 47px;
+        top: 285px;
+        border-top: 1px solid #999;
+    }
+
+    .header .gnb .depth_02.fragrancesDepth_02 {
+        padding-left: 450px;
+    }
+
+    .header .gnb .depth_02.fragrancesDepth_02 ul+ul {
+        margin-left: 54px;
+    }
+
+    .header .gnb .depth_02.skincareDepth_02 {
+        padding-left: 375px;
+    }
+
+    .header .gnb .depth_02.styleDepth_02 {
+        padding-left: 450px;
+    }
+
+    .header .gnb .banner {
+        position: absolute;
+        width: 280px;
+        height: 208px;
+        left: 70px;
+        top: 50px;
+    }
+
+    .header .gnb .banner img {
+        width: 100%;
+    }
+
+    .header .gnb>li:nth-of-type(5) .depth_02 ul {
+        width: 250px;
+    }
+
+
+    .header .gnbDepth {
+        display: none;
+        height: 420px;
+        border-bottom: 1px solid #999;
+    }
+
+    /*animation*/
+
+    @keyframes headerSmall {
+        0% {
+            top: 0;
+        }
+
+        100% {
+            top: -85px;
+        }
+    }
+
+    /* @keyframes headerLarge {
+        0% {
+            top: -85px;
+        }
+
+        100% {
+            top: 0;
+        }
+    } */
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes pagerOn {
+        0% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 0.7;
+        }
+    }
+
+
+    .MainVisual {
+        position: relative;
+        /* margin-bottom: 5.75rem; */
+        padding: 150px 0 0 0;
+    }
+</style>
+</head>
+<div id="wrap">
+    <header id="header">
+        <div class="header load largeSize">
+            <h1><a href="/">GIVENCHY PARIS</a></h1>
+            <h2><a href="/sub/store.php" target="_blank">STORE</a></h2>
+            <div class="gnbSection">
+                <ul class="gnb clear">
+                    <li>
+                        <a href="/sub/list.php?category=100000000">STYLE</a>
+                    </li>
+                    <li>
+                        <a href="/sub/list.php?category=101000000" class="">WATCH</a>
+                        <div class="depth_02 makeupDepth_02" style="display: none; opacity: 1;">
+                            <a href="/sub/view.php?product_idx=22" target="_self" class="banner">
+                                <img src="/upload_files/banner/1893213738_ZqnXxr7o_1493e1434395f51097adb0f06bac7bdff95cd27b.jpg"
+                                    alt="MAKE-UP">
+                            </a>
+                            <ul>
+                                <li><a href="/sub/list.php?category=101100000" style="cursor: pointer;">FACE</a></li>
+                                <li>
+                                    <a href="/sub/list.php?category=101100100">
+                                        FOUNDATION </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101100101">
+                                        CONCEALER </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101100102">
+                                        PRIMER </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101100103">
+                                        POWDER </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101100104">
+                                        BLUSH &amp; BRONZER </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101100106">
+                                        HIGHLIGHTER </a>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/sub/list.php?category=101101000" style="cursor: pointer;">EYES</a></li>
+                                <li>
+                                    <a href="/sub/list.php?category=101101100">
+                                        MASCARA </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101101101">
+                                        EYE PENCIL &amp; EYELINER </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101101102">
+                                        BROWS </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101101103">
+                                        EYESHADOW </a>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/sub/list.php?category=101102000" style="cursor: pointer;">LIPS</a></li>
+                                <li>
+                                    <a href="/sub/list.php?category=101102100">
+                                        LIPSTICK </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101102101">
+                                        LIP INK </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101102104">
+                                        LIP BALM </a>
+                                </li>
+
+                            </ul>
+                            <ul class="ct6">
+                                <li><a href="/sub/list.php?category=101103000" style="cursor: pointer;">WHAT’S NEW</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/list.php?category=101103104">
+                                        L'INTERDIT </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101103105">
+                                        TEINT COUTURE </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=101103106">
+                                        PRISME LIBRE </a>
+                                </li>
+
+                            </ul>
+                            <ul class="ct7">
+                                <li><a href="/sub/list.php?category=101104000" style="cursor: pointer;">NAILS</a></li>
+                                <li>
+                                    <a href="/sub/list.php?category=101104100">
+                                        LE VERNIS GIVENCHY </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/sub/list.php?category=102000000" class="">CAR&TECH</a>
+                        <div class="depth_02 fragrancesDepth_02" style="display: none; opacity: 1;">
+                            <a href="/sub/view.php?product_idx=224" target="_self" class="banner">
+                                <img src="/upload_files/banner/1893213738_zjaWEld6_92e6f0f182eb70fe24783a8ebbcc53d8cc445b85.jpg"
+                                    alt="FRAGRANCE">
+                            </a>
+                            <ul class="longTxt">
+                                <li><a href="/sub/list.php?category=102100000" style="cursor: pointer;">PERFUME FOR
+                                        WOMEN</a></li>
+                                <li>
+                                    <a href="/sub/list.php?category=102100100">
+                                        L'INTERDIT </a>
+                                </li>
+                                <li><a href="/sub/list.php?category=102100105">Irresistible</a></li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=102100102">
+                                        EAU DE GIVENCHY </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=102100104">
+                                        EAU DE MOISELLE DE GIVENCHY </a>
+                                </li>
+
+
+
+                            </ul>
+                            <ul>
+                                <li><a href="/sub/list.php?category=102101000" style="cursor: pointer;">COLOGNE FOR
+                                        MEN</a></li>
+                                <li>
+                                    <a href="/sub/list.php?category=102101100">
+                                        GENTLEMAN GIVENCHY </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=102101101">
+                                        GENTLEMEN ONLY </a>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/sub/list.php?category=102103000" style="cursor: pointer;">DE GIVENCHY</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.givenchybeauty.co.kr/sub/list.php?category=102103000">
+                                        DE GIVENCHY </a>
+                                </li>
+
+                                <li>
+                                    <a href="http://www.givenchybeauty.co.kr/sub/scentfinder.html">
+                                        FRAGRANCE FINDER </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/sub/list.php?category=103000000">FOOD</a>
+                        <div class="depth_02 skincareDepth_02">
+                            <a href="/sub/list.php?category=103102109" target="_self" class="banner">
+                                <img src="/upload_files/banner/1893213738_pFWox0NH_6078c0e5651d2f2439f307205684e0ec57b15812.jpg"
+                                    alt="SKIN CARE">
+                            </a>
+                            <ul class="shotTxt">
+                                <li><a href="/sub/list.php?category=103100000" style="cursor: pointer;">PRODUCT</a></li>
+                                <li>
+                                    <a href="/sub/list.php?category=103100100">
+                                        CLEANSER </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103100101">
+                                        DAY CREAM </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103100102">
+                                        EYE CARE </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103100103">
+                                        LOTION </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103100104">
+                                        FACE MASK </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103100105">
+                                        NIGHT CREAM </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103100106">
+                                        SERUM </a>
+                                </li>
+
+                            </ul>
+                            <ul class="shotTxt">
+                                <li><a href="/sub/list.php?category=103101000" style="cursor: pointer;">CONCERN</a></li>
+                                <li>
+                                    <a href="/sub/list.php?category=103101100">
+                                        BRIGHTEN </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103101101">
+                                        CLEANSE </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103101102">
+                                        MOISTURIZE </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103101104">
+                                        PRESERVE </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103101105">
+                                        PROTECT </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103101106">
+                                        AGE-DEFYING </a>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/sub/list.php?category=103102000" style="cursor: pointer;">COLLECTION</a>
+                                </li>
+                                <li>
+                                    <a href="/sub/list.php?category=103102100">
+                                        BLANC DIVIN </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103102102">
+                                        L'INTEMPOREL </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103102103">
+                                        L'INTEMPOREL BLOSSOM </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103102104">
+                                        LE SOIN NIOR </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103102108">
+                                        SKIN PERFECTO </a>
+                                </li>
+
+                                <li>
+                                    <a href="/sub/list.php?category=103102109">
+                                        SKIN RESSOURCE </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/sub/list.php?category=104000000">PEOPLE</a>
+                        <div class="depth_02 styleDepth_02">
+                            <a href="/sub/looks_view.php?idx=25" target="_self" class="banner">
+                                <img src="/upload_files/banner/1893213738_CRTc5MHg_507a6a49777b66723810b7144876d6d19825ea7f.jpg"
+                                    alt="LOOKS">
+                            </a>
+                            <ul>
+                                <li><a href="/sub/list.php?category=104102000" style="cursor: pointer;">INSPIRATION
+                                        LOOKS</a></li>
+                                <li>
+                                    <a href="/sub/looks_view.php?idx=24">
+                                        SHINMINA LOOK - LIP </a>
+                                </li>
+                                <li>
+                                    <a href="/sub/looks_view.php?idx=25">
+                                        SHINMINA LOOK - FACE </a>
+                                </li>
+                                <li>
+                                    <a href="/sub/looks_view.php?idx=26">
+                                        SHINMINA LOOK - SKINCARE </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/sub/list.php?category=104000000">NOW</a>
+                        <div class="depth_02 styleDepth_02">
+                            <a href="/sub/looks_view.php?idx=25" target="_self" class="banner">
+                                <img src="/upload_files/banner/1893213738_CRTc5MHg_507a6a49777b66723810b7144876d6d19825ea7f.jpg"
+                                    alt="LOOKS">
+                            </a>
+                            <ul>
+                                <li><a href="/sub/list.php?category=104102000" style="cursor: pointer;">INSPIRATION
+                                        LOOKS</a></li>
+                                <li>
+                                    <a href="/sub/looks_view.php?idx=24">
+                                        SHINMINA LOOK - LIP </a>
+                                </li>
+                                <li>
+                                    <a href="/sub/looks_view.php?idx=25">
+                                        SHINMINA LOOK - FACE </a>
+                                </li>
+                                <li>
+                                    <a href="/sub/looks_view.php?idx=26">
+                                        SHINMINA LOOK - SKINCARE </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!-- gnb :: end -->
+
+            </div>
+            <!-- gnbSection :: end -->
+            <div class="gnbDepth"
+                style="display: none; height: 420px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+            </div>
+            <!-- gnbSection :: end -->
+        </div>
+
+        <main>
+            <section class="MainVisual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure><img src="./img/042126151001.jpg" alt="">
+
+                        </figure>
+                        <div class="bottom_text">
+                            <p class="text_01">세븐틴 원우가 고래를 좋아하는 이유는?</p>
+                        </div>
+                    </div>
+                    <div class=" swiper-slide">
+                        <figure><img src="./img/042018077001.jpg" alt=""></figure>
+                        <div class="bottom_text">
+                            <p class="text_01">샤넬 J12를 선택한 12인의 스토리</p>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/style_62e79939b99ec0.jpg" alt=""></figure>
+                        <div class="bottom_text">
+                            <p class="text_01">채원 "20대를 르세라핌으로 불태우고 싶어요"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/c182dfe2-9b66-4793-b74c-47e063ff1a820.jpg" alt=""></figure>
+                        <div class="bottom_text">
+                            <p class="text_01">미미가 보컬 서바이벌 프로그램 <br />
+                                <두 번째 세계>에서 자꾸만 초심을 더듬게 되는 이유
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/style_6302e49c29ea5.jpg" alt=""></figure>
+                        <div class="bottom_text">
+                            <p class="text_01">고유하고 견고한, 더없이 크리스탈</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </section>
+            <section class="Hot">
+                <h2>THE LATEST HOT ISSUE</h2>
+
+            </section>
+
+        </main>
+</div>
+</body>
+<script>
+    var filter = "win16|win32|win64|mac";
+
+    if (navigator.platform) {
+        if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+            location.href = "/m/";
+        }
+    }
+
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '273224743732360');
+    fbq('track', 'PageView');
+</script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>

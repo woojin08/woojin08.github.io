@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esquire</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main copy.css">
+
+</head>
+<style>
+    * {
+        outline: 1px solid -- #f00;
+    }
+
+    p {
+        line-height: 1.45;
+    }
+
+    .container {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    body {
+        letter-spacing: -0.025em;
+    }
+
+    .Wrap {
+        position: relative;
+    }
+
+    #Header {
+        position: fixed;
+        left: 0;
+        right: 0;
+      
+        padding: 10px 40px;
+        display: flex;
+        justify-content: space-between;
+        min-width: 1900px;
+        background: #fff;
+        color: #333;
+        line-height: 77px;
+        transition: 0.5s;
+        z-index: 999;
+    }
+
+    #Header.on {
+        background: #333;
+    }
+
+    #Header .Gnb ul {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    #Header h1 {
+        width: 300px;
+    }
+
+    #Header .tel {
+        width: 300px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    #Header .tel i {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 50%;
+        transform: translateY(-5px);
+        margin: 0 10px 0 0;
+    }
+
+    main {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <header id="Header">
+       
+        <h1>
+            <a href="/trn04">
+                <img src="./img/Eq_PC_logo_gnb.png" alt="">
+            </a>
+        </h1>
+
+        <nav class="Gnb">
+            <ul>
+                <li><a href="">카시아 속초</a></li>
+                <li><a href="">사업개요</a></li>
+                <li><a href="">입지환경</a></li>
+                <li><a href="">시설정보</a></li>
+                <li><a href="">세대정보</a></li>
+                <li><a href="">THE SANCTUARY CLUB</a></li>
+                <li><a href="">관심고객등록</a></li>
+            </ul>
+        </nav>
+        <div class="tel">
+            <a href="tel:1644-8484">
+                <i class="xi-phone"></i>
+                1644-8484
+            </a>
+        </div>
+    </header>
+
+
+    <div class="Wrap">
+        <header class="Header">
+            <div class="top_banner">
+                <div class="container">
+                    <ul class="top_left">
+                        <li><a href="#!"><img src="./img/sns_instagram_b.png" alt=""></a></li>
+                        <li><a href="#!"><img src="./img/sns_facebook_b.png" alt=""></a></li>
+                        <li><a href="#!"><img src="./img/sns_youtube_b.png" alt=""></a></li>
+                        <li><a href="#!"><img src="./img/sns_twitter_b.png" alt=""></a></li>
+                    </ul>
+                    <div class="top_ch">
+                        <ul class="top_right">
+                            <li><a href="/">LOGIN</a></li>
+                            <li class="singnup"><a href="/">SIGNUP</a></li>
+                            <li>
+                                <form class="searchForm" action="">
+                                    <input type='text' name="search" placeholder="Search" required>
+                                    <button>
+                                        <i class="xi-search"></i>
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main_logo">
+
+                <h1>
+                    <a href=""><img src="./img/042018425001.png" alt="" class="logo-w"></a>
+
+                </h1>
+
+            </div>
+
+            <div class="header_menu">
+
+                <!-- <h2>
+                    <a href=""><img src="./img/Eq_PC_logo_gnb.png" alt=""></a>
+                </h2> -->
+                <nav class="Gnb">
+                    <ul class="MenuList">
+                        <a href=""><img src="./img/Eq_PC_logo_gnb.png" alt="" class="logo-c"></a>
+                        <li><a href="#!">STYLE</a></li>
+                        <li><a href="#!">WATCH</a></li>
+                        <li><a href="#!">CAR&TECH</a></li>
+                        <li><a href="#!">FOOD</a></li>
+                        <li><a href="#!">PEOPLE</a></li>
+                        <li><a href="#!">NOW</a></li>
+                        <li class="shop"><a href="#!"><img src="./img/eq-menu-shop.png" alt="">SHOP</a></li>
+                        <li class="the_bic"><a href="#!"><img src="./img/watch_logo.png" alt=""></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <main>
+            <section class="MainVisual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure><img src="./img/042126151001.jpg" alt="">
+
+                        </figure>
+                        <div class="bottom_text">
+                            <p class="text_01">세븐틴 원우가 고래를 좋아하는 이유는?</p>
+                        </div>
+                    </div>
+                    <div class=" swiper-slide">
+                        <figure><img src="./img/042018077001.jpg" alt=""></figure>
+                        <div class="bottom_text">
+                            <p class="text_01">샤넬 J12를 선택한 12인의 스토리</p>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/style_62e79939b99ec0.jpg" alt=""></figure>
+                        <div class="bottom_text">
+                            <p class="text_01">채원 "20대를 르세라핌으로 불태우고 싶어요"</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/c182dfe2-9b66-4793-b74c-47e063ff1a820.jpg" alt=""></figure>
+                        <div class="bottom_text">
+                            <p class="text_01">미미가 보컬 서바이벌 프로그램 <br />
+                                <두 번째 세계>에서 자꾸만 초심을 더듬게 되는 이유
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/style_6302e49c29ea5.jpg" alt=""></figure>
+                        <div class="bottom_text">
+                            <p class="text_01">고유하고 견고한, 더없이 크리스탈</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </section>
+            <section class="Hot">
+                <h2>THE LATEST HOT ISSUE</h2>
+
+            </section>
+
+        </main>
+        <!-- Swiper JS -->
+
+
+        <!-- Initialize Swiper -->
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+
+                window.addEventListener('scroll', () => {
+                    let sct = window.scrollY;
+                    console.log(sct);
+                    sct > 0
+                        ? document.querySelector('#Header').classList.add('on')
+                        : document.querySelector('#Header').classList.remove('on')
+
+                    sct > 500
+                        ? document.querySelector('.to_top').classList.add('on')
+                        : document.querySelector('.to_top').classList.remove('on')
+                });
+            });
+        </script>
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
