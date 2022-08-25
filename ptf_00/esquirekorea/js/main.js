@@ -1,3 +1,5 @@
+// menu
+
 window.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
@@ -13,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
+// main swiper
 window.addEventListener('DOMContentLoaded', () => {
     // var swiper = new Swiper(".mySwiper", {
     //     direction: "vertical",
@@ -44,4 +46,36 @@ window.addEventListener('DOMContentLoaded', () => {
             prevEl: ".swiper-button-prev",
         },
     });
-})
+
+
+    // edit swiper
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 40,
+       
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     type: "progressbar",
+        //     clickable: true,
+
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    // family
+
+
+})  ;
+
