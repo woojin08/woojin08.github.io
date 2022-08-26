@@ -17,6 +17,10 @@ body {
 
 }
 
+.container {
+    width: 1200px;
+}
+
 .Header {
     top: 0;
     left: 0;
@@ -590,6 +594,7 @@ body {
 .read .left figure {
     width: 37.5rem;
     padding-top: 100px;
+
 }
 
 
