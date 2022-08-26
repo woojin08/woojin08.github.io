@@ -448,7 +448,7 @@ body {
     margin: 0 0 47px 0;
     line-height: 2;
     border-bottom: 1px solid #fff;
-    text-align: center;
+
 }
 
 
@@ -844,8 +844,6 @@ body {
     width: 19px;
     text-align: center;
     line-height: 0;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
 }
 
 .footer .inner .sns_link a:hover {
@@ -924,6 +922,7 @@ body {
     border-top: 1px solid #262626;
     text-align: center;
     background: #000;
+
 }
 
 .footer .familysite_wrap .btn_familysite {
@@ -933,92 +932,19 @@ body {
     font-size: 12px;
     font-weight: 400;
     height: 49px;
-    transition: all 0.2s;
+    cursor: pointer;
 }
 
-.footer .familysite_wrap .btn_familysite:after {
-    content: "";
-    display: inline-block;
-    width: 13px;
-    height: 6px;
-    margin-left: 8px;
-    margin-top: -2px;
-    background: url(/asset/magazine_esquire/images/Eq_PC_ico_foot_familysite_arr.png) no-repeat;
-    vertical-align: middle;
-    transition: all 0.2s;
-}
 
-.footer .familysite_wrap.open .btn_familysite:after {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
+
 
 .footer .familysite_wrap .btn_familysite:hover {
     color: #9f9f9f;
 }
 
-.footer .familysite_wrap .btn_familysite:hover:after {
-    opacity: 0.8;
-}
 
 .footer .familysite_wrap .familysite {
     display: none;
     padding: 75px 0;
     border-top: 1px solid #333;
-}
-
-.footer .familysite_wrap .familysite:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.footer .familysite_wrap .familysite ul {
-    float: left;
-    width: 170px;
-    margin-left: 115px;
-}
-
-.footer .familysite_wrap .familysite ul li {
-    margin-top: 12px;
-    font-size: 14px;
-    line-height: 1em;
-    font-family: TTNorms-Medium;
-}
-
-.footer .familysite_wrap .familysite ul li:first-child {
-    margin-top: 0;
-}
-
-.footer .familysite_wrap .familysite ul li a {
-    color: #fff;
-    transition: color 0.2s;
-}
-
-.footer .familysite_wrap .familysite ul li a:hover {
-    color: #9f9f9f;
-}
-
-.footer .familysite_wrap .familysite .family {
-    width: 265px;
-    margin-left: 0;
-    padding: 2px 0 0;
-}
-
-.footer .familysite_wrap .familysite .family li {
-    margin-top: 36px;
-}
-
-.footer .familysite_wrap .familysite .family li:first-child {
-    margin-top: 0;
-}
-
-.footer .familysite_wrap .familysite .family li a:hover {
-    opacity: 0.6;
-}
-
-.footer .familysite_wrap .familysite>div {
-    margin: 0 auto;
-    width: 1120px;
-    text-align: left;
 }
