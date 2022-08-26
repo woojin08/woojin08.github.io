@@ -616,6 +616,9 @@ body {
     margin: 0 0 15px 0;
 }
 
+.read img {
+    width: 600px;
+}
 
 .read>div p {
     font-size: 15px;
@@ -668,6 +671,10 @@ body {
     padding: 0 0 8px 0;
 }
 
+.read_02 img {
+    width: 600px;
+}
+
 .read_03 {
     width: 75rem;
     margin: 0 auto;
@@ -716,6 +723,11 @@ body {
     padding: 0 0 8px 0;
 }
 
+.read_03 img {
+    width: 600px;
+
+}
+
 /* main_bottom */
 
 
@@ -746,7 +758,6 @@ body {
     padding: 62px 0 0;
     position: relative;
     font-size: 24px;
-    font-family: EloquentJFItalicPro;
     line-height: 1em;
     color: #fff;
 }
