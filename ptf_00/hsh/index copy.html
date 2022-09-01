@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Han Sohee</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+</head>
+<style>
+    * {
+        outline: 1px solid -- #f00;
+    }
+
+    p {
+        line-height: 1.45;
+    }
+
+    .container {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    body {
+        letter-spacing: -0.025em;
+    }
+
+    .Wrap {
+        position: relative;
+    }
+
+    #Header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 10px 40px;
+        display: flex;
+        justify-content: space-between;
+        min-width: 1900px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        line-height: 77px;
+        transition: 0.5s;
+        z-index: 999;
+    }
+
+    #Header.on {
+        background: rgba(0, 0, 0, 1);
+    }
+
+    #Header .Gnb ul {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    #Header h1 {
+        width: 300px;
+    }
+
+    #Header .tel {
+        width: 300px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    #Header .tel i {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 50%;
+        transform: translateY(-5px);
+        margin: 0 10px 0 0;
+    }
+
+    main {
+        position: relative;
+        z-index: 1;
+    }
+
+    #MainVisual {
+        position: relative;
+    }
+
+    #MainVisual .slogan {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+        z-index: 999;
+        text-shadow: 0 0 2px #000;
+    }
+
+    #MainVisual .slogan strong {
+        display: block;
+        margin: 0 0 30px 0;
+        font-size: 30px;
+        font-weight: 700;
+
+    }
+
+    #MainVisual .slogan h2 {
+        margin: 0 0 30px 0;
+        font-size: 6vw;
+        font-weight: 900;
+
+    }
+
+    #MainVisual .slogan p {
+        font-size: 15px;
+    }
+
+    #MainVisual .MainSlider figure {
+        height: 100vh;
+        background: #f00;
+    }
+
+    #MainVisual .MainSlider .itm01 {
+        background: url(../imges/bg_intro01.jpg) no-repeat center center/cover;
+    }
+
+    #MainVisual .MainSlider .itm02 {
+        background: url(../imges/bg_intro02.jpg) no-repeat center center/cover;
+    }
+
+    #MainVisual .MainSlider .itm03 {
+        background: url(../imges/bg_intro03.jpg) no-repeat center center/cover;
+    }
+
+    #MainVisual .swiper-pagination {
+        bottom: 100px;
+    }
+
+    #MainVisual .swiper-pagination span {
+        width: 100px;
+        height: 4px;
+        border-radius: 2px;
+        background: #333;
+        opacity: 1;
+    }
+
+    #MainVisual .swiper-pagination span.swiper-pagination-bullet-active {
+        background: #f00;
+
+    }
+
+    #Primium {
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    #Primium strong {
+        display: block;
+        margin: 0 0 10px 0;
+        font-size: 14px;
+    }
+
+    #Primium h2 {
+        display: block;
+        margin: 0 0 30px 0;
+        font-size: 35px;
+        font-weight: 500;
+        color: burlywood;
+    }
+
+    #Primium h3 {
+        display: block;
+        margin: 0 0 30px 0;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    #Primium .container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    #Primium .container figure {
+        position: relative;
+        width: calc(50% - 15px);
+    }
+
+    #Primium .container figure::before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 0;
+        border-top: 20px solid #deb887;
+        border-bottom: 20px solid #deb887;
+        border-left: 20px solid #deb887;
+        border-right: 20px solid transparent;
+        top: 10px;
+        left: -20px;
+        z-index: 999;
+    }
+
+    #Primium .container figure::after {
+        content: attr(data-title);
+        position: absolute;
+        top: 20px;
+        left: 0;
+        z-index: 999;
+        color: #fff;
+    }
+
+    #Primium .container .box {
+        overflow: hidden;
+        margin: 0 0 20px 0;
+    }
+
+    #Primium .container .box img {
+        transition: 0.5s;
+    }
+
+    #Primium .container .box:hover img {
+        transform: scale(1.2);
+    }
+
+    #Primium figure:nth-child(1) {
+        transform: translate(-50px, 0);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    #Primium.on figure:nth-child(1) {
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #Primium figure:nth-child(2) {
+        transform: translate(0, -50px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    #Primium.on figure:nth-child(2) {
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: 0.5s 0.5s;
+    }
+
+    #Primium figure:nth-child(3) {
+        transform: translate(0, 50px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    #Primium.on figure:nth-child(3) {
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: 0.5s 1s;
+
+    }
+
+    #Primium figure:nth-child(4) {
+        transform: translate(50px, 0);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    #Primium.on figure:nth-child(4) {
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: 0.5s 1.5s;
+
+    }
+
+    #Customer {
+        padding: 100px 0 400px 0;
+        background: url(../imges/bg_main2.jpg) no-repeat center bottom/cover;
+        color: #fff;
+        text-align: center;
+    }
+
+    #Customer h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 40px 0;
+        line-height: 1.2;
+    }
+
+    #Customer h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin: 0 0 20px 0;
+        line-height: 1.2;
+    }
+
+    #Customer p {
+        font-size: 14px;
+    }
+
+    #Customer .container {
+        gap: 30px;
+    }
+
+    #Customer .container>div {
+        position: relative;
+        flex: 1;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+    }
+
+    #Customer .container>div a::after {
+        content: "\e907";
+        font-family: xeicon !important;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        padding: 20px;
+        border: 3px solid #deb887;
+        background: #fff;
+        color: #333;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    #Customer .container>div:hover a::after {
+        content: "\eba4";
+        border: 3px solid #deb887;
+        background: #deb887;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    #Customer .container a {
+        display: block;
+        padding: 100px 30px;
+    }
+</style>
+
+<body>
+    <div class="Wrap">
+
+        <section id="Primium" class="active-event">
+            <strong>카시아 속초만의 메리트</strong>
+            <h2>PREMIUM</h2>
+            <div class="container">
+                <figure class="itm" data-title="premium01">
+                    <a href="#!">
+                        <div class="box">
+                            <img src="./img/다운로드 (1).jpg" alt="">
+                        </div>
+                        <strong>
+                            사운드트랙#1
+                        </strong>
+                        <h3>
+                            '이은수' 역
+                        </h3>
+                    </a>
+                </figure>
+                <figure class="itm" data-title="premium01">
+                    <a href="#!">
+                        <div class="box">
+                            <img src="./img/다운로드 (6).jpg" alt="">
+                        </div>
+                        <strong>
+                            사운드트랙#1
+                        </strong>
+                        <h3>
+                            '이은수' 역
+                        </h3>
+                    </a>
+                </figure>
+                <figure class="itm" data-title="premium01">
+                    <a href="#!">
+                        <div class="box">
+                            <img src="./img/다운로드 (6).jpg" alt="">
+                        </div>
+                        <strong>
+                            사운드트랙#1
+                        </strong>
+                        <h3>
+                            '이은수' 역
+                        </h3>
+                    </a>
+                </figure>
+                <figure class="itm" data-title="premium01">
+                    <a href="#!">
+                        <div class="box">
+                            <img src="./img/다운로드 (6).jpg" alt="">
+                        </div>
+                        <strong>
+                            사운드트랙#1
+                        </strong>
+                        <h3>
+                            '이은수' 역
+                        </h3>
+                    </a>
+                </figure>
+            </div>
+        </section>
+
+        </main>
+        <!-- <div class="navBar">
+            <div class="this_page">
+                HOME
+            </div>
+            <ul>
+                <li><a href="#page01">page01</a></li>
+                <li><a href="#page02">page02</a></li>
+                <li><a href="#page03">page03</a></li>
+                <li><a href="#page04">page04</a></li>
+                <li><a href="#page05">page05</a></li>
+                <li><a href="#footer">footer</a></li>
+
+            </ul>
+        </div>
+
+        <div class="cover">
+            <ul>
+                <li><a href="#!">ABOUT US</a></li>
+                <li><a href="#!">WORK</a></li>
+                <li><a href="#!">S&S</a></li>
+                <li><a href="#!">STORY</a></li>
+                <li><a href="#!">BRAND</a></li>
+                <li><a href="#!">PEOPLE</a></li>
+                <li><a href="#!">COMMUNITY</a></li>
+
+            </ul>
+        </div> -->
+</body>
+</div>
+<script src="./js/swiper-bundle.min.js">
+</script>
+<script src="./js/main.js"></script>
+
+</body>
+
+</html>
