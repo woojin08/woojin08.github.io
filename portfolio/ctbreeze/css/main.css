@@ -2011,14 +2011,19 @@
         display: block;
         position: fixed;
         top: 60px;
-        right: 30px;
+        right: 20px;
+        z-index: 999;
+        font-size: 0;
         width: 30px;
         height: 30px;
         background: #ddd;
-        font-size: 0;
-        line-height: 1;
-        z-index: 999;
-        overflow-x: hidden;
+        border-radius: 3px;
+    }
+
+    .mopen button {
+        border: none;
+        outline: none;
+        background: transparent;
     }
 
     .mopen::before,
@@ -2029,31 +2034,15 @@
         right: 5px;
         height: 2px;
         background: #333;
-        transition: 0.5s;
     }
 
     .mopen::before {
         top: 7px;
+
     }
 
     .mopen::after {
         bottom: 7px;
-    }
-
-    .mopen.on::before {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    .mopen.on::after {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    .mopen button {
-        border: none;
-        outline: none;
-        background: transparent;
     }
 
     .mopen button::before,
@@ -2064,8 +2053,13 @@
         right: 5px;
         height: 2px;
         background: #333;
+        top: 50%;
         top: calc(50% - 1px);
-        transition: 0.5s;
+    }
+
+    .mopen.on::before,
+    .mopen.on::after {
+        opacity: 0;
     }
 
     .mopen.on button::before {
@@ -2076,7 +2070,4 @@
         transform: rotate(-45deg);
     }
 
-    .mbr {
-        display: block;
-    }
 }
