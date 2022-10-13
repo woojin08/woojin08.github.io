@@ -1051,7 +1051,7 @@ html {
     }
 
     .cover li {
-        margin: 0 0 40px 0;
+        margin: 0 0 30px 0;
         font-size: 35px;
     }
 
@@ -1152,6 +1152,7 @@ html {
     .song-wrap .song-header .title {
         color: #000;
         font-size: 35px;
+        font-weight: 800;
         letter-spacing: 0.5rem;
     }
 
@@ -1613,7 +1614,7 @@ html {
     .leader-wrap {
         background: url("../img/about_company3_img.png") no-repeat 50%;
         background-size: contain;
-        padding: 10rem 0;
+        padding: 10rem 0 0 0;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -1671,6 +1672,7 @@ html {
     .leader-wrap .leader-header .title {
         color: #333;
         font-size: 35px;
+        font-weight: 800;
         letter-spacing: 0.5rem;
     }
 
@@ -1689,15 +1691,15 @@ html {
     }
 
     .mainVisual_main .mainSlider .itm01 {
-        background: url(../img/leader_img01.png) no-repeat 60%;
+        background: url(../img/leader_img01.png) no-repeat 62%;
     }
 
     .mainVisual_main .mainSlider .itm02 {
-        background: url(../img/leader_img02.png) no-repeat 60%;
+        background: url(../img/leader_img02.png) no-repeat 62%;
     }
 
     .mainVisual_main .mainSlider .itm03 {
-        background: url(../img/leader_img03.png) no-repeat 60%;
+        background: url(../img/leader_img03.png) no-repeat 62%;
     }
 
 
@@ -1715,20 +1717,20 @@ html {
     }
 
     .mainVisual_main .mainSlider .inner h2 {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 700;
-        margin: 100px 0 20px 30px;
+        margin: 130px 0 10px 50px;
     }
 
     .mainVisual_main .mainSlider .inner span {
         padding: 0 0 0 10px;
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .mainVisual_main .mainSlider .inner p {
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 400;
-        margin: 0 0 5px 30px;
+        margin: 0 0 5px 50px;
     }
 
     .mainVisual_main .mainSlider .inner a {
