@@ -1009,13 +1009,6 @@
         overflow-x: hidden;
     }
 
-
-    .Wrapper {
-        min-width: 320px;
-        overflow-x: hidden;
-    }
-
-
     .header {
         line-height: 100px;
         flex-direction: column;
