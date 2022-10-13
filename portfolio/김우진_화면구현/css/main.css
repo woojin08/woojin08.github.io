@@ -1166,12 +1166,12 @@
 
 
     .mainVisual .itm01 {
-        background: url(../img/220613_pc.jpg) no-repeat center center/cover;
+        background: url(../img/220613_pc.jpg) 42% 50% repeat-x;
     }
 
 
     .mainVisual .itm02 {
-        background: url(../img/220613_pc2.jpg) 75% 50% repeat-x;
+        background: url(../img/220613_pc2.jpg) 82% 50% repeat-x;
 
     }
 
@@ -1181,11 +1181,11 @@
     } */
 
     .mainVisual .itm03 {
-        background: url(../img/04.jpg) 95% 50% repeat-x;
+        background: url(../img/04.jpg) 93.6% 50% repeat-x;
     }
 
     .mainVisual .itm04 {
-        background: url(../img/220615_capsule_main_pc_1.jpg) 95% 50% repeat-x;
+        background: url(../img/220615_capsule_main_pc_1.jpg) 92.5% 50% repeat-x;
     }
 
     /* .mainVisual .itm03.on {
@@ -1859,7 +1859,7 @@
     .toTop {
         display: none;
         position: fixed;
-        inset: auto 5px 130px auto;
+        inset: auto -5px 15px auto;
     }
 
     .toTop img {
