@@ -724,9 +724,9 @@
 
 
 #footer {
-    min-width: 1200px;
+    /* min-width: 1200px;
     width: 100%;
-    max-width: 1807px;
+    max-width: 1807px; */
     margin: 0 auto;
     border-top: 1px solid #000;
     text-align: center;
@@ -1002,7 +1002,7 @@
         overflow-x: hidden;
     }
 
-    .body {
+    body {
         /* font-size: 1.6rem;
         letter-spacing: -0.025em;
         line-height: 1.45; */
