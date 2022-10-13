@@ -975,7 +975,7 @@ html {
     }
 
 
-    .Wrapper {
+    .Wrap {
         min-width: 320px;
         overflow-x: hidden;
     }
@@ -1079,6 +1079,7 @@ html {
     /* youtub */
     .mainVisual .video {
         height: 100vh;
+        width: 100%;
     }
 
 
