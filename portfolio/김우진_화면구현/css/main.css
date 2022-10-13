@@ -1042,9 +1042,7 @@
     /* mopen */
     .gnb {
         position: fixed;
-        top: 0;
         left: -100%;
-        width: calc(100% - 90px);
         min-width: 300px;
         height: 100vh;
         background: #fff;
