@@ -1261,7 +1261,7 @@
     } */
 
     .serviceTab .tab_menu {
-        padding-right: 725px;
+        padding-right: 780px;
     }
 
     .serviceTab .tab_menu ul {
@@ -1320,7 +1320,9 @@
         padding: 10px 15px;
     } */
 
-    .tab_content {}
+    .tab_content {
+        width: 80%;
+    }
 
     .tab_content .notice a {
         flex-direction: column;
@@ -1519,7 +1521,7 @@
     }
 
     .main_bn .flex {
-        width: 485px;
+        width: 400px;
         margin: 0 auto;
         display: flex;
         overflow: hidden;
@@ -1711,7 +1713,7 @@
         display: flex;
         width: 100%;
         margin: 0 auto;
-        gap: 70px;
+        /* gap: 70px; */
     }
 
     /* 
