@@ -1053,6 +1053,7 @@ html {
     .cover li {
         margin: 0 0 30px 0;
         font-size: 35px;
+        font-weight: 800;
     }
 
 
@@ -1118,14 +1119,14 @@ html {
         margin-bottom: 5rem;
     }
 
-    /* 
+
     .song-wrap .song-header .title {
         font-size: 4.5rem;
         font-weight: 600;
         color: #4EAFDE;
-    } */
+    }
 
-    /* .song-wrap .song-header .more {
+    .song-wrap .song-header .more {
         font-weight: 600;
         font-size: 1.8rem;
         line-height: 30px;
@@ -1133,7 +1134,7 @@ html {
         letter-spacing: 0.2em;
         text-transform: lowercase;
         color: #000000;
-    } */
+    }
 
     .song-wrap .song-header .more a {
         color: #000;
@@ -1158,6 +1159,7 @@ html {
 
     .song-wrap .song-header .more {
         font-size: 1.5rem;
+        font-weight: 700;
     }
 
     .song-wrap .song-contents {
