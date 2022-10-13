@@ -737,9 +737,8 @@
     width: 100%;
     max-width: 1400px; */
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 70px 235px 70px 0;
     font-size: 0;
-    padding-left: 90px;
 
 }
 
@@ -960,9 +959,7 @@
     display: none;
 }
 
-.mbr {
-    display: none;
-}
+
 
 
 
@@ -999,9 +996,6 @@
 
 
 @media(max-width: 768px) {
-    /* html {
-        font-size: 8px;
-    } */
 
     .Wrap {
         position: relative;
@@ -1015,16 +1009,9 @@
         overflow-x: hidden;
     }
 
-
-    .Wrapper {
-        min-width: 320px;
-        overflow-x: hidden;
-    }
-
-
     .header {
         line-height: 100px;
-
+        flex-direction: column;
     }
 
     /* .header i {
@@ -1344,7 +1331,7 @@
     }
 
     .tab_content .notice .crop {
-        margin: 0 0 0 1px;
+        margin: 0 0 0 0px;
     }
 
     .tab_content .notice p {
@@ -1356,7 +1343,7 @@
     .tab_content .notice figure {
         position: relative;
         padding-left: 50px;
-        width: 38%;
+        width: 36%;
     }
 
     .tab_content .notice figure::after {
@@ -1784,7 +1771,7 @@
     }
 
     #footer .ft_box .shopinfo {
-        padding: 20px 300px 0 0;
+        padding: 20px 715px 0 0;
     }
 
     #footer .ft_box .ft_pay>li:first-child a {
