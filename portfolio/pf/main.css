@@ -181,7 +181,7 @@ body {
 
 
 /* .pf-right */
-
+/* 
 
 
 
@@ -219,14 +219,7 @@ body {
 
 .Sns .container figure:hover .link {
     top: 0;
-}
-
-.mainVisual .box {
-    height: 618px;
-    width: 90%;
-    /* overflow: hidden; */
-    right: 0;
-}
+} */
 
 /* .Sns .container .link {
     position: absolute;
@@ -242,16 +235,6 @@ body {
     align-items: center;
     transition: 0.5s;
 } */
-
-
-
-
-
-
-
-
-
-
 
 
 
