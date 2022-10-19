@@ -168,7 +168,7 @@ body {
 }
 
 .Story {
-    background: #F5F2ED
+    background: #F5F2ED;
 }
 
 
@@ -522,4 +522,36 @@ body {
     100% {
         top: -910px;
     }
+}
+
+
+/* ddddddddddd */
+$bg: #252329;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: $bg;
+}
+
+
+// REQUIRED STYLES
+// ==========================================================
+
+.ball {
+    $size: 100px;
+    border-radius: 80%;
+    height: $size;
+    width: $size;
+    transform:
+        translateX(calc(var(--mouse-x) * 0.2px)) translateY(calc(var(--mouse-y) * 0.2px));
+    background: goldenrod;
 }
