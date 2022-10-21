@@ -1,3 +1,7 @@
+.Wrap {
+    position: relative;
+}
+
 .header {
     line-height: 100px;
 
@@ -56,7 +60,6 @@
 .header .gnb>ul>li:hover .smenu {
     display: block;
 }
-
 
 
 .main_visual {
@@ -200,10 +203,11 @@
 
 
 
-/* .serviceTab .tab_menu {
-    display: block;
-    float: none;
-} */
+.serviceTab .tab_menu {
+    /* display: block;
+    float: none; */
+    margin-bottom: 80px;
+}
 
 
 .serviceTab .tab_menu ul {
@@ -262,10 +266,14 @@
     padding: 10px 15px;
 } */
 
+.tab_content {
+    /* margin: 0 auto; */
+}
 
 .tab_content .notice a {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 
 
 }
@@ -274,16 +282,16 @@
 
 .tab_content .notice img {
     position: relative;
-    padding: 80px 0 0 10px;
+    /* padding: 80px 0 0; */
     overflow: hidden;
     min-width: 0;
-    width: 300px;
+    width: 100%;
 
 }
 
-.tab_content .notice .crop {
+/* .tab_content .notice .crop {
     margin: 0 0 0 -10px;
-}
+} */
 
 .tab_content .notice p {
     padding: 10px 0 0 0;
@@ -294,18 +302,16 @@
 .tab_content .notice figure {
     position: relative;
     flex: 1;
+    width: calc(50% - 15px);
 }
 
 .tab_content .notice figure::after {
-    content: "";
+    content: attr(data-title);
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 3px;
-    border-bottom: 1px solid #ddd;
-    transition: 0.5s;
+    top: 20px;
+    left: 0;
+    z-index: 999;
+    color: #fff;
 
 }
 
@@ -1029,8 +1035,13 @@
     .header .container {
         display: flex;
         justify-content: space-between;
-        width: 1200px;
+        width: auto;
         margin: 0 auto;
+
+        /* display: flex;
+        width: auto;
+        margin: 0 auto;
+        padding: 0 15px; */
     }
 
     .header .container h1 {
@@ -1112,6 +1123,7 @@
 
     .header .gnb>ul>li:hover .smenu {
         display: block;
+        /* position: inherit; */
     }
 
 
@@ -1138,6 +1150,7 @@
     .mainVisual .mainSlider figure {
         position: relative;
         height: 750px;
+
 
     }
 
@@ -1261,7 +1274,9 @@
     } */
 
     .serviceTab .tab_menu {
-        padding-right: 780px;
+        /* padding-right: 780px; */
+        position: absolute;
+        width: 100%;
     }
 
     .serviceTab .tab_menu ul {
@@ -1321,7 +1336,9 @@
     } */
 
     .tab_content {
-        width: 80%;
+        width: 100%;
+        margin-top: 50px;
+
     }
 
     .tab_content .notice a {
@@ -1336,6 +1353,7 @@
 
     .tab_content .notice .crop {
         margin: 0 0 0 0px;
+
     }
 
     .tab_content .notice p {
@@ -1346,26 +1364,21 @@
 
     .tab_content .notice figure {
         position: relative;
-        padding-left: 50px;
-        width: 36%;
+        /* padding-left: 50px; */
+        width: 100vw;
     }
 
     .tab_content .notice figure::after {
-        content: "";
+        content: attr(data-title);
         position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 3px;
-        border-bottom: 1px solid #ddd;
-        transition: 0.5s;
+        top: 20px;
+        left: 0;
+        z-index: 999;
+        color: #fff;
 
     }
 
-    .tab_content .notice figure:hover::after {
-        width: 60%;
-    }
+
 
     .tab_content .notice span {
         padding: 10px;
@@ -1382,10 +1395,6 @@
         word-break: break-all;
         font-weight: normal;
         color: #000;
-    }
-
-    .function p {
-        padding: 0 0 0 -300px;
     }
 
     .goods_list {
@@ -1521,7 +1530,7 @@
     }
 
     .main_bn .flex {
-        width: 400px;
+        width: 100vw;
         margin: 0 auto;
         display: flex;
         overflow: hidden;
@@ -1688,30 +1697,30 @@
 
     .section02 h2 {
         padding: 90px 0 0 0;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 700;
         margin: 0 0 20px 0;
     }
 
     .section02 h3 {
-        padding: 0;
+        /* padding: 0; */
         font-size: 30px;
         font-weight: 700;
-        margin: 0 0 20px 0;
+        margin: -130px 0 20px 0;
     }
 
     .section02 p {
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 500;
         margin: 0 0 50px 0;
         line-height: 1.6;
         letter-spacing: 1px;
-
+        padding: 0 10px;
     }
 
     .scrollme .container {
-        display: flex;
-        width: 100%;
+        display: contents;
+        /* width: 100%; */
         margin: 0 auto;
         /* gap: 70px; */
     }
@@ -1771,11 +1780,13 @@
     #footer .ft_box .ft_pay {
         display: inline-block;
         vertical-align: top;
-        padding-right: 170px;
+        /* padding-right: 170px; */
+        text-align: center;
     }
 
     #footer .ft_box .shopinfo {
         padding: 20px 0 0 0;
+        text-align: center;
     }
 
     #footer .ft_box .ft_pay>li:first-child a {
@@ -1827,17 +1838,21 @@
     }
 
     #footer .shopinfo .ft_menu {
+        /* display: flex; */
+        text-align: center;
+        margin: 10px 0;
         font-size: 0;
     }
 
     #footer .shopinfo .ft_menu>li {
-        display: inline-block;
+        display: contents;
         padding: 0 10px;
         vertical-align: top;
         margin: 0 0 10px 0;
     }
 
     #footer .shopinfo .ft_menu>li a {
+        margin: 0 4px;
         color: #010101;
         font-size: 13px;
         font-weight: 700;
@@ -1917,7 +1932,6 @@
 
     .movie video {
         max-width: 100%;
-
     }
 
     .movie .right {
