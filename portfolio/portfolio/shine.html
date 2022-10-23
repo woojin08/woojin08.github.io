@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body {
+        background: black;
+        font-family: 'Poppins', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .btn-shine {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 12px 48px;
+        color: #ffffff;
+        background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+        background-position: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s infinite linear;
+        animation-fill-mode: forwards;
+        -webkit-text-size-adjust: none;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    @keyframes shine {
+        0% {
+            background-position: 0;
+        }
+
+        60% {
+
+            background-position: 230px;
+        }
+
+        100% {
+            background-position: 230px;
+        }
+    }
+</style>
+
+<body>
+    <section class="section mainVisual">
+        <div class="btn-shine" target="_blank">
+            <div class="left txt">
+                <div class="container">
+                    <strong> MY PORTFOLIO</strong>
+                    <h2>ㅇㅅㅇ김우진</h2>
+
+                    <!-- <p>프론트엔드 개발자<br />
+            김우진</p> -->
+                    <!-- <a href="">VIEW MORE</a> -->
+                </div>
+            </div>
+        </div>
+        <figure>
+            <!-- <div class="box">
+            <img src="./assets/imges/sns01.png" alt="">
+        </div> -->
+
+        </figure>
+    </section>
+    <!-- <a href="" class="btn-shine" target="_blank">Get early access</a> -->
+</body>
+
+</html>

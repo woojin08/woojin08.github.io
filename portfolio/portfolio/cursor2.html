@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .circle {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+        position: absolute;
+        border-radius: 15px;
+    }
+
+    body {
+        background: linear-gradient(320deg, #2ecc71 15%, #2980b9 85%) fixed;
+    }
+</style>
+
+<body>
+    <div class="cursor-wrapper">
+        <!-- 마우스 위치를 감지하고 위치를 변경하기 위한 wrapper -->
+        <div class="custom-cursor"></div>
+        <!--마우스 커서 모양 -->
+        <div class="cursor-text">DISCOVER</div>
+        <!-- 커서가 이미지 위에서 있을 때 표시해줄 텍스트-->
+    </div>
+    <!-- 마우스 커서보다 한 템포 느리게 뒤따라 오는 꼬리-->
+    <div class="cursor-tail"></div>
+</body>
+<script>
+    document.onmousemove = animateCircles; // circle follow mouse
+
+    var colors = ['#1abc9c', '#3498db', '#f1c40f']
+
+    function animateCircles(event) {
+        var circle = document.createElement("div");
+        circle.setAttribute("class", "circle");
+        document.body.appendChild(circle); // adds function to body
+
+        // adds motion
+        circle.style.left = event.clientX + 'px';
+        circle.style.top = event.clientY + 'px';
+
+        // randomize color
+        var color = colors[Math.floor(Math.random() * colors.length)];
+        circle.style.borderColor = color;
+
+        // adds animation
+        circle.style.transition = "all 0.5s linear 0s";
+
+        circle.style.left = circle.offsetLeft - 20 + 'px';
+        circle.style.top = circle.offsetTop - 20 + 'px';
+
+        circle.style.width = "50px";
+        circle.style.height = "50px";
+        circle.style.borderWidth = "5px";
+        circle.style.opacity = 0;
+    }
+</script>
+
+</html>
