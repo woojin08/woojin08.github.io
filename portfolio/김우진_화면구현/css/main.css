@@ -111,7 +111,7 @@
 
 
 .mainVisual .itm01 {
-    background: url(../img/220613_pc.jpg) no-repeat center center/cover;
+    background: url(../img/main01.jpg) no-repeat center center/cover;
 }
 
 /* .mainVisual .itm01.on {
@@ -120,7 +120,7 @@
 } */
 
 .mainVisual .itm02 {
-    background: url(../img/220613_pc2.jpg) no-repeat center center/cover;
+    background: url(../img/main02.jpg) no-repeat center center/cover;
 }
 
 /* .mainVisual .itm02.on {
@@ -129,11 +129,11 @@
 } */
 
 .mainVisual .itm03 {
-    background: url(../img/04.jpg) no-repeat center center/cover;
+    background: url(../img/main03.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .itm04 {
-    background: url(../img/220615_capsule_main_pc_1.jpg) no-repeat center center/cover;
+    background: url(../img/main04.jpg) no-repeat center center/cover;
 }
 
 /* .mainVisual .itm03.on {
@@ -654,7 +654,7 @@
 }
 
 .section02 h3 {
-    padding: 100px 0 0 0;
+    /* padding: 100px 0 0 0; */
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 20px 0;
@@ -753,6 +753,7 @@
 #footer .ft_box .ft_pay {
     display: inline-block;
     vertical-align: top;
+    line-height: 15px;
 }
 
 #footer .ft_box .ft_pay>li:first-child a {
@@ -1179,12 +1180,12 @@
 
 
     .mainVisual .itm01 {
-        background: url(../img/220613_pc.jpg) 42% 50% repeat-x;
+        background: url(../img/main01.jpg) 42% 50% repeat-x;
     }
 
 
     .mainVisual .itm02 {
-        background: url(../img/220613_pc2.jpg) 82% 50% repeat-x;
+        background: url(../img/main02.jpg) 82% 50% repeat-x;
 
     }
 
@@ -1194,11 +1195,11 @@
     } */
 
     .mainVisual .itm03 {
-        background: url(../img/04.jpg) 93.6% 50% repeat-x;
+        background: url(../img/main03.jpg) 93.6% 50% repeat-x;
     }
 
     .mainVisual .itm04 {
-        background: url(../img/220615_capsule_main_pc_1.jpg) 92.5% 50% repeat-x;
+        background: url(../img/main04.jpg) 92.5% 50% repeat-x;
     }
 
     /* .mainVisual .itm03.on {
@@ -1706,7 +1707,7 @@
         /* padding: 0; */
         font-size: 30px;
         font-weight: 700;
-        margin: -130px 0 20px 0;
+        margin: -65px 0 20px 0;
     }
 
     .section02 p {
