@@ -55,7 +55,6 @@ function songFirst() {
 
     songBtnPrev.addClass('first');
     songProcess();
-    // var item = $('.slide');
     songItem.each(function (index, count) {
         songPrev(true);
     });
@@ -111,6 +110,7 @@ songBtnPrev.on('click', function () {
     songNum();
 });
 
+
 // main3
 $('.mainSlider').on('init afterChange', function (e, s, c) {
     var current = $('.slick-current');
@@ -145,9 +145,10 @@ $('.gnb .left').hover(function () {
         $('.smenu').removeClass('on')
     })
 
-// youtu
 $('.mainVisual').YTPlayer({
-    videoURL: 'https://youtu.be/VCDWg0ljbFQ',
+    videoURL: 'https://youtu.be/js1CtxSY38I',
     containment: '.video', autoPlay: true, mute: true, startAt: 3, opacity: 1, showControls: false, playOnlyIfVisible: true,
 })
+
+
 
