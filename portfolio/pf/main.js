@@ -1,7 +1,9 @@
+
+
 $(function () {
-    var TXT = ['HOME', '01', '02', '03', '04', 'woojin portfolio', 'copyright']
+    var TXT = ['HOME', '01', '02', '03', '04', '05', 'contact', 'copyright']
     $('.main').fullpage({
-        anchors: ['page01', 'page02', 'page03', 'page04', 'page05', 'footer'],
+        anchors: ['HOME', 'page01', 'page02', 'page03', 'page04', 'page05', 'page06', 'contact'],
         //navigation: true,
         css3: false,
         afterLoad: function (page, num) {
@@ -20,12 +22,12 @@ $(function () {
     });
 
 
-    $('.basicSlider').slick({
-        arrows: false,
-        autoplay: true,
-        //pauseOnHover: true,
-        asNavFor: '.basicSlider',
-    });
+    // $('.pf-right').slick({
+    //     arrows: false,
+    //     autoplay: true,
+    //     //pauseOnHover: true,
+    //     asNavFor: '.basicSlider',
+    // });
 
 
     $('.productSlider .slide_menu li').on('click', function () {
@@ -47,14 +49,9 @@ $(function () {
         event.preventDefault()
     })
 
+
+
 })
 
-// sss
-var docStyle = document.documentElement.style;
 
-// setting CSS variables inside this JS where they 
-// can be declaratively used inside the CSS file.
-document.addEventListener('mousemove', function (e) {
-    docStyle.setProperty('--mouse-x', e.clientX);
-    docStyle.setProperty('--mouse-y', e.clientY);
-});
+
