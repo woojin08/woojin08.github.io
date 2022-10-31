@@ -1,4 +1,5 @@
 $(function () {
+    // cover 메뉴
     $('header i').on('click', function () {
         $('.cover').toggleClass('on')
     });
@@ -69,6 +70,7 @@ function songLast() {
 let playing = true;
 let lastNextCall = new Date();
 
+// 끝->다시 리턴
 function songPrev(force) {
     if (!playing) return;
     if ((force || !lastNextCall || new Date() - lastNextCall > 3000)) {
@@ -100,6 +102,9 @@ function songNext(force) {
         songSlider.find('.on').next().addClass('on').siblings().removeClass('on');
     }
 }
+
+// song next,prev
+
 setInterval(songNext, 100);
 songBtnNext.on('click', function () {
     songNext(true);
@@ -111,7 +116,7 @@ songBtnPrev.on('click', function () {
 });
 
 
-// main3
+// main3 leader
 $('.mainSlider').on('init afterChange', function (e, s, c) {
     var current = $('.slick-current');
     current.addClass('on').siblings().removeClass('on');
@@ -145,6 +150,7 @@ $('.gnb .left').hover(function () {
         $('.smenu').removeClass('on')
     })
 
+// ytb
 $('.mainVisual').YTPlayer({
     videoURL: 'https://youtu.be/js1CtxSY38I',
     containment: '.video', autoPlay: true, mute: true, startAt: 3, opacity: 1, showControls: false, playOnlyIfVisible: true,
