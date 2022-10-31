@@ -480,7 +480,7 @@
 }
 
 
-.section02 {
+.lookbook {
     display: flex;
     flex-direction: column;
     background: #f3f3f3;
@@ -489,7 +489,7 @@
     text-align: center;
 }
 
-.section02 .gnb a {
+.lookbook .gnb a {
     display: block;
     font-size: 14px;
     width: 100%;
@@ -498,34 +498,34 @@
 }
 
 
-.section02 .container {
+.lookbook .container {
     width: 1200px;
     margin: 0 auto;
     gap: 30px;
 
 }
 
-.section02 .container img {
+.lookbook .container img {
     max-width: 100%;
     padding: 0 0 100px 0;
 }
 
 
 
-.section02 h2 {
+.lookbook h2 {
     padding: 90px 0 0 0;
     font-size: 80px;
     font-weight: 700;
     margin: 0 0 20px 0;
 }
 
-.section02 h3 {
+.lookbook h3 {
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 20px 0;
 }
 
-.section02 p {
+.lookbook p {
     font-size: 15px;
     font-weight: 500;
     margin: 0 0 50px 0;
@@ -593,42 +593,42 @@
 }
 
 
-#footer {
+.footer {
     margin: 0 auto;
     border-top: 1px solid #000;
     text-align: center;
 }
 
-#footer .ft_box {
+.footer .ft_box {
     margin: 0 auto;
     padding: 70px 235px 70px 0;
     font-size: 0;
 
 }
 
-#footer .ft_box .ft_wrap,
-#footer .ft_box .shopinfo,
-#footer .ft_box .ft_pay {
+.footer .ft_box .ft_wrap,
+.footer .ft_box .shopinfo,
+.footer .ft_box .ft_pay {
     display: inline-block;
     vertical-align: top;
     line-height: 15px;
 }
 
-#footer .ft_box .ft_pay>li:first-child a {
+.footer .ft_box .ft_pay>li:first-child a {
     cursor: default;
 }
 
-#footer .ft_wrap {
+.footer .ft_wrap {
     text-align: left;
 }
 
-#footer .ft_wrap .cs_title {
+.footer .ft_wrap .cs_title {
     color: #010101;
     font-size: 13px;
     letter-spacing: 0.05rem;
 }
 
-#footer .ft_wrap .cs_box strong {
+.footer .ft_wrap .cs_box strong {
     color: #010101;
     font-size: 22px;
     font-weight: 900;
@@ -636,20 +636,20 @@
     letter-spacing: 0.05rem;
 }
 
-#footer .ft_wrap .cs_box p {
+.footer .ft_wrap .cs_box p {
     color: #626262;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.05rem;
 }
 
-#footer .shopinfo {
+.footer .shopinfo {
     padding: 0 135px;
     text-align: left;
 }
 
-#footer .shopinfo .info,
-#footer .shopinfo .info * {
+.footer .shopinfo .info,
+.footer .shopinfo .info * {
     color: #010101;
     font-size: 12px;
     font-style: normal;
@@ -657,36 +657,36 @@
     line-height: 13px;
 }
 
-#footer .shopinfo .info span {
+.footer .shopinfo .info span {
     position: relative;
     padding: 0 6px;
 }
 
-#footer .shopinfo .ft_menu {
+.footer .shopinfo .ft_menu {
     font-size: 0;
 }
 
-#footer .shopinfo .ft_menu>li {
+.footer .shopinfo .ft_menu>li {
     display: inline-block;
     padding: 0 10px;
     vertical-align: top;
     margin: 0 0 10px 0;
 }
 
-#footer .shopinfo .ft_menu>li a {
+.footer .shopinfo .ft_menu>li a {
     color: #010101;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.05rem;
 }
 
-#footer .shopinfo .copyright {
+.footer .shopinfo .copyright {
     margin-top: 9px;
     color: #000;
     font-size: 13px;
 }
 
-#footer .shopinfo .copyright a {
+.footer .shopinfo .copyright a {
     color: #000;
     font-size: 13px;
 }
@@ -736,11 +736,11 @@
     max-width: 100%;
 }
 
-.section02 .movie {
+.lookbook .movie {
     padding: 400px;
 }
 
-.section02 .movie .container {
+.lookbook .movie .container {
     display: flex;
     gap: 30px;
     width: 1200px;
@@ -748,7 +748,7 @@
 
 }
 
-.section02 .movie .container>div {
+.lookbook .movie .container>div {
     flex: 1;
 }
 
@@ -1451,7 +1451,7 @@
     }
 
 
-    .section02 {
+    .lookbook {
         display: flex;
         flex-direction: column;
         background: #f3f3f3;
@@ -1460,7 +1460,7 @@
         text-align: center;
     }
 
-    .section02 .gnb a {
+    .lookbook .gnb a {
         display: block;
         font-size: 14px;
         width: 100%;
@@ -1468,16 +1468,16 @@
 
     }
 
-    /* .section02 .gnb>ul {
+    /* .lookbook .gnb>ul {
         display: flex;
         gap: 50px;
     } */
 
-    /* .section02 .gnb>ul>li {
+    /* .lookbook .gnb>ul>li {
         position: relative;
     } */
 
-    /* .section02 .gnb>ul>li .smenu {
+    /* .lookbook .gnb>ul>li .smenu {
         position: absolute;
         top: 90;
         left: 50%;
@@ -1491,62 +1491,62 @@
         z-index: 999;
     } */
 
-    /* .section02 .gnb>ul>li:hover .smenu {
+    /* .lookbook .gnb>ul>li:hover .smenu {
         display: block;
     } */
 
 
-    .section02 .container {
+    .lookbook .container {
         width: 1200px;
         margin: 0 auto;
         gap: 30px;
 
     }
 
-    .section02 .container img {
+    .lookbook .container img {
         max-width: 100%;
         padding: 0 0 100px 0;
     }
 
-    /* .section02 .container .left {
+    /* .lookbook .container .left {
         transform: translate(-20%, 0%);
         transition: all 1s ease;
         opacity: 0;
     }
     
-    .section02 .container:hover .left {
+    .lookbook .container:hover .left {
         transform: translate(-10%, 0%);
         opacity: 1;
     
     }
     
-    .section02 .container .right {
+    .lookbook .container .right {
         transform: translate(60%, -50%);
         transition: all 1s ease;
         opacity: 0;
     }
     
-    .section02 .container:hover .right {
+    .lookbook .container:hover .right {
         transform: translate(50%, -50%);
         opacity: 1;
     
     } */
 
-    .section02 h2 {
+    .lookbook h2 {
         padding: 90px 0 0 0;
         font-size: 45px;
         font-weight: 700;
         margin: 0 0 20px 0;
     }
 
-    .section02 h3 {
+    .lookbook h3 {
         /* padding: 0; */
         font-size: 30px;
         font-weight: 700;
         margin: -65px 0 20px 0;
     }
 
-    .section02 p {
+    .lookbook p {
         font-size: 15px;
         font-weight: 500;
         margin: 0 0 50px 0;
@@ -1592,7 +1592,7 @@
     } */
 
 
-    #footer {
+    .footer {
         /* min-width: 400px; */
         /* width: 100%; */
         /* max-width: 1807px; */
@@ -1601,7 +1601,7 @@
         text-align: center;
     }
 
-    #footer .ft_box {
+    .footer .ft_box {
         /* min-width: 1200px;
         width: 100%;
         max-width: 1400px; */
@@ -1612,35 +1612,35 @@
 
     }
 
-    #footer .ft_box .ft_wrap,
-    /* #footer .ft_box .shopinfo, */
-    #footer .ft_box .ft_pay {
+    .footer .ft_box .ft_wrap,
+    /* .footer .ft_box .shopinfo, */
+    .footer .ft_box .ft_pay {
         display: inline-block;
         vertical-align: top;
         /* padding-right: 170px; */
         text-align: center;
     }
 
-    #footer .ft_box .shopinfo {
+    .footer .ft_box .shopinfo {
         padding: 20px 0 0 0;
         text-align: center;
     }
 
-    #footer .ft_box .ft_pay>li:first-child a {
+    .footer .ft_box .ft_pay>li:first-child a {
         cursor: default;
     }
 
-    #footer .ft_wrap {
+    .footer .ft_wrap {
         text-align: left;
     }
 
-    #footer .ft_wrap .cs_title {
+    .footer .ft_wrap .cs_title {
         color: #010101;
         font-size: 13px;
         letter-spacing: 0.05rem;
     }
 
-    #footer .ft_wrap .cs_box strong {
+    .footer .ft_wrap .cs_box strong {
         color: #010101;
         font-size: 22px;
         font-weight: 900;
@@ -1648,20 +1648,20 @@
         letter-spacing: 0.05rem;
     }
 
-    #footer .ft_wrap .cs_box p {
+    .footer .ft_wrap .cs_box p {
         color: #626262;
         font-size: 15px;
         font-weight: 400;
         letter-spacing: 0.05rem;
     }
 
-    #footer .shopinfo {
+    .footer .shopinfo {
         padding: 0 135px;
         text-align: left;
     }
 
-    #footer .shopinfo .info,
-    #footer .shopinfo .info * {
+    .footer .shopinfo .info,
+    .footer .shopinfo .info * {
         color: #010101;
         font-size: 12px;
         font-style: normal;
@@ -1669,26 +1669,26 @@
         line-height: 13px;
     }
 
-    #footer .shopinfo .info span {
+    .footer .shopinfo .info span {
         position: relative;
         padding: 0 6px;
     }
 
-    #footer .shopinfo .ft_menu {
+    .footer .shopinfo .ft_menu {
         /* display: flex; */
         text-align: center;
         margin: 10px 0;
         font-size: 0;
     }
 
-    #footer .shopinfo .ft_menu>li {
+    .footer .shopinfo .ft_menu>li {
         display: contents;
         padding: 0 10px;
         vertical-align: top;
         margin: 0 0 10px 0;
     }
 
-    #footer .shopinfo .ft_menu>li a {
+    .footer .shopinfo .ft_menu>li a {
         margin: 0 4px;
         color: #010101;
         font-size: 13px;
@@ -1696,13 +1696,13 @@
         letter-spacing: 0.05rem;
     }
 
-    #footer .shopinfo .copyright {
+    .footer .shopinfo .copyright {
         margin-top: 9px;
         color: #000;
         font-size: 13px;
     }
 
-    #footer .shopinfo .copyright a {
+    .footer .shopinfo .copyright a {
         color: #000;
         font-size: 13px;
     }
@@ -1750,11 +1750,11 @@
         max-width: 100%;
     }
 
-    .section02 .movie {
+    .lookbook .movie {
         padding: 400px;
     }
 
-    .section02 .movie .container {
+    .lookbook .movie .container {
         display: flex;
         gap: 30px;
         width: 1200px;
@@ -1763,7 +1763,7 @@
 
     }
 
-    .section02 .movie .container>div {
+    .lookbook .movie .container>div {
         flex: 1;
     }
 
