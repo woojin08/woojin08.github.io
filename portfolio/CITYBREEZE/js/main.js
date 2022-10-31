@@ -1,9 +1,4 @@
 $(function () {
-    //topBanner
-    $('.topBanner i').on('click', function () {
-        $('.topBanner').slideUp();
-    });
-
     // mainslider
     $('.mainSlider').on('init afterChange', function (e, s, c) {
         var current = $('.slick-current');
@@ -26,8 +21,7 @@ $(function () {
     });
 
 
-
-    // tap
+    // tap menu
     $('.tab_menu li').on('click', function (event) {
         event.preventDefault();
         $('.tab_menu li').removeClass('on');
@@ -56,7 +50,7 @@ $(function () {
         }
     });
 
-    $(window).on('section02', function () {
+    $(window).on('lookbook', function () {
         var sct = $(window).scrollTop();
         if (sct > 500) {
             $('.toTop').fadeIn(300)
