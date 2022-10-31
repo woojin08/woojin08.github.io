@@ -105,7 +105,7 @@ header i {
 
 }
 
-/* youtub */
+/*main youtub */
 .mainVisual .video {
     height: 100vh;
 }
@@ -125,6 +125,7 @@ html {
     box-sizing: border-box;
 }
 
+/* song-slide */
 .song-wrap {
     background: #EAF0F3;
     width: 100%;
@@ -297,6 +298,7 @@ html {
     overflow: hidden;
 }
 
+/* 앨범 움직임 slide  */
 .song-wrap .song-contents .slider-wrap .slide .album {
     transition: all .5s;
 }
@@ -325,6 +327,7 @@ html {
     text-align: center;
 }
 
+/* bar */
 .song-wrap .song-contents .btn-box .paging .process-bar {
     width: 4rem;
     margin: -.4rem .8rem 0;
@@ -339,20 +342,6 @@ html {
     transition: all 3s;
 }
 
-.song-wrap .song-contents .btn-box .paging .process-bar .process.on {
-    animation: progress ease 3s;
-    animation-iteration-count: infinite;
-}
-
-.song-wrap .song-contents .btn-box .paging .process-bar .process.pause {
-    animation-play-state: paused;
-}
-
-.song-wrap .song-contents .btn-box .paging .process-bar .process.restart {
-    animation: progress ease-out 3s;
-    animation-iteration-count: infinite;
-}
-
 .song-wrap .song-contents .btn-box .nav-box {
     display: flex;
     margin-top: .5rem;
@@ -364,27 +353,8 @@ html {
     margin: 0 .5rem;
 }
 
-@keyframes progress {
-    0% {
-        width: 0;
-    }
 
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes song {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(1000%);
-    }
-}
-
-/* Artist */
+/* Artist 소개*/
 .Artist {}
 
 .artist-wrap {
@@ -422,7 +392,6 @@ html {
     color: #000;
     text-decoration: none;
 }
-
 
 
 .artist-wrap .artist-header {
@@ -639,7 +608,7 @@ html {
 }
 
 
-/* leader */
+/* leader 소개*/
 .leader-wrap {
     background: url("../img/about_company3_img.png") no-repeat 50%;
     /* background-color: #F7F7F7; */
@@ -659,6 +628,19 @@ html {
     height: 70%;
 }
 
+.artist-wrap {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.artist-wrap .inner {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 70%;
+}
 
 .leader-wrap .leader-header {
     display: flex;
@@ -712,7 +694,7 @@ html {
 
 .mainVisual_main .mainSlider figure {
     position: relative;
-    height: 550px;
+    height: 605px;
 
 }
 
@@ -728,10 +710,6 @@ html {
     background: url(../img/leader_img03.png) no-repeat center center/cover;
 }
 
-/* 
-.mainVisual .mainSlider .itm04 {
-    background: url(../img/leader_img04.png) no-repeat center center/cover;
-} */
 
 .mainVisual_main .mainSlider .inner {
     position: absolute;
@@ -747,7 +725,7 @@ html {
 }
 
 .mainVisual_main .mainSlider .inner h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     margin: 0 0 30px 0;
 }
@@ -833,7 +811,6 @@ html {
     position: absolute;
     inset: 57% auto auto 50%;
     transform: translate(-50%, -50%);
-    /* 투명하게 */
     color: rgba(255, 255, 255, 0.5);
     font-size: 100px;
 
@@ -1263,7 +1240,6 @@ html {
     .song-wrap .song-contents .slider-wrap .slide .info-box .title {
         font-size: 3.2rem;
         line-height: 4.5rem;
-        /* max-height: 27.5rem; */
         overflow: hidden;
     }
 
@@ -1702,8 +1678,6 @@ html {
     .mainVisual_main .mainSlider .inner {
         position: absolute;
         inset: 50% auto auto 50%;
-        /* width: 500px;
-        padding-top: 150px; */
         transform: translate(-20%, -20%);
         color: #fff;
 
