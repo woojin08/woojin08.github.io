@@ -235,17 +235,20 @@
 .tab_content .notice figure {
     position: relative;
     flex: 1;
-    width: calc(50% - 15px);
 }
 
 .tab_content .notice figure::after {
-    content: attr(data-title);
+    content: "";
     position: absolute;
-    top: 20px;
-    left: 0;
-    z-index: 999;
-    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.5s;
 }
+
 
 .tab_content .notice figure:hover::after {
     width: 60%;
