@@ -1252,15 +1252,16 @@ html {
     .song-wrap .song-contents .slider-wrap .slide .album img {
         position: relative;
         width: 100%;
-        height: 25rem;
+        height: 100%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     .song-wrap .song-contents .btn-box {
         z-index: 1;
         display: flex;
-        font-size: 1.3rem;
-        padding-top: 10rem;
+        font-size: 1.5rem;
+        padding-top: 50%;
+        justify-content: center;
         color: #009BD2;
     }
 
@@ -1794,7 +1795,7 @@ html {
         font-size: 1.4rem;
         font-weight: 300;
         line-height: 1.8;
-        padding-left: 20px;
+        text-align: center;
     }
 
     .ft .container_a {
@@ -1802,7 +1803,7 @@ html {
         width: 100%;
         font-size: 13px;
         margin: 0 auto;
-        /* padding: 0 0.75rem; */
+        justify-content: center;
     }
 
     .ft .container_a strong {
