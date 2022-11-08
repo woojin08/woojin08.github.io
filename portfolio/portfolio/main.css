@@ -1677,10 +1677,10 @@ body {
     /* 컴퓨터화면-EQ */
     .box-wrap3 {
         position: absolute;
-        top: 20px;
+        top: 50px;
         left: 0px;
         background: none;
-        height: 40%;
+        height: 36%;
         width: 100%;
         overflow: hidden;
         border: 1px solid #333;
