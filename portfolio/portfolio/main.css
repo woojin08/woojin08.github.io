@@ -593,7 +593,7 @@ body {
 .hk a {
     display: inline-block;
     padding: 13px 23px;
-    border: 1px solid #A4B4CA;
+    border: 1px solid #AECAEF;
     background: #fff;
     color: #000;
     align-self: flex-start;
@@ -602,7 +602,7 @@ body {
 
 .hk a:hover {
     padding: 13px 23px;
-    background: #AECAEF;
+    background: #044ACE;
     color: #fff;
     align-self: flex-start;
 }
@@ -1497,7 +1497,7 @@ body {
     .pl a {
         display: inline-block;
         padding: 8px 18px;
-        border: 1px solid #AECAEF;
+        border: 1px solid #8CBDED;
         background: #fff;
         color: #000;
         align-self: flex-start;
@@ -1524,7 +1524,7 @@ body {
     .hk a {
         display: inline-block;
         padding: 8px 18px;
-        border: 1px solid #A4B4CA;
+        border: 1px solid #AECAEF;
         background: #fff;
         color: #000;
         align-self: flex-start;
