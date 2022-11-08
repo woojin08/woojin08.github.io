@@ -38,35 +38,20 @@ window.addEventListener('scroll', () => {
 // aw
 var swiper = new Swiper(".mySwiperr", {
     scrollbar: {
-      el: ".swiper-scrollbar",
-      hide: false,
+        el: ".swiper-scrollbar",
+        hide: false,
     },
-  });
-  var swiper = new Swiper(".mySwiperr", {
+});
+var swiper = new Swiper(".mySwiperr", {
     slidesPerView: 3,
     spaceBetween: 40,
 
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
 
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     type: "progressbar",
-    //     clickable: true,
-
-    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 });
-
 
 
 
