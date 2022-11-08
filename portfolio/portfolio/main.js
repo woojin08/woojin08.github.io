@@ -6,8 +6,8 @@ $(function () {
         anchors: ['HOME', 'page01', 'page02', 'page03', 'page04', 'page05', 'page06', 'contact'],
         //navigation: true,
         css3: false,
+        // responsiveWidth: 768,
         afterLoad: function (page, num) {
-            //애니메이션을 큐스텍에 담아서 딜레이 시킴...
             setTimeout(function () {
                 $('.section').eq(num - 1).addClass('on').siblings().removeClass('on');
             });
@@ -20,15 +20,6 @@ $(function () {
                 : $('.Header').removeClass('on')
         },
     });
-
-
-    // $('.pf-right').slick({
-    //     arrows: false,
-    //     autoplay: true,
-    //     //pauseOnHover: true,
-    //     asNavFor: '.basicSlider',
-    // });
-
 
     $('.productSlider .slide_menu li').on('click', function () {
         var idx = $(this).index();
@@ -49,7 +40,7 @@ $(function () {
         event.preventDefault()
     })
 
-    // bubble
+    // bubble 효과
 
     jQuery(document).ready(function ($) {
 
@@ -84,12 +75,8 @@ $(function () {
                 $(this).remove()
             }
             );
-
-
         }, 350);
-
     });
-
 })
 
 
