@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     /* padding-top: 70px; */
-    padding: 120px 90px 0 90px;
+    padding: 128px 90px 0 90px;
 }
 
 .txt strong {
@@ -1826,7 +1826,7 @@ body {
         width: 89px;
         height: 190px;
         position: absolute;
-        top: 6px;
+        top: 5px;
         border-radius: 10px;
         overflow: hidden;
         opacity: 0;
