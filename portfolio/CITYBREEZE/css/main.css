@@ -1291,7 +1291,7 @@
         left: 50%;
         transform: translate(-20%, -50%);
         color: #1b1b1b;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 300;
         letter-spacing: 0.030em;
         transition: all 1s ease;
@@ -1310,7 +1310,7 @@
         left: 50%;
         transform: translate(-80%, -50%);
         color: #1b1b1b;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 300;
         letter-spacing: 0.030em;
         transition: all 1s ease;
@@ -1415,6 +1415,7 @@
         margin: 0 auto;
         padding: 70px 0;
         font-size: 0;
+        word-break: keep-all;
     }
 
     .footer .ft_box .ft_wrap,
