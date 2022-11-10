@@ -6,7 +6,7 @@ $(function () {
         anchors: ['HOME', 'page01', 'page02', 'page03', 'page04', 'page05', 'page06', 'contact'],
         //navigation: true,
         css3: false,
-        responsiveWidth: 768,
+        // responsiveWidth: 768,
         afterLoad: function (page, num) {
             setTimeout(function () {
                 $('.section').eq(num - 1).addClass('on').siblings().removeClass('on');
