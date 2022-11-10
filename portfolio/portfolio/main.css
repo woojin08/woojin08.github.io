@@ -1954,7 +1954,7 @@ body {
         font-size: 13px;
         color: #fff;
         position: relative;
-        bottom: -20px;
+        top: -52px;
         left: 0;
         line-height: 14px;
         letter-spacing: 1.2px;
@@ -1984,10 +1984,12 @@ body {
         font-size: 13px;
         color: #fff;
         position: relative;
-        top: -50px;
-        left: 20px;
+        top: -40px;
+        left: 0;
         line-height: 18px;
         letter-spacing: 1.2px;
     }
+
+
 
 }
