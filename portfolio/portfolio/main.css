@@ -1848,7 +1848,7 @@ body {
 
 
     .n-iphone02:hover img {
-        animation: linear iphone2 9s infinite;
+        animation: linear iphone2 5s infinite;
     }
 
     @keyframes iphone2 {
