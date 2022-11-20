@@ -1637,7 +1637,7 @@ body {
         }
 
         50% {
-            transform: translateY(-1050px);
+            transform: translateY(-1550px);
         }
 
         100% {
@@ -1664,7 +1664,7 @@ body {
     }
 
     .box-wrap2:hover img {
-        animation: linear HB 6s infinite;
+        animation: linear HB 8s infinite;
     }
 
     @keyframes HB {
@@ -1673,7 +1673,7 @@ body {
         }
 
         50% {
-            transform: translateY(-670px);
+            transform: translateY(-1000px);
         }
 
         100% {
@@ -1701,7 +1701,7 @@ body {
     }
 
     .box-wrap3:hover img {
-        animation: linear EQ 5s infinite;
+        animation: linear EQ 7s infinite;
     }
 
     @keyframes EQ {
@@ -1710,7 +1710,7 @@ body {
         }
 
         50% {
-            transform: translateY(-520px);
+            transform: translateY(-860px);
         }
 
         100% {
@@ -1738,7 +1738,7 @@ body {
     }
 
     .box-wrap4:hover img {
-        animation: linear PL 3s infinite;
+        animation: linear PL 5s infinite;
     }
 
     @keyframes PL {
@@ -1747,7 +1747,7 @@ body {
         }
 
         50% {
-            transform: translateY(-278px);
+            transform: translateY(-490px);
         }
 
         100% {
@@ -1784,7 +1784,7 @@ body {
         }
 
         50% {
-            transform: translateY(-485px);
+            transform: translateY(-760px);
         }
 
         100% {
