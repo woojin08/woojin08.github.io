@@ -9,10 +9,9 @@
 
 * 다단메뉴
 * 메인 slick= main slider를 이용
-* 
-tap content= 메뉴
-ytb 영상
-scroll이용 사진
+* tap content= 메뉴
+* ytb 영상
+* scroll이용 사진
 
 
 
