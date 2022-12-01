@@ -1,20 +1,14 @@
-* {
-    outline: 1px solid --#f00;
-}
+.Wrapper {
+    position: relative;
 
-p {
-    line-height: 1.45;
 }
-
 
 body {
     letter-spacing: 0.025em;
 }
 
-
-.Wrapper {
-    position: relative;
-
+p {
+    line-height: 1.45;
 }
 
 .Header {
@@ -149,8 +143,6 @@ body {
     text-align: center;
 }
 
-
-
 .Header .top_mi.on .logo-c {
     position: absolute;
 }
@@ -208,7 +200,6 @@ body {
 .Header .MenuList>li>a {
     position: relative;
 }
-
 
 .header_menu .Gnb .shop img {
     width: 30px;
@@ -278,12 +269,12 @@ body {
 
 .swiper-button-next {
     color: #333;
-    padding: 20px 200px 0 0;
+    padding: 20px 100px 0 0;
 }
 
 .swiper-button-prev {
     color: #333;
-    padding: 20px 0 0 200px;
+    padding: 20px 0 0 100px;
 }
 
 .MainVisual .swiper-pagination {
@@ -306,7 +297,7 @@ body {
 
 /* HOT */
 .Hot {
-    padding: 100px 350px;
+    padding: 100px 192px;
     position: relative;
 }
 
@@ -359,7 +350,6 @@ body {
 
 .Hot .best_wrapper figure {
     position: relative;
-
 }
 
 
@@ -411,7 +401,7 @@ body {
 
 /* edit */
 .edit {
-    padding: 100px 350px;
+    padding: 100px 192px;
     position: relative;
     background: #000;
 
@@ -703,7 +693,7 @@ body {
 
 .main_bottom .main_cont_bottom {
     clear: both;
-    background: url(../img/Co_PC_bg_foot_link.jpg)no-repeat;
+    background: url(../img/Co_PC_bg_foot_link.jpg)no-repeat 50%;
 }
 
 .main_bottom .main_cont_bottom .inner {
