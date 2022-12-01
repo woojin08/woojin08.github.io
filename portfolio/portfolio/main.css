@@ -616,8 +616,8 @@ body {
     width: 1200px;
     height: 100%;
     position: absolute;
-    top: -20px;
-    left: 0;
+    bottom: 100px;
+    left: -100px;
 }
 
 .skill {
@@ -687,7 +687,7 @@ body {
     padding: 30px;
     position: relative;
     top: 200px;
-    left: 35%;
+    left: 30%;
 
     width: 45%;
     height: 250px;
