@@ -462,7 +462,7 @@ body {
     /* background: rgba(255, 255, 255, 0.2); */
     position: relative;
     /* top: 135px; */
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, 0);
     border-radius: 10px 10px 10px 10px;
 }
@@ -470,7 +470,7 @@ body {
 /* .pf-left */
 .pf-left {
     float: left;
-    width: 520px;
+    width: 515px;
     height: 700px;
     background: rgba(255, 255, 255, 0.3);
     /* padding: 60px 70px 0 85px; */
@@ -482,7 +482,7 @@ body {
 
 .pf-right {
     float: left;
-    width: 920px;
+    width: 1080px;
     height: 700px;
     position: relative;
     padding-top: 100px;
@@ -738,7 +738,7 @@ body {
 header .contact {
     position: fixed;
     bottom: 20px;
-    left: 100px;
+    left: 50px;
     line-height: 55px;
     z-index: 999;
 }
@@ -858,7 +858,7 @@ header .contact span:nth-of-type(1):after {
 }
 
 .box-wrap:hover img {
-    animation: linear CB 13s infinite;
+    animation: linear CB 18s infinite;
 }
 
 @keyframes CB {
@@ -867,7 +867,7 @@ header .contact span:nth-of-type(1):after {
     }
 
     50% {
-        transform: translateY(-2580px);
+        transform: translateY(-3100px);
     }
 
     100% {
@@ -904,7 +904,7 @@ header .contact span:nth-of-type(1):after {
     }
 
     50% {
-        transform: translateY(-1550px);
+        transform: translateY(-1950px);
     }
 
     100% {
@@ -939,7 +939,7 @@ header .contact span:nth-of-type(1):after {
     }
 
     50% {
-        transform: translateY(-1250px);
+        transform: translateY(-1630px);
     }
 
     100% {
@@ -965,7 +965,7 @@ header .contact span:nth-of-type(1):after {
 }
 
 .box-wrap4:hover img {
-    animation: linear PL 7s infinite;
+    animation: linear PL 9s infinite;
 }
 
 @keyframes PL {
@@ -974,7 +974,7 @@ header .contact span:nth-of-type(1):after {
     }
 
     50% {
-        transform: translateY(-800px);
+        transform: translateY(-1020px);
     }
 
     100% {
@@ -1000,7 +1000,7 @@ header .contact span:nth-of-type(1):after {
 }
 
 .box-wrap5:hover img {
-    animation: linear HK 9s infinite;
+    animation: linear HK 12s infinite;
 }
 
 @keyframes HK {
@@ -1009,7 +1009,7 @@ header .contact span:nth-of-type(1):after {
     }
 
     50% {
-        transform: translateY(-1200px);
+        transform: translateY(-1600px);
     }
 
     100% {
@@ -2026,6 +2026,9 @@ header .contact span:nth-of-type(1):after {
         letter-spacing: 1.2px;
     }
 
+    header .contact {
+        display: none;
+    }
 
 
 }
