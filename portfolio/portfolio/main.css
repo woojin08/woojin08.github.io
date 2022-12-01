@@ -1664,7 +1664,7 @@ header .contact span:nth-of-type(1):after {
 
 
     .box-wrap:hover img {
-        animation: linear CB 12s infinite;
+        animation: linear CB 8s infinite;
     }
 
     @keyframes CB {
@@ -1673,7 +1673,7 @@ header .contact span:nth-of-type(1):after {
         }
 
         50% {
-            transform: translateY(-1050px);
+            transform: translateY(-1100px);
         }
 
         100% {
@@ -1700,7 +1700,7 @@ header .contact span:nth-of-type(1):after {
     }
 
     .box-wrap2:hover img {
-        animation: linear HB 6s infinite;
+        animation: linear HB 5s infinite;
     }
 
     @keyframes HB {
@@ -1709,7 +1709,7 @@ header .contact span:nth-of-type(1):after {
         }
 
         50% {
-            transform: translateY(-670px);
+            transform: translateY(-690px);
         }
 
         100% {
@@ -1746,7 +1746,7 @@ header .contact span:nth-of-type(1):after {
         }
 
         50% {
-            transform: translateY(-520px);
+            transform: translateY(-550px);
         }
 
         100% {
@@ -1783,7 +1783,7 @@ header .contact span:nth-of-type(1):after {
         }
 
         50% {
-            transform: translateY(-278px);
+            transform: translateY(-300px);
         }
 
         100% {
@@ -1811,7 +1811,7 @@ header .contact span:nth-of-type(1):after {
     }
 
     .box-wrap5:hover img {
-        animation: linear HK 6s infinite;
+        animation: linear HK 5s infinite;
     }
 
     @keyframes HK {
@@ -1820,7 +1820,7 @@ header .contact span:nth-of-type(1):after {
         }
 
         50% {
-            transform: translateY(-485px);
+            transform: translateY(-510px);
         }
 
         100% {
