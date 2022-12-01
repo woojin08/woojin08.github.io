@@ -374,6 +374,7 @@ html {
 .artist-wrap .artist-header {
     display: flex;
     justify-content: space-between;
+    margin-top: 20rem;
     align-content: center;
     margin-bottom: 80px;
 }
@@ -694,7 +695,7 @@ html {
 
 .mainVisual_main .mainSlider figure {
     position: relative;
-    height: 605px;
+    height: 550px;
 
 }
 
@@ -821,11 +822,11 @@ html {
 }
 
 .mainArrow i:nth-child(1) {
-    margin: 0 0 0 -800px;
+    margin: 0 0 0 -700px;
 }
 
 .mainArrow i:nth-child(2) {
-    margin: 0 0 0 800px;
+    margin: 0 0 0 700px;
 }
 
 /* sns */
@@ -1382,6 +1383,7 @@ html {
         justify-content: space-between;
         font-weight: 800;
         align-items: center;
+        margin-top: 0;
     }
 
     .artist-wrap .artist-header .title {
