@@ -333,7 +333,7 @@ dl dd {
 }
 
 .cover .inner .cv_menu {
-    margin-top: 455px;
+    margin-top: 430px;
 }
 
 .cover .inner .cv_menu h2 {
@@ -341,7 +341,6 @@ dl dd {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 0.1em;
-    margin-top: 65px;
     color: #fff;
 }
 
@@ -684,15 +683,15 @@ body {
 }
 
 /* 프로필 내용 */
-.profile dl {
+/* .profile dl {
     padding: 30px;
     position: relative;
     top: 200px;
     left: 35%;
-    /* transform: translateX(-50%); */
+   
     width: 45%;
     height: 250px;
-    /* border: 1px solid #fff; */
+    
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 
@@ -735,8 +734,45 @@ body {
     line-height: 20px;
     letter-spacing: 1.2px;
 }
+ */
+header .contact {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    line-height: 55px;
+    z-index: 999;
+}
 
+header .contact p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0;
+}
 
+header .contact span {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 10px;
+    color: #888;
+}
+
+header .contact span:nth-of-type(1) {
+    padding-left: 0;
+}
+
+header .contact span:nth-of-type(1):after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background: #888;
+}
 
 .mainVisual h2 {
     font-family: 'Montserrat', sans-serif;
@@ -804,7 +840,7 @@ body {
 
 /* 컴퓨터화면-CB */
 .box-wrap {
-    width: 90%;
+    width: 85%;
     height: 490px;
     background: #fff;
     border-radius: 14px 14px 14px 14px;
@@ -831,7 +867,7 @@ body {
     }
 
     50% {
-        transform: translateY(-3300px);
+        transform: translateY(-3100px);
     }
 
     100% {
@@ -841,7 +877,7 @@ body {
 
 /* 컴퓨터화면-HB */
 .box-wrap2 {
-    width: 90%;
+    width: 85%;
     height: 490px;
     background: #fff;
     border-radius: 14px 14px 14px 14px;
@@ -868,7 +904,7 @@ body {
     }
 
     50% {
-        transform: translateY(-2100px);
+        transform: translateY(-1950px);
     }
 
     100% {
@@ -878,7 +914,7 @@ body {
 
 /* 컴퓨터화면-EQ */
 .box-wrap3 {
-    width: 90%;
+    width: 85%;
     height: 490px;
     background: #fff;
     border-radius: 14px 14px 14px 14px;
@@ -894,7 +930,7 @@ body {
 }
 
 .box-wrap3:hover img {
-    animation: linear EQ 14s infinite;
+    animation: linear EQ 10s infinite;
 }
 
 @keyframes EQ {
@@ -903,7 +939,7 @@ body {
     }
 
     50% {
-        transform: translateY(-1780px);
+        transform: translateY(-1630px);
     }
 
     100% {
@@ -913,7 +949,7 @@ body {
 
 /* 컴퓨터화면-PL */
 .box-wrap4 {
-    width: 90%;
+    width: 85%;
     height: 490px;
     background: #fff;
     border-radius: 14px 14px 14px 14px;
@@ -938,7 +974,7 @@ body {
     }
 
     50% {
-        transform: translateY(-1100px);
+        transform: translateY(-1020px);
     }
 
     100% {
@@ -948,7 +984,7 @@ body {
 
 /* 컴퓨터화면-HK */
 .box-wrap5 {
-    width: 90%;
+    width: 85%;
     height: 490px;
     background: #fff;
     border-radius: 14px 14px 14px 14px;
@@ -964,7 +1000,7 @@ body {
 }
 
 .box-wrap5:hover img {
-    animation: linear HK 15s infinite;
+    animation: linear HK 12s infinite;
 }
 
 @keyframes HK {
@@ -973,7 +1009,7 @@ body {
     }
 
     50% {
-        transform: translateY(-1700px);
+        transform: translateY(-1600px);
     }
 
     100% {
@@ -1637,7 +1673,7 @@ body {
         }
 
         50% {
-            transform: translateY(-1550px);
+            transform: translateY(-1050px);
         }
 
         100% {
@@ -1664,7 +1700,7 @@ body {
     }
 
     .box-wrap2:hover img {
-        animation: linear HB 8s infinite;
+        animation: linear HB 6s infinite;
     }
 
     @keyframes HB {
@@ -1673,7 +1709,7 @@ body {
         }
 
         50% {
-            transform: translateY(-1000px);
+            transform: translateY(-670px);
         }
 
         100% {
@@ -1701,7 +1737,7 @@ body {
     }
 
     .box-wrap3:hover img {
-        animation: linear EQ 7s infinite;
+        animation: linear EQ 5s infinite;
     }
 
     @keyframes EQ {
@@ -1710,7 +1746,7 @@ body {
         }
 
         50% {
-            transform: translateY(-860px);
+            transform: translateY(-520px);
         }
 
         100% {
@@ -1738,7 +1774,7 @@ body {
     }
 
     .box-wrap4:hover img {
-        animation: linear PL 5s infinite;
+        animation: linear PL 3s infinite;
     }
 
     @keyframes PL {
@@ -1747,7 +1783,7 @@ body {
         }
 
         50% {
-            transform: translateY(-490px);
+            transform: translateY(-278px);
         }
 
         100% {
@@ -1784,7 +1820,7 @@ body {
         }
 
         50% {
-            transform: translateY(-760px);
+            transform: translateY(-485px);
         }
 
         100% {
@@ -1848,7 +1884,7 @@ body {
 
 
     .n-iphone02:hover img {
-        animation: linear iphone2 5s infinite;
+        animation: linear iphone2 9s infinite;
     }
 
     @keyframes iphone2 {
