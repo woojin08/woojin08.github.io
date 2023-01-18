@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>영화의 모든것</title>
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -12,7 +13,8 @@
 
 
 <body>
-    <!-- <header class="Header">
+    <div class="Wrap">
+        <!-- <header class="Header">
         <h1>
             <a href="/">
                 <img src="./img/logoRed.png" alt="">
@@ -25,196 +27,203 @@
                 <li><a href="#!">인기영화</a></li>
             </ul>
         </nav>
-    </header> -->
-    <header class="header">
-        <h1>
-            <a href="index.html"><img src="./img/logoRed.png" alt="카시아속초"></a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#!">2022년 영화들</a></li>
-                <li><a href="#!">OST</a></li>
-                <li><a href="#!">인기영화</a></li>
-            </ul>
-        </nav>
-       
-    </header>
-    <!-- Swiper -->
+        </header> -->
+        <header class="header">
+            <h1>
+                <a href="index.html"><img src="./img/logoRed.png" alt=""></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#!">2022년 영화들</a></li>
+                    <li><a href="#!">OST</a></li>
+                    <li><a href="#!">인기영화</a></li>
+                </ul>
+            </nav>
 
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-         <div class="swiper-slide">Slide 1</div>
-         <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-        </div>
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-         <div class="swiper-pagination"></div>
+        </header>
+        <!-- Swiper -->
+        <main>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mainvisual">
+                        <!-- <figure><img src="./img/main01.jpg" alt="헤어질결심 메인"></figure> -->
+                    </div>
+                    <div class="swiper-slide mainvisual02">
+                        <!-- <figure><img src="./img/main01.jpg" alt="헤어질결심 메인"> -->
+                    </div>
+                    <div class="swiper-slide mainvisual03">
+                        <!-- <figure><img src="./img/main01.jpg" alt="헤어질결심 메인"> -->
+                    </div>
+                    <div class="swiper-slide mainvisual04">
+                        <!-- <figure><img src="./img/main05.jpg" alt="헤어질결심 메인"> -->
+                    </div>
+                    <div class="swiper-slide mainvisual05">
+                        <!-- <figure><img src="./img/main05.jpg" alt="헤어질결심 메인"> -->
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <section class="rank">
+                <h2>무비차트</h2>
+                <strong>TOP5</strong>
+                <div class="container">
+                    <figure class="itm" data-title="1위">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/rank01.jpg" alt="헤어질 결심 순위">
+                            </div>
+                            <h3>헤어질 결심</h3>
+                            <strong>개봉 2022.06.29.</strong>
+                        </a>
+                    </figure>
+                    <figure class="itm" data-title="2위">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/rank02.jpg" alt="범죄도시2 순위">
+                            </div>
+                            <h3>범죄도시2</h3>
+                            <strong>개봉 2022.05.18.</strong>
+                        </a>
+                    </figure>
+                    <figure class="itm" data-title="3위">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/rank03.jpg" alt="썸머 필름을 타고! 순위">
+                            </div>
+                            <h3>썸머 필름을 타고!</h3>
+                            <strong>개봉 2022.07.20.</strong>
+                        </a>
+                    </figure>
+                    <figure class="itmrank" data-title="4위">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/rank04.jpg" alt="공조2 순위">
+                            </div>
+                            <h3>공조2</h3>
+                            <strong>개봉 2022.09.07.</strong>
+                        </a>
+                    </figure>
+                    <figure class="itmrank" data-title="5위">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/rank05.jpg" alt="미니언즈2 순위">
+                            </div>
+                            <h3>미니언즈2</h3>
+                            <strong>개봉 2022.07.20.</strong>
+                        </a>
+                    </figure>
+                </div>
+            </section>
+            <section class="ost">
+                <strong></strong>
+                <h2>영화 OST 목록</h2>
+                <div class="container">
+                    <figure class="itm">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/ost01.jpg" alt="">
+                            </div>
+                            <h3>비긴어게인 OST</h3>
+                            <p>Lost stars-Adam Levine(Maroon 5)</p>
+                        </a>
+                    </figure>
+                    <figure class="itm">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/ost02.jpg" alt="">
+                            </div>
+                            <h3>라라랜드 OST</h3>
+                            <p>City Of Stars-Ryan Gosling & Emma Stone</p>
+                        </a>
+                    </figure>
+                    <figure class="itm">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/ost03.jpg" alt="">
+                            </div>
+                            <h3>원스(Once) OST</h3>
+                            <p>Falling Slowly-Glen Hansard & Marketa Irglova</p>
+                        </a>
+                    </figure>
+                    <figure class="itm">
+                        <a href="#!">
+                            <div class="boxsize">
+                                <img src="./img/ost04.jpg" alt="">
+                            </div>
+                            <h3>비긴어게인</h3>
+                            <p>Lost stars-Adam Levine(Maroon 5)</p>
+
+                        </a>
+                    </figure>
+                    <figure class="itm">
+                        <a href="#!">
+                            <div class="box">
+                                <img src="./img/ost05.jpg" alt="">
+                            </div>
+                            <h3>비긴어게인</h3>
+                            <p>Lost stars-Adam Levine(Maroon 5)</p>
+                        </a>
+                    </figure>
+                </div>
+            </section>
+            <section class="ott">
+                <div class="container">
+                    <h2>OTT 플랫폼</h2>
+                    <figure>
+                        <a href="https://www.netflix.com/kr/">
+                            <div class="icon01">
+                                <strong></strong>
+                                <img src="./img/ott01.png" alt="">
+                                <span>넷플릭스(NETFLIX)</span>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="https://watcha.com/">
+                            <div class="icon02">
+                                <strong></strong>
+                                <img src="./img/ott02.svg" alt="">
+                                <span>왓챠(Watxha)</span>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a
+                            href="https://www.wavve.com/?utm_source=google&utm_medium=search&utm_campaign=wavve_pc&utm_content=0.%EB%B8%8C%EB%9E%9C%EB%93%9C%ED%82%A4%EC%9B%8C%EB%93%9C&utm_term=%EC%9B%A8%EC%9D%B4%EB%B8%8C&gclid=Cj0KCQiAq5meBhCyARIsAJrtdr79zwN4bAk6MANTntQGAPg2jOEolr713KHmXpOTBOWvuJvHg8oOTHIaAkfVEALw_wcB">
+                            <div class="icon03">
+                                <strong></strong>
+                                <img src="./img/ott03.svg" alt="">
+                                <span>웨이브(Wavve)</span>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a
+                            href="https://www.disneyplus.com/ko-kr?cid=DSS-Search-Google-71700000088339394-&s_kwcid=AL!8468!3!620347232144!e!!g!!%EB%94%94%EC%A6%88%EB%8B%88%20%ED%94%8C%EB%9F%AC%EC%8A%A4&gclid=Cj0KCQiAq5meBhCyARIsAJrtdr4SDU_Y_UlxR3rhBkGuXFEUHaBRiwQqnKoXuLIAaQ5RLe7jF46w9sMaAquzEALw_wcB&gclsrc=aw.ds">
+                            <div class="icon04">
+                                <strong></strong>
+                               <img src="./img/ott04.svg" alt="">
+                                <span>디즈니<br />플러스(Disney+)</span>
+                            </div>
+                        </a>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <!-- <section class="ost">
+            <div class="ost01">
+
+            </div>
+        </section> -->
+        <!-- Swiper JS -->
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
     </div>
-    <section id="Primium" class="active-event">
-        <strong>카시아 속초만의 메리트</strong>
-        <h2>PREMIUM</h2>
-        <div class="container">
-            <figure class="itm" data-title="premium01">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank01.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-                </a>
-            </figure>
-            <figure class="itm" data-title="premium02">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank02.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-
-                </a>
-            </figure>
-            <figure class="itm" data-title="premium03">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank03.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-
-                </a>
-            </figure>
-            <figure class="itm" data-title="premium04">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank04.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-
-                </a>
-            </figure>
-            <figure class="itm" data-title="premium04">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank05.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-
-                </a>
-            </figure>
-        </div>
-    </section>
-    <section id="Primium" class="active-event">
-        <strong>카시아 속초만의 메리트</strong>
-        <h2>PREMIUM</h2>
-        <div class="container">
-            <figure class="itm" data-title="premium01">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank01.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-                </a>
-            </figure>
-            <figure class="itm" data-title="premium02">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank02.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-
-                </a>
-            </figure>
-            <figure class="itm" data-title="premium03">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank03.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-
-                </a>
-            </figure>
-            <figure class="itm" data-title="premium04">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank04.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-
-                </a>
-            </figure>
-            <figure class="itm" data-title="premium04">
-                <a href="#!">
-                    <div class="box">
-                        <img src="./img/rank05.jpg" alt="">
-                    </div>
-                    <strong>반얀트리 그룹의 레지던스 브랜드 '카시아 속초' </strong>
-                    <h3>세계적인 명성의 호텔 & 리조트체인</h3>
-
-                </a>
-            </figure>
-        </div>
-    </section>
-    <section id="service">
-       
-        <div class="container">
-            <h2>Service</h2>
-            <figure>
-                <a href="">
-                    <div class="icon01">
-
-                        <strong></strong>
-                        <figure><img src="./img/ott01.png" alt=""></figure>
-                        <span>유기동물통계</span>
-                    </div>
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <div class="icon02">
-                        <strong></strong>
-                        <figure><img src="./img/ott02.svg" alt=""></figure>
-                        <span>카탈로그</span>
-                    </div>
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <div class="icon03">
-                        <strong></strong>
-                        <figure><img src="./img/ott03.svg" alt=""></figure>
-                        <span>제품 문의</span>
-                    </div>
-                </a>
-            </figure>
-            <figure>
-                <a href="">
-                    <div class="icon04">
-                        <strong></strong>
-                        <figure><img src="./img/img (3).png" alt=""></figure>
-                        <span>카카오 같이가치</span>
-                    </div>
-                </a>
-            </figure>
-        </div>
-    </section>
-    <section class="ost">
-        <div class="ost01">
-
-        </div>
-    </section>
-    <!-- Swiper JS -->
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
 </body>
 <!-- Initialize Swiper -->
+
 
 </html>
 
