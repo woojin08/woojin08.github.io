@@ -30,11 +30,12 @@
 } */
 
 /* header */
-h2{
+h2 {
     display: block;
     /* margin: 0 0 30px 0; */
     font-size: 2em;
     font-weight: 600;
+    text-align: center;
 }
 
 .container {
@@ -92,7 +93,7 @@ body {
 }
 
 body {
-    background: #eee;
+    /* background: #eee; */
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -200,7 +201,7 @@ body {
     font-size: 1.5em;
 }
 
-.rank h3:hover{
+.rank h3:hover {
     text-decoration: underline;
 }
 
@@ -323,7 +324,7 @@ body {
     opacity: 0.3;
 }
 
-.ost .container .boxsize{
+.ost .container .boxsize {
     overflow: hidden;
     margin: 0 0 20px 0;
     display: flex;
@@ -331,12 +332,13 @@ body {
     height: 500px;
 }
 
-.ost .container .boxsize img{
-width: 760px;
-object-fit: cover;
-display: inline-block;
+.ost .container .boxsize img {
+    width: 760px;
+    object-fit: cover;
+    display: inline-block;
 }
-.ost .container .boxsize:hover{
+
+.ost .container .boxsize:hover {
     background-color: rgba(0, 0, 0, 0.75);
     opacity: 0.3;
 }
@@ -409,12 +411,13 @@ display: inline-block;
 
 
 /* sub01 */
-.moviesub{
+.moviesub {
     position: relative;
     padding: 100px 0;
     text-align: center;
 }
-.moviesub .container{
+
+.moviesub .container {
     position: relative;
     display: inline-block;
     padding: 20px 0 0 20px;
@@ -422,11 +425,12 @@ display: inline-block;
     font-weight: 600;
 }
 
-.moviesub .container ul{
+.moviesub .container ul {
     overflow: hidden;
     margin: 0 0 0 -40px;
 }
-.moviesub .container ul li{
+
+.moviesub .container ul li {
     position: relative;
     float: left;
     margin: 0 0 0 40px;
@@ -436,3 +440,269 @@ display: inline-block;
 
 
 
+/* sub01-2 ost list */
+.ostlist h2 {
+    /* text-align: center; */
+    padding: 20px;
+}
+
+.ostlist table {
+    width: 100%;
+    /* border-bottom: 1px solid #444; */
+    border-collapse: collapse;
+    /*표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.*/
+    text-align: left;
+}
+
+.ostlist .list-wrap {
+    /* table-layout: fixed; */
+    /*값을 fixed로 정하면 table의 크기가 커지지 않음*/
+    width: 100%;
+    margin: 10px 0;
+}
+
+.ostlist .list-wrap th,
+.ostlist .list-wrap td {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.ostlist .list-wrap th {
+    font-weight: 700;
+    background: #ddd;
+    /* padding: 10px; */
+}
+
+.ostlist .list-wrap tr {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.ostlist td>a>img {
+    width: 100px;
+}
+
+.ostlist .list-wrap .album:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.ostlist .list-wrap thead {
+    border-top: 1px solid #333;
+}
+
+/* sub01-3 rank list*/
+caption {
+    position: absolute !important;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.ranklist h2 {
+    padding: 20px;
+}
+
+.ranklist table {
+    width: 100%;
+    border: 1px solid #444;
+    border-collapse: collapse;
+    /*표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.*/
+    text-align: center;
+}
+
+.ranklist th,
+.ranklist td {
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+.ranklist th {
+    font-size: 1em;
+    font-weight: 700;
+    background: #fb4357;
+    color: #fff;
+    border-bottom: none;
+}
+
+.ranklist td {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.ranklist .name {
+    /* margin:100px;
+    outline: 1px solid black;
+    display: block;
+    color: black;
+    width: 630px;
+    font-size: 20px;
+    font-weight: bolder !important; */
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+
+.ranklist .name:hover {
+    text-decoration: underline;
+}
+
+/* 
+.w25 {width: 8%;} */
+
+
+
+
+/* sub-sub */
+.box-wrap {
+    padding-left: 30px;
+    /* position: absolute;
+    left: 370px;
+    top: 0;
+    width: calc(100% - 370px);
+    color: #fff; */
+}
+
+.box-wrap h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.movie-intro h2{
+    padding: 20px;
+}
+
+.movie-intro .box-poster a {
+    display: block;
+    width: 400px;
+}
+
+.movie-intro .box-poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.movie-intro .box-tit {
+    border-bottom: 1px solid #444;
+}
+
+.movie-intro .box-summary{
+    line-height: 1.2;
+    padding: 20px 0;
+}
+
+.movie-intro .box-summary .txt{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.movie-intro .box-summary .story{
+padding: 8px 0;
+font-weight: 600;
+}
+
+.movie-intro .spec {
+    border-left: 2px solid #ddd;
+    padding: 0 10px;
+}
+
+.movie-intro .spec dl{
+    line-height: 1.5;
+}
+
+.movie-intro .spec dt{
+    /* float: left; */
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.still {
+    background: url(../img/still0101.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.still02 {
+    background: url(../img/still0102.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.still03 {
+    background: url(../img/still0103.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.still04 {
+    background: url(../img/still0104.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.still05 {
+    background: url(../img/still0105.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+.still06 {
+    background: url(../img/still0106.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+.still07 {
+    background: url(../img/still0107.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+.still08 {
+    background: url(../img/still0108.png)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+.still09 {
+    background: url(../img/still0109.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+.still10 {
+    background: url(../img/still01010.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.sitllSwiper{
+    padding: 20px 0;
+    width: 75%;
+    height: 100%;
+}
+.sitllSwiper .swiper-pagination{
+    padding-bottom: 30px;
+}
+.movie-intro .stillcut p{
+text-align: center;
+}
