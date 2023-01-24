@@ -19,7 +19,25 @@ var swiper = new Swiper(".mySwiper", {
     crossFade: true,
 },
   });
-var swiper = new Swiper(".sitllSwiper", {
+
+
+  // totop
+  const SCE_ELE = document.querySelectorAll('.active-event');
+  window.addEventListener('scroll', () => {
+      let sct = window.scrollY;
+      SCE_ELE.forEach(el => {
+          sct > el.offsetTop - 300
+              ? el.classList.add('on')
+              : el.classList.remove('on')
+      })
+  });
+
+  document.querySelector('.to_top').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+});
+
+
+var swiper = new Swiper(".stillSwiper", {
     spaceBetween: 30, //슬라이드 사이 여백
     centeredSlides: true, //센터모드
    
@@ -32,9 +50,14 @@ var swiper = new Swiper(".sitllSwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-//     effect : 'fade', 
-//     fadeEffect: { 
-//     crossFade: true,
-// },
   });
+  
+  
+
+
+
+
+
+
+
   
