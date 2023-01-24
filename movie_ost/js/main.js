@@ -32,7 +32,7 @@ var swiper = new Swiper(".mySwiper", {
       })
   });
 
-  document.querySelector('.to_top').addEventListener('click', () => {
+  document.querySelector('.to-top').addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
 });
 
