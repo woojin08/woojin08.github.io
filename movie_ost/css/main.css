@@ -996,7 +996,7 @@ caption {
 
 
 /* totop */
-.to_top {
+.to-top {
     position: fixed;
     bottom: 30px;
     right: 50px;
@@ -1012,7 +1012,7 @@ caption {
     transition: 0.5s;
 }
 
-.to_top.on {
+.to-top.on {
     visibility: visible;
     opacity: 1;
 }
