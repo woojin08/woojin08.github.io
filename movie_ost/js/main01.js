@@ -8,7 +8,7 @@ $(function () {
         $('.tab-content>div').removeClass('on');
         $('.tab-content>div').eq(idx).addClass('on');
 
-
+        console.log(1);
     });
 
     const SCE_ELE = document.querySelectorAll('.active-event');
@@ -37,6 +37,7 @@ $(function () {
         $('.ost-content>div').removeClass('on');
         $('.ost-content>div').eq(idx).addClass('on');
 
+          console.log(2);
 
     });
 
