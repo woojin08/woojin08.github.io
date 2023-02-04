@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: #353535;
+    font-family: "Robot","NanumSqure",sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0px;
+}
+
+.intro_section .logo{position: absolute; top: 87px; left: 70px;}
+.intro_section .logo img{width: 100px;}
+.intro_section .copyright{position: absolute; transform: rotate(90deg); top: 290px; right: -130px; font-size: 22px; letter-spacing: -0.5px; font-weight: 800;}
+.intro_section .main_title{font-size: 8vw; font-family: 'Nanum Myeongjo'; font-weight: 700; position: absolute; top: 50vh; left: 50vw; margin-top: -12vw; margin-left: -28vw; letter-spacing: -.55px; z-index: 1;} 
+.intro_section .sub_title{font-size: 1.2vw; font-weight: 500; position: absolute; top: 50vh; left: 50vw; margin-top: 10vw; margin-left: -9vw;}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline-block{ width: 700px; height: 300px; display: flex;}
+        .inline-block div{flex: 1;}
+       
+    
+        .inline-block .div1{
+          background: coral;
+        }
+        .inline-block .div2{
+           background: lightblue;
+        }
+        .inline-block .div3{
+           background:lightpink;
+        }
+        
+
+        #main{width: 500px;height: 300px; display: flex; flex-direction: column;}
+
+        #main div{flex: 1;}
+        #main div.half_width{flex: 2;}
+
+        .grid-container{display: grid; width:300px; grid-template-columns: auto auto auto}
+        .grid-item{border: 1px solid #ddd; padding: 20px; text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div class="inline-block">
+        <div class="div1">공간1</div>
+        <div class="div2">공간2</div>
+        <div class="div3">공간3</div>
+    </div>
+    <div id="main">
+        <div style="background-color:coral;">red</div>
+        <div style="background-color:lightblue;">blue</div>
+        <div class="half_width" style="background-color:lightgreen;">green</div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+</html>
