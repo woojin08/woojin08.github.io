@@ -1,0 +1,45 @@
+@media only screen and (max-width:800px){
+.intro_section .copyright{display: none;} ul{margin: 0px;} 
+.sns_section{position: absolute; bottom: inherit; left: inherit; top: 26px; right:20px;}.sns_section .sns_deco{display: none;}
+.sns_section ul li{font-weight: 800; font-size: 17px; display: inline-block;margin-left: 20px; vertical-align: middle;}
+.intro_section .logo{top: 28px; left: 22px;}.intro_section .logo img{width: 60px;} .intro_section .main_title{top: 50%; left: 0%; margin-top: -24vw; font-size: 9.5vw; margin-left: 0px;text-align: center;line-height: 14vw;}
+.intro_section .sub_title{width: 100%; left: 0%; margin-left: 0px; text-align: center; top: 50%; font-size: 12px; margin-top: 8vw;}
+.intro_section .site_title{left: 20px; bottom: 20px; font-size: 14px;} 
+
+/* intro_section2 */
+.intro_section2{padding-left: 70px; padding-right: 0px; margin-top: -60px;}
+.intro_section2 img{width: 100%;}
+
+/* intro_section3 */
+.intro_section3{padding: 80px 20px; }.intro_section3 .sub_title{font-size: 11px;} .intro_section3 .main_title{font-size: 17px; margin-top: 5px;}
+.intro_section3 .section_desc{font-size: 13px; line-height: 23px; margin-top: 10px;}
+
+/*intro_section4 */
+.intro_section4{padding: 40px 20px 50px;}
+.intro_section4 .main_title{font-size: 20px; -webkit-text-stroke: 0.7px #353535;}
+.intro_section4 .main_desc{margin-top: 20px; margin-left: 0; font-size: 13px; line-height: 23px;}
+
+/*intro_section5 */
+.intro_section5{margin: 30px 0px;}
+.intro_section5 .main_section_tl .img_section{height: 100%;}
+.intro_section5 .main_section_tl .img_section img{width: 100%;}
+.intro_section5 .main_section_tl .img_block{width: 80%;}
+.intro_section5 .main_section_tl .img_block .main_title{display: none;}
+.intro_section5 .main_section_tl .img_block .deco_title{top: 28vw;}
+
+/*intro_section6 */
+.intro_section6{ margin-top: 60px; padding: 0px 20px 100px; height: 100%;}
+.intro_section6 .sub_title{font-size: 12px;}
+.intro_section6 .section_desc{font-size: 13px; line-height: 23px; margin-top: 10px;}
+.intro_section6 .section_desc br{display:none;}
+.intro_section6 .contact_summary{margin: 30px 0px;}
+.intro_section6 .contact_summary .cs_item{font-size: 13px; line-height: 30px; margin-bottom: 10px; width: 49%; margin-right: 0;}
+.intro_section6 .contact_summary .cs_item:first-child{display: block;}
+.intro_section6 .contact_form{width: 100%; position: relative; display: block;}
+.intro_section6 .contact_form input, .intro_section6 .contact_form textarea{box-sizing: border-box; line-height: 30px; font-size: 14px;}
+.intro_section6 .contact_form textarea{height: 50px;}
+.intro_section6 .contact_form .submit_bt{width: 100%; font-size: 15px; margin-top: 10px;}
+.intro_section6 .contact_desc {font-size: 13px; position: relative; bottom: inherit; margin-top: 20px; line-height: 24px;}
+.intro_section6 .contact_deco{display: none;}
+.intro_section6 .top_bt{bottom: 25px; font-size: 15px;}
+}
