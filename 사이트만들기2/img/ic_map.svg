@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>map_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="4.00000667 0 8 0 8 12 4.00000667 12 1.33333333e-05 12 1.33333333e-05 0"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="map_icon">
+            <g id="Page-1">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M4.00001333,6 C2.89721333,6 2.00001333,5.1028 2.00001333,4 C2.00001333,2.8972 2.89721333,2 4.00001333,2 C5.10281333,2 6.00001333,2.8972 6.00001333,4 C6.00001333,5.1028 5.10281333,6 4.00001333,6 M4.00001333,0 C1.79441333,0 1.33333333e-05,1.7944 1.33333333e-05,4 C1.33333333e-05,4.66213333 0.165613333,5.31866667 0.48028,5.90093333 L3.78121333,11.8710667 C3.82521333,11.9506667 3.90894667,12 4.00001333,12 C4.09108,12 4.17481333,11.9506667 4.21881333,11.8710667 L7.52094667,5.89893333 C7.83441333,5.31866667 8.00001333,4.66213333 8.00001333,4 C8.00001333,1.7944 6.20561333,0 4.00001333,0" id="Fill-1" fill="#B1B1B1" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
