@@ -1,0 +1,74 @@
+/* header */
+.header{background-color: #f7f7f7; position: relative; width: 100%;height: 80px; padding-top: 25px; font-weight: 700; color: #3c3c3c; border-bottom: 1px solid coral;}
+.header .logo-section{position: absolute; left: 60px; top: 30px; width: 100px;}
+.header .logo-section img{width: 100%;}
+.header .page-title{position: absolute; left: 170px; padding-left: 20px; border-left: 1px solid #ddd; line-height: 30px; margin-top: 15px; color: #b1b1b1;}
+.header .main-menu{position: absolute; right: 150px; top: 40px;}
+.header .main-menu ul li{display: inline-block; font-weight: 700; font-size: 15px; margin-left: 45px;}
+
+/* contents-wrap */
+
+.swiper { width: 100%;height: 100%;}
+.swiper-slide {text-align: center;font-size: 18px;background: #fff;
+
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+}
+
+/* .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 600vh;
+        object-fit: cover;
+      } */
+
+.mainvisual {background: url(../img/main01.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.mainvisual02 {
+    background: url(../img/main02.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.mainvisual03 {
+    background: url(../img/main03.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.mainvisual04 {
+    background: url(../img/main04.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
+.mainvisual05 {
+    background: url(../img/main05.jpg)no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    height: 100vh;
+}
+
