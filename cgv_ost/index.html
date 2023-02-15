@@ -6,48 +6,263 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGV</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/main.css"> -->
+
 </head>
 
 <body>
     <div class="header">
-        <div class="logo-section"><img src="./img/logoRed.png" alt="cgvlogo"></div>
+        <div class="logo-section"><a href="index.html"><img src="./img/logoRed.png" alt="cgv-logo"></a></div>
         <div class="page-title">영화OST 페이지</div>
         <div class="main-menu">
             <ul>
-                <li><a href="">2022년 영화들</a></li>
-                <li><a href="">OST</a></li>
+                <li><a href="sub01.html">2022년 영화들</a></li>
+                <li><a href="sub02.html">OST</a></li>
                 <li><a href="">인기영화</a></li>
-                <li><a href="">극장</a></li>
-                <li><a href="">스토어</a></li>
-                <li><a href="">이벤트</a></li>
-                <li><a href="">혜택</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="sub_join.html">회원가입</a></li>
             </ul>
         </div>
     </div>
-    <div class="contents-wrap">
-        <div class="swiper">
+    <div class="mainvisual-wrap">
+        <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/main01.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/main02.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/main03.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/main04.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/main05.jpg" alt=""></div>
+                <div class="swiper-slide mainvisual"></div>
+                <div class="swiper-slide mainvisual02"></div>
+                <div class="swiper-slide mainvisual03"></div>
+                <div class="swiper-slide mainvisual04"></div>
+                <div class="swiper-slide mainvisual05"></div>
             </div>
-            <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="contents-wrap">
+        <div class="movieChart-section">
+            <div class="movieChart-title">
+                <h2>무비 차트</h2>
+            </div>
+            <div class="movie-input-section">
+                <div class="movieChrt-item">
+                    <div class="mc-img">
+                        <img src="./img/rank01.jpg" alt="">
+                        <span class="more-bt"><a href="#!">예매하기</a></span>
+                        <span class="ticketing-bt"><a href="#!">상세보기</a></span>
+                    </div>
+                    <div class="mc-contents">
+                        <div class="movieName">헤어질 결심</div>
+                        <div class="mc-desc">예매율 49.6%</div>
+                    </div>
+                </div>
+                <div class="movieChrt-item">
+                    <div class="mc-img">
+                        <img src="./img/rank02.jpg" alt="">
+                        <span class="more-bt"><a href="#!">예매하기</a></span>
+                        <span class="ticketing-bt"><a href="#!">상세보기</a></span>
+                    </div>
+                    <div class="mc-contents">
+                        <div class="movieName">범죄도시2</div>
+                        <div class="mc-desc">예매율 49.6%</div>
+
+                    </div>
+                </div>
+                <div class="movieChrt-item">
+                    <div class="mc-img">
+                        <img src="./img/rank03.jpg" alt="">
+                        <span class="more-bt"><a href="#!">예매하기</a></span>
+                        <span class="ticketing-bt"><a href="#!">상세보기</a></span>
+                    </div>
+                    <div class="mc-contents">
+                        <div class="movieName">썸머 필름을 타고!</div>
+                        <div class="mc-desc">예매율 49.6%</div>
+
+                    </div>
+                </div>
+                <div class="movieChrt-item">
+                    <div class="mc-img">
+                        <img src="./img/rank04.jpg" alt="">
+                        <span class="more-bt"><a href="#!">예매하기</a></span>
+                        <span class="ticketing-bt"><a href="#!">상세보기</a></span>
+                    </div>
+                    <div class="mc-contents">
+                        <div class="movieName">공조2</div>
+                        <div class="mc-desc">예매율 49.6%</div>
+
+                    </div>
+                </div>
+                <div class="movieChrt-item">
+                    <div class="mc-img">
+                        <img src="./img/rank05.jpg" alt="">
+                        <span class="more-bt"><a href="#!">예매하기</a></span>
+                        <span class="ticketing-bt"><a href="#!">상세보기</a></span>
+                    </div>
+                    <div class="mc-contents">
+                        <div class="movieName">미니언즈2</div>
+                        <div class="mc-desc">예매율 49.6%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="movieOst-section">
+            <div class="movieOst-title">
+                <h2>영화 OST 목록</h2>
+            </div>
+            <div class="movieOst-input-section">
+                <div class="movieOst-item">
+                    <div class="mo-img"><img src="./img/ost01.jpg" alt="ost비긴어게인"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">비긴 어게인</div>
+                    </div>
+                </div>
+                <div class="movieOst-item">
+                    <div class="mo-img"><img src="./img/ost02.jpg" alt="ost비긴어게인"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">비긴 어게인</div>
+                    </div>
+                </div>
+                <div class="movieOst-item">
+                    <div class="mo-img"><img src="./img/ost033.jpg" alt="ost비긴어게인"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">비긴 어게인</div>
+                    </div>
+                </div>
+                <div class="movieOst-item">
+                    <div class="mo-img"><img src="./img/ost044.jpg" alt="ost비긴어게인"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">비긴 어게인</div>
+                    </div>
+                </div>
+                <div class="movieOst-item">
+                    <div class="mo-img"><img src="./img/ost055.jpg" alt="ost비긴어게인"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">비긴 어게인</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="movieOst-items-section">
+            <div class="movieOst-title">
+                <h2>무비 OST목록</h2>
+            </div>
+            <div class="movie-left-section">
+                <div class="movieOst-item">
+                    <div class="mo-img01"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">비긴어게인(Begin Again) OST</div>
+                        <div class="mo-subinfo">
+                            <div class="mo-writer">Lost stars-Adam Levine(Maroon 5)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movieOst-item">
+                    <div class="mo-img02"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">라라랜드(La La Land) OST</div>
+                        <div class="mo-subinfo">
+                            <div class="mo-writer">City Of Stars - Ryan Gosling & Emma Stone</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movieOst-item">
+                    <div class="mo-img03"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">알라딘(Aladdin) OST</div>
+                        <div class="mo-subinfo">
+                            <div class="mo-writer">Speechless - Naomi Scott</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movieOst-item">
+                    <div class="mo-img04"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">어바웃타임(About Time)</div>
+                        <div class="mo-subinfo">
+                            <div class="mo-writer">How Long Will I Love You - Ellie Goulding</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-right-section">
+                <div class="movieOst-right-item">
+                    <div class="mo-img01"></div>
+                    <div class="mo-contents">
+                        <div class="mo-title">원스(Once)</div>
+                        <div class="mo-subinfo">
+                            <div class="mo-writer">Lost stars-Adam Levine(Maroon 5)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
+        <div class="movieOtt-section">
+            <div class="ovieOtt-title">
+                <h2>OTT플랫폼</h2>
+            </div>
+            <div class="movieOtt-input-section">
+                <div class="movieOtt-item">
+                    <div class="mt-img"><a href="https://www.netflix.com/kr/"><img src="./img/ott01.png" alt=""></a>
+                    </div>
+                    <div class="mt-contents">
+                        <div class="mt-title">넷플릭스(NETFLIX)</div>
+                    </div>
+                </div>
+                <div class="movieOtt-item">
+                    <div class="mt-img"><a href="https://www.netflix.com/kr/"><img src="./img/ott02.svg" alt=""></a>
+                    </div>
+                    <div class="mt-contents">
+                        <div class="mt-title">왓챠</div>
+                    </div>
+                </div>
+                <div class="movieOtt-item">
+                    <div class="mt-img"><a href="https://www.netflix.com/kr/"><img src="./img/ott03.svg" alt=""></a>
+                    </div>
+                    <div class="mt-contents">
+                        <div class="mt-title">웨이브</div>
+                    </div>
+                </div>
+                <div class="movieOtt-item">
+                    <div class="mt-img"><a href="https://www.netflix.com/kr/"><img src="./img/ott04.svg" alt=""></a>
+                    </div>
+                    <div class="mt-contents">
+                        <div class="mt-title">디즈니+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <section class="footer">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="./img/footerlogo.png">
+                </div>
+                <div class="footer-con">
+                    <h3>04377서울특별시 용산구 한강대로 23길 55 (아이파크몰 6층) &nbsp;&nbsp;|&nbsp;&nbsp; 고객센터 : 1544-1122</h3>
+                    <p>대표이사 : 최병환 &nbsp;&nbsp;| &nbsp;&nbsp;사업자등록번호 : 104-81-45690 &nbsp;&nbsp;|
+                        &nbsp;&nbsp;통신판매업신고번호 : 2017-서울용산-0662</p>
+                </div>
+            </div>
+            <div class="footer-sub">
+                <div class="footer-cr">
+                    COPYRIGHT ⓒ2023 ALL RIGHT RESERVED
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div id="totop" class="iconbutton">▲</div>
+    <!-- <button type="button" name="button" class="ac-sub-go-top">위로</button> -->
 
     <script src="./js/swiper.js"></script>
     <script src="./js/swiper.min.js"></script>
-
+    <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/common.js"></script>
 </body>
 

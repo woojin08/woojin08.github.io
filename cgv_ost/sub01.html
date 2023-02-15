@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<style>
+    /*********************
+	Common Style
+**********************/
+    .goto-control {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1000;
+        background: #2292e9;
+        text-align: center;
+        color: #fff !important;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    .goto-control:focus {
+        z-index: 9999;
+        opacity: 1;
+        height: auto;
+        padding: 10px;
+    }
+
+
+    /********************
+	Tab Style
+********************/
+
+    .tab-group .tabs {
+        position: absolute;
+        bottom: -380px;
+        right: 50%;
+        display: block;
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    .tab-group .tabs li button {
+        display: block;
+        padding: 0 .9rem;
+        height: 3rem;
+        text-align: center;
+        color: #777;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .tab-group .tabs li {
+        /* width: auto;
+        float: left; */
+        display: inline-block;
+    }
+
+    .tab-group .tabs li button.on {
+        color: #fff;
+        background: #fb4357;
+        border: none;
+        /* padding: 0 1.8rem;
+ margin-right: 1rem; */
+        border-radius: .4rem;
+    }
+
+    .tab-group .tabs li button .selected {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -999;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    .tab-group .tabs li button.on .selected {
+        display: block;
+    }
+
+    .tab-group .tab-con {
+        display: none;
+    }
+
+    .tab-group .tab-con.on {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="logo-section"><a href="index.html"><img src="./img/logoRed.png" alt="cgv-logo"></a></div>
+        <div class="page-title">영화OST 페이지</div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="sub01.html">2022년 영화들</a></li>
+                <li><a href="sub02.html">OST</a></li>
+                <li><a href="">인기영화</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="sub_join.html">회원가입</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-group" id="mycode_tabs">
+        <div class="tabs">
+            <ul>
+                <li class="tab-active">
+                    <button type="button" data-tab="탭1" onclick="fn_tabs_content(this);" class="on">1 <span
+                            class="selected">선택됨</span></button>
+                </li>
+                <li>
+                    <button type="button" data-tab="탭2" onclick="fn_tabs_content(this);">2</button>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-con on" data-content="탭1">
+                <!-- <h3 class="blind">1</h3> -->
+                <div class="movie-contents_wrap">
+                    <div class="movieOpen-section">
+                        <div class="movieOpne-title">
+                            <h2>2022년 개봉영화</h2>
+                        </div>
+                        <ul class="movieOpen-input-section">
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv01.jpg" alt="">
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">
+                                        <spna>개봉</spna>2022.05.18.
+                                    </div>
+                                    <span class="sub_info">
+                                        <span class="mc-star">9.7</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv02.jpg" alt="">
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">
+                                        <spna>개봉</spna>2022.05.18.
+                                    </div>
+                                    <span class="sub_info">
+                                        <span class="mc-star">9.7</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv03.jpg" alt="">
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">
+                                        <spna>개봉</spna>2022.05.18.
+                                    </div>
+                                    <span class="sub_info">
+                                        <span class="mc-star">9.7</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv04.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">
+                                        <spna>개봉</spna>2022.05.18.
+                                    </div>
+                                    <span class="sub_info">
+                                        <span class="mc-star">9.7</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="movieOpen-input-section">
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv05.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">
+                                        <spna>개봉</spna>2022.05.18.
+                                    </div>
+                                    <span class="sub_info">
+                                        <span class="mc-star">9.7</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv06.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">
+                                        <spna>개봉</spna>2022.05.18.
+                                    </div>
+                                    <span class="sub_info">
+                                        <span class="mc-star">9.7</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv07.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">
+                                        <spna>개봉</spna>2022.05.18.
+                                    </div>
+                                    <span class="sub_info">
+                                        <span class="mc-star">9.7</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv08.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">
+                                        <spna>개봉</spna>2022.05.18.
+                                    </div>
+                                    <span class="sub_info">
+                                        <span class="mc-star">9.7</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-con" data-content="탭2">
+                <!-- <h3 class="blind">2</h3> -->
+                <div class="movie-contents_wrap">
+                    <div class="movieOpen-section">
+                        <div class="movieOpne-title">
+                            <h2>2022년 개봉영화</h2>
+                        </div>
+                        <ul class="movieOpen-input-section">
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv09.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">예매율 49.6%</div>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv10.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">범죄도시2</div>
+                                    <div class="mc-desc">예매율 49.6%</div>
+
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv11.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">썸머 필름을 타고!</div>
+                                    <div class="mc-desc">예매율 49.6%</div>
+
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv12.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">공조2</div>
+                                    <div class="mc-desc">예매율 49.6%</div>
+
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="movieOpen-input-section">
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv13.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">미니언즈2</div>
+                                    <div class="mc-desc">예매율 49.6%</div>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv14.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">헤어질 결심</div>
+                                    <div class="mc-desc">예매율 49.6%</div>
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv15.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">범죄도시2</div>
+                                    <div class="mc-desc">예매율 49.6%</div>
+
+                                </div>
+                            </li>
+                            <li class="movieOpen-item">
+                                <div class="mo-img">
+                                    <img src="./img/submv16.jpg" alt="">
+
+                                </div>
+                                <div class="mo-contents">
+                                    <div class="movieName">썸머 필름을 타고!</div>
+                                    <div class="mc-desc">예매율 49.6%</div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#mycode_tabs" class="goto-control">탭으로 돌아가기</a>
+    </div>
+    </div>
+
+    <script>
+        function fn_tabs_content(obj) {
+            var target = $(obj).attr('data-tab');
+            var parents = $(obj).closest('.tab-group');
+            var now_content = $('.tab-con[data-content="' + target + '"]', parents);
+
+            parents.find('.on').removeClass('on');
+            parents.find('.selected').remove();
+            parents.find('.tab-active').removeClass('tab-active');
+            $(obj).addClass('on').closest('li').addClass('tab-active');
+            $(obj).append($('<span class="selected">선택됨</span>'));
+            now_content.addClass('on');
+        }
+    </script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+</body>
+
+</html>

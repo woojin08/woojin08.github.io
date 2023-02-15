@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<style>
+    .main {
+        width: 250px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+    }
+
+    .logo {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    #login {
+        width: 100%;
+        background-color: skyblue;
+        border-color: transparent;
+        color: white;
+    }
+
+    .account {
+        display: block;
+        margin-bottom: 3px;
+        padding: 3px;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+    }
+
+    #alert {
+        border-color: transparent;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="logo-section"><a href="index.html"><img src="./img/logoRed.png" alt="cgv-logo"></a></div>
+        <div class="page-title">영화OST 페이지</div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="sub01.html">2022년 영화들</a></li>
+                <li><a href="sub02.html">OST</a></li>
+                <li><a href="">인기영화</a></li>
+                <li><a href="">로그인</a></li>
+                <li><a href="sub_join.html">회원가입</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="login-page">
+        <div class="login-section">
+            <div class="logo_section">
+                <img src="./img/logoRed.png" alt="">
+            </div>
+            <div class="login-title">아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.</div>
+            <div class="login-input-section">
+                <div class="input-item">
+                    <input type="text" placeholder="아이디" class="id" />
+                </div>
+                <div class="input-item">
+                    <input type="password" placeholder="비밀번호" class="password" />
+                </div>
+                <div class="ck-input-item">
+                    <input type="checkbox">아이디 저장하기
+                </div>
+                <div class="input-item">
+                    <button class="login-bt" class="login">로그인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1 class="logo">Acidgram</h1>
+        <div class="container">
+            <input type="text" placeholder="ID" id="id" class="account">
+            <input type="password" placeholder="Password" id="password" class="account">
+            <button id="login" class="account">login</button>
+            <p id="alert" class="account"></p>
+        </div>
+    </div>
+    <script>
+        const id = document.getElementById('id')
+        const password = document.getElementById('password')
+        const login = document.getElementById('login')
+        let errStack = 0;
+
+        login.addEventListener('click', () => {
+            if (id.value == 'acid') {
+                if (password.value == '0000') {
+                    alert('로그인 되었습니다!')
+                }
+                else {
+                    alert('아이디와 비밀번호를 다시 한 번 확인해주세요!')
+                    errStack++;
+                }
+            }
+            else {
+                alert('존재하지 않는 계정입니다.')
+            }
+
+            if (errStack >= 5) {
+                alert('비밀번호를 5회 이상 틀리셨습니다. 비밀번호 찾기를 권장드립니다.')
+            }
+        })
+    </script>
+</body>
+
+</html>
