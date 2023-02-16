@@ -15,7 +15,25 @@
     <link rel="stylesheet" href="./css/main.css"> -->
 
 </head>
+<style>
+  /*********************
+	Common Style
+**********************/
+.goto-control {display:block; position:absolute; width:100%; height:0; overflow:hidden; bottom:0; left:0; right:0; z-index:-1000; background:#2292e9; text-align:center; color:#fff !important; opacity:0; box-sizing:border-box;}
+.goto-control:focus {z-index:9999; opacity:1; height:auto; padding:10px;}
 
+
+/********************
+	Tab Style
+********************/
+.tab-group .tabs {}
+.tab-group .tabs li button {}
+.tab-group .tabs li button.on {}
+.tab-group .tabs li button .selected {display:none; position:absolute; top:0; left:0; z-index:-999; overflow:hidden; width:0; height:0; opacity:0;}
+.tab-group .tabs li button.on .selected {display:block;}
+.tab-group .tab-con {display:none;}
+.tab-group .tab-con.on {display:block;}
+</style>
 <body>
   <div class="header">
     <div class="logo-section"><img src="./img/logoRed.png" alt="cgvlogo"></div>
@@ -44,6 +62,69 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="tab-group" id="mycode_tabs">
+    <div class="tabs">
+      <ul>
+        <li class="tab-active">
+          <button type="button" data-tab="탭1" onclick="fn_tabs_content(this);" class="on">탭1 <span class="selected">선택됨</span></button>
+        </li>
+        <li>
+          <button type="button" data-tab="탭2" onclick="fn_tabs_content(this);">탭2</button>
+        </li>
+        <li>
+          <button type="button" data-tab="탭3" onclick="fn_tabs_content(this);">탭3</button>
+        </li>
+        <li>
+          <button type="button" data-tab="탭4" onclick="fn_tabs_content(this);">탭4</button>
+        </li>
+        <li>
+          <button type="button" data-tab="탭5" onclick="fn_tabs_content(this);">탭5</button>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="tab-con on" data-content="탭1">
+        <h3 class="blind">탭1</h3>
+        
+        첫번째 탭 내용<br />
+        각 컨텐츠별로 제목값은 반드시 들어가야합니다. (웹접근성)<br />
+        탭으로 이동 시 컨텐츠 내용이 끝난 후, 탭으로 돌아가기 링크가 뜨게 됩니다.
+      </div>
+      <div class="tab-con" data-content="탭2">
+        <h3 class="blind">탭2</h3>
+        
+        두번째 탭 내용
+      </div>
+      <div class="tab-con" data-content="탭3">
+        <h3 class="blind">탭3</h3>
+        
+        세번째 탭 내용
+      </div>
+      <div class="tab-con" data-content="탭4">
+        <h3 class="blind">탭4</h3>
+        
+        네번째 탭 내용
+      </div>
+      <div class="tab-con" data-content="탭5">
+        <h3 class="blind">탭5</h3>
+  
+        다섯번째 탭 내용
+      </div>
+  <script>function fn_tabs_content(obj) {
+    var target = $(obj).attr('data-tab');
+    var parents = $(obj).closest('.tab-group');
+    var now_content = $('.tab-con[data-content="'+target+'"]', parents);
+  
+    parents.find('.on').removeClass('on');
+    parents.find('.selected').remove();
+    parents.find('.tab-active').removeClass('tab-active');
+    $(obj).addClass('on').closest('li').addClass('tab-active');
+    $(obj).append($('<span class="selected">선택됨</span>'));
+    now_content.addClass('on');
+  }</script>
+      <a href="#mycode_tabs" class="goto-control">탭으로 돌아가기</a>
     </div>
   </div>
   <script src="./js/swiper.js"></script>
