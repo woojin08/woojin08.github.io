@@ -89,7 +89,7 @@ body {
 .movieChart-section .movie-input-section .movieChrt-item .mc-img{position: relative;}
 /* .movieChart-section .movie-input-section .movieChrt-item:hover .mc-img{background-size: 100%;} */
 
-.movieChart-section .movie-input-section .movieChrt-item:hover .mc-img:after{content: '';position: absolute; background-color: rgba(0, 0, 0, 0.4); top: 0px; left: 0px; bottom: 8px; right: 0px; border-radius: 6px;}
+.movieChart-section .movie-input-section .movieChrt-item:hover .mc-img:after{content: '';position: absolute; background-color: rgba(0, 0, 0, 0.8); top: 0px; left: 0px; bottom: 8px; right: 0px; border-radius: 6px;}
 .movieChart-section .movie-input-section .movieChrt-item .mc-img .more-bt{position: absolute; left: 40%; top: 45%; height: 35px; margin-top: -17px; background: #fff; width: 136px; text-align: center; margin-left: -40px; line-height: 35px; display: inline-block; border-radius: 6px;font-size: 13px; font-weight: 700; box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.4); z-index: 1; opacity: 0; transition-duration: 0.2s;}
 .movieChart-section .movie-input-section .movieChrt-item:hover .mc-img .more-bt{opacity: 1;}
 .movieChart-section .movie-input-section .movieChrt-item .mc-img .ticketing-bt{position: absolute; left: 40%; top: 55%; height: 35px; margin-top: -17px; background: #fb4357; width: 136px; text-align: center; margin-left: -40px; line-height: 35px; display: inline-block; border-radius: 6px;font-size: 13px; font-weight: 700; box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.4); z-index: 1; opacity: 0; transition-duration: 0.2s;}
@@ -141,13 +141,35 @@ body {
 .movieOpen-section .movie-item{position: relative; width: 400px;}
 .movieOpen-section .movieOpen-input-section{padding: 10px 0;}
 .movieOpen-section .movieOpen-input-section .movieOpen-item{position: relative; display: inline-block; width: 284px; height: 500px; margin-right: 12px;}
-
-.movieOpen-section .movieOpen-input-section .movieOpen-item .mo-img{position: relative;}
+.movieOpen-section .movieOpen-input-section .movieOpen-item .mo-img{position: relative; transition-duration: 0.2s;}
+.movieOpen-section .movieOpen-input-section .movieOpen-item:hover .mo-img:after{content: ''; position: absolute; top: 0px; left: 0px; bottom: 7px; right: 0px; background-color: rgba(0, 0, 0, 0.8); border-radius: 6px;}
+.movieOpen-section .movieOpen-input-section .movieOpen-item .mo-img .more-bt{position: absolute; z-index: 1; left: 50%; top: 50%; background: #fff; width: 136px; height: 35px; text-align: center; line-height: 35px; margin-top: 140px; margin-left: -68px; border-radius: 6px; font-size: 13px; font-weight: 700; opacity: 0; transition-duration: 0.2s;}
+.movieOpen-section .movieOpen-input-section .movieOpen-item:hover .mo-img .more-bt{opacity: 1;}
+.movieOpen-section .movieOpen-input-section .movieOpen-item .mo-img .summary{position: absolute; position: absolute; z-index: 1; left: 50%; top: 50%;  width: 136px; height: 35px; text-align: left; line-height: 35px; margin-top: -180px; margin-left: -120px;font-size: 13px; font-weight: 700; opacity: 0; transition-duration: 0.2s; color: #fff; width: 90%;}
+.movieOpen-section .movieOpen-input-section .movieOpen-item:hover .mo-img .summary{opacity: 1;}
 .movieOpen-section .movieOpen-input-section .movieOpen-item img{width: 100%; border-radius: 6px;}
 .movieOpen-section .movieOpen-input-section .movieOpen-item .mo-contents{display: inline-block; text-align: center; width: 100%;}
-.movieOpen-section .movieOpen-input-section .movieOpen-item .movieName{font-size: 18px; font-weight: 600;}
+.movieOpen-section .movieOpen-input-section .movieOpen-item .movieName{font-size: 18px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .sub_info{ font-size: 11px; display: block;}
 .mc-star{background: url(../img/ic_star.png)no-repeat 0px 9px; display: inline-block; padding-left: 12px;}
+
+
+/* SUB01-01 */
+.movieDetail-wrap{width: 1200px; margin: 0 auto; padding-bottom: 50px;}
+.movieDetail-wrap .movieDetail-section{padding: 100px 0 50px; border-bottom: 2px solid #fb4357;}
+.movieDetail-wrap .movieDetail-section .poster-info{position: relative; display: inline-block; width: 250px; height: 400px;}
+.movieDetail-wrap .movieDetail-section .poster-info img{width: 100%;}
+.movieDetail-wrap .movieDetail-section .md-items{display: inline-block; position: absolute; padding-top: 20px; height: 380px; width: 890px;  margin-left: 50px;}
+.movieDetail-wrap .movieDetail-section .md-items .md-title strong{font-size: 28px; font-weight: 700;}
+.movieDetail-wrap .movieDetail-section .md-items .md-title p{font-size: 13px; padding-bottom:20px; color: #989898;}
+.movieDetail-wrap .movieDetail-section .md-items .detail-info1{border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 10px;}
+.movieDetail-wrap .movieDetail-section .md-items .detail-info1 em{font-size: 15px;}
+.movieDetail-wrap .movieDetail-section .md-items .detail-info1 strong{font-size: 20px;}
+.movieDetail-wrap .movieDetail-section .md-items .detail-info1 .sub-info1 {float: left;  padding-right: 20px;}
+.movieDetail-wrap .movieDetail-section .md-items .detail-info1 .sub-info1 .star{background: url(../img/ic_star.png)no-repeat 0px 9px; display: inline-block; padding-left: 12px;}
+.movieDetail-wrap .movieDetail-section .md-items .detail-info2{margin:24px;}
+.ticketing-bt{ height: 45px; margin-top: 20px; background: #fb4357; width: 136px; text-align: center; line-height: 45px; display: inline-block; border-radius: 6px;font-size: 13px; font-weight: 700; box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.4);}
+.movieDetail-wrap .movieStory-section{padding: 20px 30px; font-weight: 700;}
 
 /* SUB02 */
 .ostContents-wrap{position: relative; z-index: 10; background-color: #fafafa; padding: 30px 0px;}
@@ -163,7 +185,7 @@ body {
 .ostContents-wrap .ostList-section .ostList-items .list-item .lt-img01{position: absolute; right: 20px; top: 12px; width: 150px; height: 150px;}
 .ostContents-wrap .ostList-section .ostList-items .list-item .lt-img01 img{width: 100%;}
 .ostContents-wrap .ostList-section .ostList-items .list-item .lt-option ul li{display: inline-block; font-size: 13px; font-weight: 500; margin-right: 25px;}
-.ostContents-wrap .ostList-section .ostList-items .list-item .lt-bt{position: absolute; top: 90px; right: 15%; width: 200px; height: 64px;  font-size: 16px; font-weight: 500; background-color: #fb4357;color: #fff; border: 1px solid #ddd; border-radius: 6px; cursor: pointer;}
+.ostContents-wrap .ostList-section .ostList-items .list-item .lt-bt{position: absolute; top: 90px; right: 15%; width: 200px; height: 64px;  font-size: 16px; font-weight: 500; background-color: #fb4357; color: #fff; border: 1px solid #ddd; border-radius: 6px; cursor: pointer;}
 
 
 
@@ -195,7 +217,6 @@ body {
 .default-bt.phone-check-bt{width: 100px; height: 56px; font-size: 15px; font-weight: 500; color: #fff; background-color: #fb4357; border-radius: 6px; border: 1px solid #ddd;  cursor: pointer;}
 .auth-page .join-section a{color: #181818; text-decoration: underline; font-weight: 600;}
 .auth-page .join-section .join-bottom-section{margin-top: 35px; padding-top: 17px; border-top: 1px solid #ddd; text-align: left;}
-
 
 /* footer */
 .footer{background: #313131; padding: 48px 0 60px; color: #fff; width: 100%; margin-top: 50px;}
