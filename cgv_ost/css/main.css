@@ -141,7 +141,7 @@ body {
 .movieOtt-section .movieOtt-input-section .movieOtt-item .mt-contents .mt-title{font-size: 15px; text-align: center; font-weight: 700;}
 
 /* SUB01 */
-.movie-contents_wrap{width: 1200px; margin: 0 auto;}
+.movie-contents_wrap{width: 1200px; margin: 0 auto; padding-bottom: 100px;}
 .movieOpen-section .movie-item{position: relative; width: 400px;}
 .movieOpen-section .movieOpen-input-section{padding: 10px 0;}
 .movieOpen-section .movieOpen-input-section .movieOpen-item{position: relative; display: inline-block; width: 284px; height: 500px; margin-right: 12px;}
@@ -227,7 +227,7 @@ body {
 
 
 /* SUB02 */
-.ostContents-wrap{position: relative; z-index: 10; background-color: #fafafa; padding: 30px 0px;}
+.ostContents-wrap{position: relative; z-index: 10; /*background-color: #fafafa;*/ padding: 30px 0;}
 .ostContents-wrap .ostList-section{width: 1600px; margin: 0 auto;}
 .ostContents-wrap .ostList-section .ostList-items{display: inline-block; width: 100%;}
 .ostContents-wrap .ostList-section .ostList-items .list-section{background: #fb4357; border-radius: 6px; padding: 0px 25px; line-height: 45px; height: 47px; box-sizing: border-box; margin-bottom: 15px;}
@@ -246,10 +246,14 @@ body {
 .rankList-wrap{width: 1200px; margin: 0 auto; padding: 50px 0;}
 .rankList-wrap .rankList-section table{width: 100%; border-collapse: collapse;/*표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.*/text-align: center;}
 .rankList-wrap .rankList-section caption{ position: absolute !important; top: auto; left: -10000px; width: 1px; height: 1px; overflow: hidden;}
-.rankList-wrap .rankList-section .rankList-content thead{border: 1px solid #000;}
-.rankList-wrap .rankList-section tr{ border-bottom: 1px solid #fb4357;}
+.rankList-wrap .rankList-section .rankList-content thead{border-top: 1px solid #000; background-color: #eaeaea;}
+.rankList-wrap .rankList-section tr{ border-bottom: 1px solid #ddd;}
+.rankList-wrap .rankList-section th{padding: 10px 0;}
+.rankList-wrap .rankList-section .rankList-content .tit{font-size: 16px; font-weight: 700;}
+.rankList-wrap .rankList-section .rankList-content .txt{font-size: 13px; font-weight: 400;}
 /* th,td{border: 1px solid #000;} */
-
+.star{background: url(../img/ic_star.png)no-repeat 45px 18px; padding-left: 12px;}
+.starOne{background: url(../img/ic_star.png)no-repeat 45px 51px; padding-left: 12px;}
 
 
 /* login */
