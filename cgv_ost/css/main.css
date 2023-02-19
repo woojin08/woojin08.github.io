@@ -120,10 +120,10 @@ body {
 .movieOst-items-section .movie-right-section .movieOst-right-item .mo-contents{padding: 25px 30px;}
 .movieOst-items-section .movie-right-section .movieOst-right-item .mo-contents .mo-title{font-size: 17px; font-weight: 700;}
 .movieOst-items-section .movie-right-section .movieOst-right-item .mo-contents .mo-subinfo{font-size: 14px;}
-.movieOst-items-section .movieOst-item .mo-img01{background-image: url(../img/ost01.jpg); height: 270px;  transition: 0.2s; background-position: center center; background-size: 100%; border-radius: 6px;}
-.movieOst-items-section .movieOst-item .mo-img02{background-image: url(../img/ost02.jpg); height: 270px;  transition: 0.2s; background-position: center center; background-size: 100%; border-radius: 6px;}
-.movieOst-items-section .movieOst-item .mo-img03{background-image: url(../img/ost055.jpg); height: 270px;  transition: 0.2s; background-position: center center; background-size: 100%; border-radius: 6px;}
-.movieOst-items-section .movieOst-item .mo-img04{background-image: url(../img/ost04.jpg); height: 270px;  transition: 0.2s; background-position: center center; background-size: 100%; border-radius: 6px;}
+.movieOst-items-section .movieOst-item .mo-img01{background-image: url(../img/ost01.jpg); height: 270px;  background-position: center center; background-size: 100%; border-radius: 6px;}
+.movieOst-items-section .movieOst-item .mo-img02{background-image: url(../img/ost02.jpg); height: 270px;  background-position: center center; background-size: 100%; border-radius: 6px;}
+.movieOst-items-section .movieOst-item .mo-img03{background-image: url(../img/ost055.jpg); height: 270px; background-position: center center; background-size: 100%; border-radius: 6px;}
+.movieOst-items-section .movieOst-item .mo-img04{background-image: url(../img/ost04.jpg); height: 270px;  background-position: center center; background-size: 100%; border-radius: 6px;}
 .movieOst-items-section .movieOst-right-item .mo-img01{background-image: url(../img/ost03.jpg); height: 700px; transition: 0.2s; background-position: center center; background-size: 100%; background-repeat: no-repeat; border-radius: 6px;}
 .movieOst-items-section .movieOst-item .mo-contents{padding: 25px 30px;}
 .movieOst-items-section .movieOst-item .mo-contents .mo-title{font-size: 17px; font-weight: 700;}
@@ -334,3 +334,8 @@ p {
     background-size: 50%;
     display: none;
   } */
+
+  .play-arrow{background-color: #fff; width: 60px; height: 60px; bottom: 25px; right: 20px; position: absolute; border-radius: 50%;}
+  .play-arrow .play{position: absolute; text-align: center; top: 12px; width: 100%;  height: 100%; font-size:35px; left: 3px;}
+  .play-arrow:hover{background-color: rgba(0, 0, 0, 0.75);}
+  .play-arrow .play:hover{color: #fff;}
