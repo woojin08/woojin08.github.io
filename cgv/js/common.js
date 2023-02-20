@@ -45,7 +45,6 @@ var swiper = new Swiper(".mdSwiper", {
 
 // totop
 
-//11111
 $(document).ready(function() {   //$(document).ready(function()=$(function()   모든 html 페이지가 화면에 뿌려지고 나서  ready안에 서술된 이벤트들이 동작준비를 하는것
   console.log($(this).scrollTop());  //console()안에 있는 것 출력 
   if ($(this).scrollTop() == 0) {   //scrollTop()은 선택한 요소의 스크롤바 수직 위치를 반환하거나 스크롤바 수직 위치를 정함

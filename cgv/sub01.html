@@ -421,7 +421,8 @@
             </div>
         </section>
     </footer>
-    <script>
+    <div id="totop" class="iconbutton">▲</div>
+     <script>
         function fn_tabs_content(obj) {
             var target = $(obj).attr('data-tab');  //.attr()은 요소(element)의 속성(attribute)의 값을 가져오거나 속성을 추가한다.
             var parents = $(obj).closest('.tab-group'); //parents()=모든 부모 요소를 반환할 필요가 있다면 parents() 메소드를 사용, .closest()= 선택한 요소를 포함하면서 가장 가까운 상위 요소를 선택합니다.
@@ -432,11 +433,12 @@
             parents.find('.tab-active').removeClass('tab-active');
             $(obj).addClass('on').closest('li').addClass('tab-active'); //.addClass()로 선택한 요소에 클래스 값을 추가할 수 있습니다.
             $(obj).append($('<span class="selected">선택됨</span>')); //.append() 메소드는 선택된 요소의 마지막에 새로운 HTML 요소나 콘텐츠를 추가한다.
-            $(target).append(source)
             now_content.addClass('on');
         }
     </script>
-    <script src="./js/jquery-1.12.4.min.js"></script>
-</body>
+      <script src="./js/swiper.js"></script>
+      <script src="./js/swiper.min.js"></script>
+      <script src="./js/jquery-1.12.4.min.js"></script>
+      <script src="./js/common.js"></script>
 
 </html>
