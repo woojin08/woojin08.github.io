@@ -9,43 +9,6 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<style>
-    .main {
-        width: 250px;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border: 1px solid lightgrey;
-        border-radius: 5px;
-    }
-
-    .logo {
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
-
-    #login {
-        width: 100%;
-        background-color: skyblue;
-        border-color: transparent;
-        color: white;
-    }
-
-    .account {
-        display: block;
-        margin-bottom: 3px;
-        padding: 3px;
-        border: 1px solid lightgray;
-        border-radius: 3px;
-    }
-
-    #alert {
-        border-color: transparent;
-    }
-</style>
-
 <body>
     <div class="header">
         <div class="logo-section"><a href="index.html"><img src="./img/logoRed.png" alt="cgv-logo"></a></div>
@@ -69,18 +32,15 @@
             <div class="login-title">아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.</div>
             <div class="login-input-section">
                 <div class="input-item">
-                    <!-- <input type="text" placeholder="아이디" class="id" /> -->
                     <input type="text" placeholder="아이디" id="id" class="account">
                 </div>
                 <div class="input-item">
-                    <!-- <input type="password" placeholder="비밀번호" class="password" /> -->
                     <input type="password" placeholder="비밀번호" id="password" class="account">
                 </div>
                 <div class="ck-input-item">
                     <input type="checkbox">아이디 저장하기
                 </div>
                 <div class="input-item">
-                    <!-- <button class="login-bt">로그인</button> -->
                     <button id="login-bt" class="account">login</button>
                 </div>
             </div>
