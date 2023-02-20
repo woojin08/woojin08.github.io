@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<style>
+    /*********************
+	Common Style
+**********************/
+    .goto-control {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1000;
+        background: #2292e9;
+        text-align: center;
+        color: #fff !important;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    .goto-control:focus {
+        z-index: 9999;
+        opacity: 1;
+        height: auto;
+        padding: 10px;
+    }
+
+
+    /********************
+	Tab Style
+********************/
+
+    .tab-group .tabs {
+        position: absolute;
+        bottom: -1230px;
+        right: 50%;
+        display: block;
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    .tab-group .tabs li button {
+        display: block;
+        padding: 0 .9rem;
+        height: 3rem;
+        text-align: center;
+        color: #777;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .tab-group .tabs li {
+        /* width: auto;
+        float: left; */
+        display: inline-block;
+    }
+
+    .tab-group .tabs li button.on {
+        color: #fff;
+        background: #fb4357;
+        border: none;
+        /* padding: 0 1.8rem;
+ margin-right: 1rem; */
+        border-radius: .4rem;
+    }
+
+    .tab-group .tabs li button .selected {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -999;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    .tab-group .tabs li button.on .selected {
+        display: block;
+    }
+
+    .tab-group .tab-con {
+        display: none;
+    }
+
+    .tab-group .tab-con.on {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="logo-section"><a href="index.html"><img src="./img/logoRed.png" alt="cgv-logo"></a></div>
+        <div class="page-title">영화OST 페이지</div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="sub01.html">2022년 영화들</a></li>
+                <li><a href="sub02.html">OST</a></li>
+                <li><a href="sub03.html">인기영화</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="sub_join.html">회원가입</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="ostContents-wrap">
+        <div class="ostList-section">
+            <div class="ostList-items">
+                <div class="list-section">
+                    <ul>
+                        <li>인기순위</li>
+                        <li>POP</li>
+                        <li>최신순</li>
+                    </ul>
+                </div>
+                <div class="list-item">
+                    <div class="lt-title">Lost stars-Adam Levine(Maroon 5)</div>
+                    <div class="lt-artist">비긴어게인(Begin Again) (영화OST)</div>
+                    <div class="lt-img01"><img src="./img/subost01.jpg" alt=""></div>
+                    <div class="lt-option">
+                        <ul>
+                            <li>2014.07.01</li>
+                            <li>04:27</li>
+                            <li>국외영화, 록/메탈, POP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="lt-title">Lost stars-Adam Levine(Maroon 5)</div>
+                    <div class="lt-artist">비긴어게인(Begin Again) (영화OST)</div>
+                    <div class="lt-img01"><img src="./img/subost01.jpg" alt=""></div>
+                    <div class="lt-option">
+                        <ul>
+                            <li>2014.07.01</li>
+                            <li>04:27</li>
+                            <li>국외영화, 록/메탈, POP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="lt-title">Lost stars-Adam Levine(Maroon 5)</div>
+                    <div class="lt-artist">비긴어게인(Begin Again) (영화OST)</div>
+                    <div class="lt-img01"><img src="./img/subost01.jpg" alt=""></div>
+                    <div class="lt-option">
+                        <ul>
+                            <li>2014.07.01</li>
+                            <li>04:27</li>
+                            <li>국외영화, 록/메탈, POP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="tab-group" id="mycode_tabs">
+        <div class="tabs">
+            <ul>
+                <li class="tab-active">
+                    <button type="button" data-tab="탭1" onclick="fn_tabs_content(this);" class="on">1 <span
+                            class="selected">선택됨</span></button>
+                </li>
+                <li>
+                    <button type="button" data-tab="탭2" onclick="fn_tabs_content(this);">2</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="ostContents-wrap">
+            <div class="ostList-section">
+                <div class="ostList-items">
+                    <div class="list-section">
+                        <ul>
+                            <li class="active">인기순위</li>
+                            <li>최신순</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-con on" data-content="탭1">
+                            <!-- <h3 class="blind">영화OST 목록</h3> -->
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=cL4uhaQ58Rk" class="link"
+                                        title="새창열림" target="_blank">Lost stars 비긴어게인(영화 'Begin Again' OST)</a></div>
+                                <div class="lt-artist">Adam Levine(Maroon 5)</div>
+                                <div class="lt-img01"><img src="./img/subost01.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2014.07.01</li>
+                                        <li>04:27</li>
+                                        <li>국외영화, 록/메탈, POP</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=GTWqwSNQCcg" class="link"
+                                        title="새창열림" target="_blank">Ryan Gosling, Emma Ston</a></div>
+                                <div class="lt-artist">City Of Stars (영화 '라라랜드' OST)</div>
+                                <div class="lt-img01"><img src="./img/subost02.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2016.12.09</li>
+                                        <li>02:14</li>
+                                        <li>국외영화, POP</li>
+                                    </ul>
+                                </div>
+                                <div class="bt-item">
+                                    <button class="lt-bt">재생</button>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=k8mtXwtapX4" class="link"
+                                        title="새창열림" target="_blank">Falling Slowly (영화 'Once' OST)</a></div>
+                                <div class="lt-artist">Glen Hansard & Marketa Irglova</div>
+                                <div class="lt-img01"><img src="./img/subost03.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2007.08.14</li>
+                                        <li>04:19</li>
+                                        <li>국외영화</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=qhanxrVLepQ" class="link"
+                                        title="새창열림" target="_blank">How Long Will I Love You (영화 'About Time' OST)</a>
+                                </div>
+                                <div class="lt-artist">Jon Boden, Sam Sweeney, Ben Coleman</div>
+                                <div class="lt-img01"><img src="./img/subost04.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2013.12.02</li>
+                                        <li>02:48</li>
+                                        <li>팝, OST</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=mw5VIEIvuMI" class="link"
+                                        title="새창열림" target="_blank">Speechless (영화 '알라딘' OST)</a></div>
+                                <div class="lt-artist">Naomi Scott</div>
+                                <div class="lt-img01"><img src="./img/subost05.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2019.05.22</li>
+                                        <li>03:26</li>
+                                        <li>팝, OST</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=gIOyB9ZXn8s" class="link"
+                                        title="새창열림" target="_blank">Into the Unknown (영화 '겨울왕국2' OST)</a></div>
+                                <div class="lt-artist">Idina Menzel</div>
+                                <div class="lt-img01"><img src="./img/subost06.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2019.11.15</li>
+                                        <li>03:13</li>
+                                        <li>팝, OST</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=L0MK7qz13bU" class="link"
+                                        title="새창열림" target="_blank">Let It Go (영화 '겨울왕국' OST)</a></div>
+                                <div class="lt-artist">Idina Menzel</div>
+                                <div class="lt-img01"><img src="./img/subost07.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2013.01.01</li>
+                                        <li>04:19</li>
+                                        <li>팝, OST</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=sasJZTOUfpk&list=PLxmIkmr-4PrS4E20aDhMU9uZiKmtSuZpP" class="link"
+                                        title="새창열림" target="_blank">변하지 않는 것 (영화 '시간을 달리는 소녀' OST)</a></div>
+                                <div class="lt-artist">Yoshida Kiyoshi</div>
+                                <div class="lt-img01"><img src="./img/subost08.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2007.06.21</li>
+                                        <li>04:40</li>
+                                        <li>애니메이션/게임 / OST</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=5ysdHjaeGGU" class="link"
+                                        title="새창열림" target="_blank">너에게 난 나에게 넌 (영화 '클래식' OST)</a></div>
+                                <div class="lt-artist">자전거 탄 풍경</div>
+                                <div class="lt-img01"><img src="./img/subost09.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2003.02.11</li>
+                                        <li>03:43</li>
+                                        <li>한국영화 / OST</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="lt-title"><a href="https://www.youtube.com/watch?v=z_a09IMO4lI" class="link"
+                                        title="새창열림" target="_blank">빙글빙글 (영화 '써니' OST)</a></div>
+                                <div class="lt-artist">써니</div>
+                                <div class="lt-img01"><img src="./img/subost10.jpg" alt=""></div>
+                                <div class="lt-option">
+                                    <ul>
+                                        <li>2012.03.12</li>
+                                        <li>03:52</li>
+                                        <li>국내영화, 댄스</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-con" data-content="탭2">
+                        <!-- <h3 class="blind">2</h3> -->
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=v9JQto3M3zQ" class="link"
+                                    title="새창열림" target="_blank">Narratage (영화 '나라타주' OST)</a></div>
+                            <div class="lt-artist">adieu</div>
+                            <div class="lt-img01"><img src="./img/subost11.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2017.10.04</li>
+                                    <li>05:43</li>
+                                    <li>J-POP</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=w3qPMe_cCJk" class="link"
+                                    title="새창열림" target="_blank">Please, Please, Please, Let Me Get What I Want (영화
+                                    '500일의 썸머' OST)</a></div>
+                            <div class="lt-artist">The Smiths</div>
+                            <div class="lt-img01"><img src="./img/subost12.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2009.12.29</li>
+                                    <li>01:53</li>
+                                    <li>국외영화, POP</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=NXt-YY3Xt8Q" class="link"
+                                    title="새창열림" target="_blank">인생의 회전목마 (영화 '하울의 움직이는 성' OST)</a></div>
+                            <div class="lt-artist">Hisaishi Joe(히사이시 조/久石 讓)</div>
+                            <div class="lt-img01"><img src="./img/subost13.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2004.12.15</li>
+                                    <li>05:12</li>
+                                    <li>애니메이션, OST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=66u3OPuiA1I" class="link"
+                                    title="새창열림" target="_blank">Reality (영화 'LA BOUM' OST)</a></div>
+                            <div class="lt-artist">Vladimir Cosma</div>
+                            <div class="lt-img01"><img src="./img/subost14.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2006.02.07</li>
+                                    <li>02:48</li>
+                                    <li>국외영화, OST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=87vPoKxk1Js" class="link"
+                                    title="새창열림" target="_blank">Summer (영화 '기쿠지로의 여름' OST)</a></div>
+                            <div class="lt-artist">Naomi Scott</div>
+                            <div class="lt-img01"><img src="./img/subost15.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2002.08</li>
+                                    <li>06:23</li>
+                                    <li>OST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=vSkXfrJtbAw" class="link"
+                                    title="새창열림" target="_blank">Maria (영화 '미녀는 괴로워' OST)</a></div>
+                            <div class="lt-artist">김아중</div>
+                            <div class="lt-img01"><img src="./img/subost16.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2006.10.16</li>
+                                    <li>03:07</li>
+                                    <li>팝, OST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=55ALXXHzRno" class="link"
+                                    title="새창열림" target="_blank">Aiokuri (영화 '너와의 100번째 사랑' OST)</a></div>
+                            <div class="lt-artist">miwa</div>
+                            <div class="lt-img01"><img src="./img/subost17.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2017.02.22</li>
+                                    <li>03:49</li>
+                                    <li>팝, J-POP</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=hgeuZEkUL-A" class="link"
+                                    title="새창열림" target="_blank">나의 왕자님 (My Prince) (영화 '늑대소년' OST)</a></div>
+                            <div class="lt-artist">박보영</div>
+                            <div class="lt-img01"><img src="./img/subost18.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2012.11.12</li>
+                                    <li>04:13</li>
+                                    <li>한국영화 / OST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=H_z63kWV-80" class="link"
+                                    title="새창열림" target="_blank">Photograph (영화 'Me Before You' OST)</a></div>
+                            <div class="lt-artist">Ed Sheeran</div>
+                            <div class="lt-img01"><img src="./img/subost19.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2016.06.03</li>
+                                    <li>04:14</li>
+                                    <li>국외영화 / OST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="lt-title"><a href="https://www.youtube.com/watch?v=60sYc0Gnayw" class="link"
+                                    title="새창열림" target="_blank">Amapola (영화 '뷰티 인사이드' OST)</a></div>
+                            <div class="lt-artist">The Soundtrackings</div>
+                            <div class="lt-img01"><img src="./img/subost20.jpg" alt=""></div>
+                            <div class="lt-option">
+                                <ul>
+                                    <li>2015.05.04</li>
+                                    <li>03:27</li>
+                                    <li>국내영화, OST</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="tab-con" data-content="탭3">
+                <h3 class="blind">3</h3>
+                
+                세번째 탭 내용
+            </div>
+            <div class="tab-con" data-content="탭4">
+                <h3 class="blind">탭4</h3>
+                
+                네번째 탭 내용
+            </div>
+            <div class="tab-con" data-content="탭5">
+                <h3 class="blind">탭5</h3>
+    
+                다섯번째 탭 내용
+            </div> -->
+
+            <a href="#mycode_tabs" class="goto-control">탭으로 돌아가기</a>
+        </div>
+    </div>
+    <footer>
+        <section class="footer">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="./img/footerlogo.png">
+                </div>
+                <div class="footer-con">
+                    <h3>04377서울특별시 용산구 한강대로 23길 55 (아이파크몰 6층) &nbsp;&nbsp;|&nbsp;&nbsp; 고객센터 : 1544-1122</h3>
+                    <p>대표이사 : 최병환 &nbsp;&nbsp;| &nbsp;&nbsp;사업자등록번호 : 104-81-45690 &nbsp;&nbsp;|
+                        &nbsp;&nbsp;통신판매업신고번호 : 2017-서울용산-0662</p>
+                </div>
+            </div>
+            <div class="footer-sub">
+                <div class="footer-cr">
+                    COPYRIGHT ⓒ2023 ALL RIGHT RESERVED
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div id="totop" class="iconbutton">▲</div>
+    <script>
+        function fn_tabs_content(obj) {
+            var target = $(obj).attr('data-tab');
+            var parents = $(obj).closest('.tab-group');
+            var now_content = $('.tab-con[data-content="' + target + '"]', parents);
+
+            parents.find('.on').removeClass('on');
+            parents.find('.selected').remove();
+            parents.find('.tab-active').removeClass('tab-active');
+            $(obj).addClass('on').closest('li').addClass('tab-active');
+            $(obj).append($('<span class="selected">선택됨</span>'));
+            now_content.addClass('on');
+        }
+    </script>
+       <script src="./js/swiper.js"></script>
+       <script src="./js/swiper.min.js"></script>
+       <script src="./js/jquery-1.12.4.min.js"></script>
+       <script src="./js/common.js"></script>
+</body>
+
+</html>
