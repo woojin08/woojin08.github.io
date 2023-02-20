@@ -30,13 +30,28 @@ html,body {position: relative; height: 100%;}
 .swiper-slide img {display: block; width: 100%; height: 100px; object-fit: cover; }
 .mainvisual-wrap{overflow-x: hidden;}
 .mainvisual {background: url(../img/main01.jpg)no-repeat center center/cover; text-align: center; color: #fff; text-shadow: 0 0 3px #000; height: 100vh;}
-
+.inner {position: absolute;
+    inset: 75% auto auto 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+.inner h3 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 10px 50px;
+    text-align: left;
+}
+.inner p {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 30px 0 10px 50px;
+    line-height: 30px;
+    text-align: left;
+}
 .mainvisual02 {background: url(../img/main02.jpg)no-repeat center center/cover; text-align: center; color: #fff; text-shadow: 0 0 3px #000; height: 100vh;}
-
 .mainvisual03 {background: url(../img/main03.jpg)no-repeat center center/cover; text-align: center; color: #fff; text-shadow: 0 0 3px #000; height: 100vh;}
-
 .mainvisual04 {background: url(../img/main04.jpg)no-repeat center center/cover; text-align: center; color: #fff; text-shadow: 0 0 3px #000; height: 100vh;}
-
 .mainvisual05 { background: url(../img/main05.jpg)no-repeat center center/cover; text-align: center; color: #fff; text-shadow: 0 0 3px #000; height: 100vh;}
 
 
@@ -272,6 +287,39 @@ html,body {position: relative; height: 100%;}
 }
 .still03_10 {
     background: url(../img/still03010.jpg)no-repeat center center/cover;
+}
+/* still 01_04 */
+.still04_01 {
+    background: url(../img/still0401.jpg)no-repeat center center/cover;
+}
+
+.still04_02 {
+    background: url(../img/still0402.jpg)no-repeat center center/cover;
+}
+.still04_03 {
+    background: url(../img/still0403.jpg)no-repeat center center/cover;
+}
+
+.still04_04 {
+    background: url(../img/still0404.jpg)no-repeat center center/cover;
+}
+.still04_05 {
+    background: url(../img/still0405.jpg)no-repeat center center/cover;
+}
+.still04_06 {
+    background: url(../img/still0406.jpg)no-repeat center center/cover;
+}
+.still04_07 {
+    background: url(../img/still0407.jpg)no-repeat center center/cover;
+}
+.still04_08 {
+    background: url(../img/still0408.jpg)no-repeat center center/cover;
+}
+.still04_09 {
+    background: url(../img/still0409.jpg)no-repeat center center/cover;
+}
+.still04_10 {
+    background: url(../img/still04010.jpg)no-repeat center center/cover;
 }
 
 /* SUB02 */
