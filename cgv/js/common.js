@@ -53,9 +53,9 @@ $(document).ready(function() {   //$(document).ready(function()=$(function()   �
 
   $(document).scroll(function() {
       if ($(this).scrollTop() > 0) {  //스크롤 높이가 0이상
-          $(".iconbutton").show(); //만족하면 선택한 요소를 순간적으로 사라지게 함
+          $(".iconbutton").show(); //만족하면 선택한 요소를 나타나게함
       } else {
-          $(".iconbutton").hide(); //한족하지 않으면 선택한 요소를 나타나게함
+          $(".iconbutton").hide(); //한족하지 않으면 선택한 요소를 순간적으로 사라지게함
       }
   })
 
